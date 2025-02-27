@@ -1,0 +1,1019 @@
+Question Number,2023 Description,New Variable Name,Combined Score,Cosine Similarity,Jaccard Similarity,MDR Variable Name,MDR Definition
+1-3,Reporting period,REFPER_CAL_YEAR_STAT,80.1,82.48,66.67,SURV_YEAR_STAT,Reporting Period Type
+,Total worldwide research and development  (Performed by your company),,76.72,80.18,57.14,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+4-6c,Worldwide capital expenditures: total,CAPEX_WW_TOT_VAL,76.7,79.65,60.0,CAPEX_NEW_TOT_DVAL,Capital Expenditures: All new - total
+4-5c,Expenditures: total,CAPEX_WW_TOT_VAL,76.59,84.23,33.33,EXPS_CON_PCT_OTH,"Expenditures incurred,  Other"
+1-2,Was company owned by a US company?,PARENTCO_DOM_STAT,75.47,77.03,66.67,AFFIL_SPL_OWN_DOM_NO_ARCHIVE,Is the company owned or controlled by another domestic company?
+1-4,Was company owned by a foreign company?,AFFIL_OWNER_FOR_STAT,74.9,79.29,50.0,AFFIL_SPL_OWN_DOM_NO_ARCHIVE,Is the company owned or controlled by another domestic company?
+2-1,Worldwide R&D expense,EXPS_WORLD_RD_VAL,74.89,85.16,16.67,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+4-5a,"Expenditures: property, plant, and equipment",CAPEX_WW_PPE_VAL,74.75,85.73,12.5,CAPEX_TOT,"Capital Expenditures, New and Used Buildings and Machinery Total"
+4-6a,"Domestic capital expenditures: property, plant, and equipment",CAPEX_DOM_PPE_VAL,74.29,83.47,22.22,CAPEX_TOT,"Capital Expenditures, New and Used Buildings and Machinery Total"
+4-6c,Domestic capital expenditures,CAPEX_DOM_TOT_VAL,74.03,75.33,66.67,CAPEX_MACH_OTH,"Capital Expenditures, Others"
+4-6a,"Worldwide capital expenditures: property, plant, and equipment",CAPEX_WW_PPE_VAL,73.26,82.27,22.22,CAPEX_TOT,"Capital Expenditures, New and Used Buildings and Machinery Total"
+,Total foreign research and development  (Performed by your company),,73.02,79.29,37.5,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+4-6c,Foreign capital expenditures: total,CAPEX_FOR_TOT_VAL,72.74,74.99,60.0,CAPEX_OTH_NEW_WRTIN_TXT,"Capital Expenditures: Other new - total, specify"
+4-2c,Depreciation: total,ASSET_DA_TOT_VAL,71.06,74.77,50.0,DEPR_TOT,"Depreciation charges, Total Buildings and Machinery"
+2-8c,Type of R&D Costs: Leased employees and temporary staffing  (Domestic),EXPS_DOM_RD_CORE_TEMP_VAL,71.02,79.63,22.22,EXPS_TEMPSTAF_VAL,Temporary Staff and Leased Employee Expense
+2-23,Projected R&D paid for by your company: Worldwide,EXPS_PRJ_WORLD_RD_VAL,70.7,78.13,28.57,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-10,R&D paid for and performed by your company (Worldwide) (calc),EXPS_WORLD_RD_INT_VAL,69.24,77.05,25.0,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+4-2a,"Depreciation: property, plant, and equipment",ASSET_DA_PPE_VAL,69.09,81.28,0.0,ASSET_RETIRED,"Depreciable assets sold, retired, scrapped, destroyed, etc.   Total Buildings and Machinery"
+6-5b,R&D employees by occupation: R&D technicians - domestic,EMP_DOM_RD_TECH_NUM,68.58,74.8,33.33,EMP_MAR12_RD_TECH,"Employment By Occupation, Research and Development, Technicians or technologists"
+6-5b,R&D employees by occupation: R&D technicians - worldwide,EMP_WW_RD_TECH_NUM,67.57,73.61,33.33,EMP_MAR12_RD_TECH,"Employment By Occupation, Research and Development, Technicians or technologists"
+1-1,Date your company ceased operations,OPSTAT_CEASED_DATE,67.28,70.33,50.0,OPSTAT_DATES,"Ceased, Sold, and Added date"
+2-8c,Type of R&D Costs: Leased employees and temporary staffing  (Foreign),EXPS_FOR_RD_CORE_TEMP_VAL,67.17,75.11,22.22,EXPS_TEMPSTAF_VAL,Temporary Staff and Leased Employee Expense
+,Hours needed to complete survey,,67.11,75.43,20.0,SURVEY_HRS_NUM,Survey Completion Time
+,Worldwide R&D paid for by the company and others and performed by the company and others,,66.99,73.77,28.57,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+2-8c,Type of R&D Costs: Leased employees and temporary staffing  (Worldwide),EXPS_WORLD_RD_CORE_TEMP_VAL,66.89,74.78,22.22,EXPS_TEMPSTAF_VAL,Temporary Staff and Leased Employee Expense
+1-12,Worldwide net sales and operating revenues,RCPT_TOT_VAL,66.55,75.35,16.67,NET_REV_LSD,net revenue
+4-7a,"Domestic capital expenditures for R&D: property, plant, and equipment",CAPEX_DOM_RD_PPE_VAL,66.52,74.34,22.22,CAPEX_TOT,"Capital Expenditures, New and Used Buildings and Machinery Total"
+4-6a,"Foreign capital expenditures: property, plant, and equipment",CAPEX_FOR_PPE_VAL,65.91,73.62,22.22,CAPEX_TOT,"Capital Expenditures, New and Used Buildings and Machinery Total"
+4-8b,"Domestic capital expenditures for R&D, by type of asset: Buildings and land improvements",CAPEX_DOM_RD_STR_VAL,65.83,72.16,30.0,CAPEX_NEW_NONHWY_BUILD,"Capital Expenditures, New Non Highway Buildings"
+5-15b,Foreign R&D paid for and performed by your company -  Total Development,EXPS_FOR_RD_INT_DEV_VAL,65.75,73.43,22.22,RD_VAL,Company's worldwide expenses for research and development
+4-8a,"Domestic capital expenditures for R&D, by type of asset: Land Acquisition",CAPEX_DOM_RD_LND_VAL,65.68,69.71,42.86,CAPEX_MIN_LAND,"Capital Expenditures, Mineral Land"
+4-5b,Expenditures: identifiable intangible assets,CAPEX_WW_IIA_VAL,65.6,73.64,20.0,EXPS_CON_PCT_OTH,"Expenditures incurred,  Other"
+5-3b,Domestic R&D paid for and performed by your company - Total Development,EXPS_DOM_RD_INT_DEV_VAL,65.54,73.18,22.22,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+4-7c,Domestic capital expenditures for R&D: Total,CAPEX_DOM_RD_TOT_VAL,65.33,66.27,60.0,CAPEX_NEW_TOT_DVAL,Capital Expenditures: All new - total
+2-8l,Type of R&D Costs:  All other costs (Worldwide),EXPS_WORLD_RD_CORE_OCST_VAL,65.32,74.33,14.29,RD_VAL,Company's worldwide expenses for research and development
+2-7b,R&D costs incurred - Foreign,EXPS_FOR_RD_CORE_VAL,65.29,76.81,0.0,RD_VAL,Company's worldwide expenses for research and development
+4-8c,"Domestic capital expenditures for R&D, by type of asset: Equipment",CAPEX_DOM_RD_EQP_VAL,65.18,71.64,28.57,CAPEX_MACH_VAL,Capital Expenditures: New and Used machinery
+6-5b,R&D employees by occupation: R&D technicians - foreign,EMP_FOR_RD_TECH_NUM,64.95,70.53,33.33,EMP_MAR12_RD_TECH,"Employment By Occupation, Research and Development, Technicians or technologists"
+3-3l,"Domestic, foreign, and worldwide R&D paid for by others: All other costs - Worldwide",EXPS_WORLD_RD_RMB_OCST_VAL,64.68,74.13,11.11,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+4-8d,"Domestic capital expenditures for R&D, by type of asset: Capitalized software",CAPEX_DOM_RD_SFT_VAL,64.59,68.43,42.86,CAPEX_SOFTWARE_INTDEV_VAL,"Capital Expenditures:_x000D_
+Computer Software, internally-developed"
+1-2,Is the parent company a holding company?,PARENTCO_HOLDING_STAT,64.57,70.08,33.33,AFFIL_OWNER_NAME,Name of the owning or controlling company
+,"Domestic R&D paid for by the company and others and performed by the company, by type of cost - All other costs",,64.46,74.23,9.09,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+2-8j,Type of R&D Costs:  Contract R&D (Worldwide),EXPS_WORLD_RD_CORE_CTR_VAL,64.4,73.56,12.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+4-1a,"Assets: property, plant, and equipment",ASSET_NET_WW_PPE_VAL,64.36,72.78,16.67,ASSET_RETIRED,"Depreciable assets sold, retired, scrapped, destroyed, etc.   Total Buildings and Machinery"
+5-15a,Foreign R&D paid for and performed by your company - Total Research ,EXPS_FOR_RD_INT_RES_VAL,64.31,71.74,22.22,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-8b,Type of R&D Costs: Stock-based compensation (Worldwide),EXPS_WORLD_RD_CORE_STOCK_VAL,64.27,73.85,10.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+5-29b,Federally funded R&D performed in US - Total Development,EXPS_DOM_RD_RMB_INT_DEV_FED_VAL,64.22,73.95,9.09,FUNDS_DEV_FEDGOV,"Source of Research and Development Funds,  Federal government contracts and subcontracts"
+,Minutes needed to complete survey,,64.17,71.97,20.0,SURVEY_HRS_NUM,Survey Completion Time
+2-23,Projected R&D paid for by your company: Foreign,EXPS_PRJ_FOR_RD_VAL,64.15,73.27,12.5,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+,Domestic R&D paid for by the company's foreign subsidiaries and performed by the company - Development,,64.14,71.93,20.0,RD_VAL,Company's worldwide expenses for research and development
+2-8k,Type of R&D Costs:  Other purchased services (Worldwide),EXPS_WORLD_RD_CORE_SRV_VAL,63.96,73.29,11.11,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-1b,All other Employees  - Total Worldwide,EMP_WW_NONRD_NUM,63.9,69.29,33.33,EMP_MAR12,Total Employment
+,Domestic R&D paid for by the company and others and performed by the company - Development,,63.8,70.64,25.0,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+2-8e,Type of R&D Costs: Materials and supplies (Worldwide),EXPS_WORLD_RD_CORE_MTR_VAL,63.65,72.92,11.11,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in Other Asian Countries,EXPS_OAP_RD_INT_VAL,63.52,68.84,33.33,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-5a,R&D employees by occupation: Researchers - worldwide,EMP_WW_RD_RES_NUM,63.52,72.52,12.5,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+2-8d,Type of R&D Costs: Expensed equipment [not capitalized] (Worldwide),EXPS_WORLD_RD_CORE_EQP_VAL,63.5,72.94,10.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in Puerto Rico,EXPS_PRI_RD_INT_VAL,63.44,71.11,20.0,RCPT_CONTRACT_FOOD,"Contract Work done by customer in Puerto Rico, Hotels, restaurants, food services, and drinking places"
+2-11,Research and development paid for and performed by your company in Other Latin American Countries,EXPS_OLA_RD_INT_VAL,62.98,68.8,30.0,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+,Domestic R&D paid for by the company's foreign subsidiaries and performed by the company - Basic research,,62.85,70.73,18.18,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+5-3a,Domestic R&D paid for and performed by your company - Total Research ,EXPS_DOM_RD_INT_RES_VAL,62.77,69.93,22.22,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-7a,R&D costs incurred - Domestic,EXPS_DOM_RD_CORE_VAL,62.74,73.82,0.0,RD_EXPS_STAT,Research and Development Expenses
+3-8e,"Domestic R&D performed by your company that was paid for by others, by Source of Funds: US state and local government agencies and labs",EXPS_DOM_RD_RMB_INT_STATEGOV,62.73,70.08,21.05,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+5-29a,Federally funded R&D performed in US - Total Research,EXPS_DOM_RD_RMB_INT_RES_FED_VAL,62.57,69.2,25.0,FUNDS_DEV_TOT,"Source of Research and Development Funds,  Total"
+3-8d,"Domestic R&D performed by your company that was paid for by others, by Source of Funds: US federal government agencies and labs",EXPS_DOM_RD_RMB_INT_FEDGOV,62.52,70.77,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-6,Research and development performed by your company and paid for by others in Other Asian Countries,EXPS_OAP_RD_RMB_INT_VAL,62.5,67.65,33.33,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+4-8f,"Domestic capital expenditures for R&D, by type of asset: All other capital expenditures for R&D",CAPEX_DOM_RD_OTH_VAL,62.48,67.62,33.33,CAPEX_OTH_USED_WRTIN_TXT,"Capital Expenditures: Other used - total, specify"
+4-6b,Domestic capital expenditures: identifiable intangible assets,CAPEX_DOM_IIA_VAL,62.36,69.45,22.22,CAPEX_TOT,"Capital Expenditures, New and Used Buildings and Machinery Total"
+2-18,"R&D paid for and performed by your company, paid for by foreign operations or subsidiaries",EXPS_DOM_RD_INT_PBF_VAL,62.34,71.58,10.0,RD_VAL,Company's worldwide expenses for research and development
+3-3d,"Domestic, foreign, and worldwide R&D paid for by others : Expensed equipment - Worldwide",EXPS_WORLD_RD_RMB_EQP_VAL,62.34,71.58,10.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+,"Domestic R&D paid for by the company and others and performed by the company, by type of cost - Royalties and licensing fees",,62.3,71.94,7.69,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in Other European Countries,EXPS_OEU_RD_INT_VAL,62.19,67.28,33.33,RD_VAL,Company's worldwide expenses for research and development
+5-15c,Foreign R&D paid for and performed by your company - Total Research and Total Development (copy),,62.07,67.73,30.0,RD_VAL,Company's worldwide expenses for research and development
+2-11,"R&D paid for and performed by your company, by country where performed",,62.04,70.47,14.29,RD_CHECK_NO_ARCHIVE,Did your company perform or fund research and development?
+2-12,Research and development paid for and performed by your company in Colorado,EXPS_CO_RD_INT_VAL,61.95,65.32,42.86,RD_CHECK,Did your company perform or fund research and development?
+3-6,Research and development performed by your company and paid for by others in Other Latin American Countries,EXPS_OLA_RD_RMB_INT_VAL,61.92,67.55,30.0,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in Brazil,EXPS_BRA_RD_INT_VAL,61.76,66.04,37.5,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+3-6,Research and development performed by your company and paid for by others in Puerto Rico,EXPS_PRI_RD_RMB_INT_VAL,61.71,69.06,20.0,RCPT_CONTRACT_FOOD,"Contract Work done by customer in Puerto Rico, Hotels, restaurants, food services, and drinking places"
+3-14,Total domestic research and development performed by your company and paid for by others in Texas,EXPS_DOM_RD_RMB_INT_TX_TOT,61.66,67.24,30.0,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+2-12,Research and development paid for and performed by your company in Oklahoma,EXPS_OK_RD_INT_VAL,61.58,64.88,42.86,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+2-12,Research and development paid for and performed by your company in Kansas,EXPS_KS_RD_INT_VAL,61.57,64.87,42.86,RD_CHECK_NO_ARCHIVE,Did your company perform or fund research and development?
+2-12,Research and development paid for and performed by your company in Nebraska,EXPS_NE_RD_INT_VAL,61.53,64.82,42.86,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+6-5a,R&D employees by occupation: Researchers - foreign,EMP_FOR_RD_RES_NUM,61.49,70.13,12.5,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+,Domestic R&D paid for by the company's foreign subsidiaries and performed by the company - Applied research,,61.47,69.11,18.18,RD_VAL,Company's worldwide expenses for research and development
+3-8g,"Domestic R&D performed by your company that was paid for by others, by Source of Funds: Universities, colleges, and academic researchers located inside the US",EXPS_DOM_RD_RMB_INT_USUNI,61.44,70.68,9.09,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+,Domestic R&D paid for by the company and others and performed by the company - Applied research,,61.44,67.87,25.0,RD_CHECK_NO,Did your company perform or fund research and development?
+6-2,Total employees in West Virginia,EMP_WV_TOT_NUM,61.43,65.22,40.0,RCPT_C_ST_WV,"Construction Work by State,  West Virginia"
+2-8h,Type of R&D Costs:  Royalties and licensing fees (Worldwide),EXPS_WORLD_RD_CORE_ROY_VAL,61.39,70.46,10.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-3f,"Domestic, foreign, and worldwide R&D paid for by others: Materials and Supplies - Worldwide",EXPS_WORLD_RD_RMB_RENT_VAL,61.27,70.32,10.0,RD_VAL,Company's worldwide expenses for research and development
+3-3e,"Domestic, foreign, and worldwide R&D paid for by others: Materials and Supplies - Worldwide",EXPS_WORLD_RD_RMB_MTR_VAL,61.27,70.32,10.0,RD_VAL,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Indiana,EXPS_DOM_RD_RMB_INT_IN_TOT,61.21,66.13,33.33,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Washington,EXPS_DOM_RD_RMB_INT_FED_WA,61.19,69.05,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+2-12,Research and development paid for and performed by your company in Texas,EXPS_TX_RD_INT_VAL,61.18,64.41,42.86,RD_CHECK_NO_ARCHIVE,Did your company perform or fund research and development?
+2-12,"R&D paid for and performed by your company, by state where performed ",,61.18,69.46,14.29,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+3-6,Research and development performed by your company and paid for by others in Brazil,EXPS_BRA_RD_RMB_INT_VAL,61.13,65.3,37.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+5-33c,Foreign R&D paid for by others and performed by your company - Total Research and Total Development (copy),,61.12,66.61,30.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in District of Columbia,EXPS_DOM_RD_RMB_INT_NONFED_DC,61.11,69.11,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+5-30b,Federally funded R&D performed in US -  Total Basic research,EXPS_DOM_RD_RMB_INT_BR_FED_VAL,61.11,70.42,8.33,FUNDS_DEV_FEDGOV,"Source of Research and Development Funds,  Federal government contracts and subcontracts"
+3-14,Total domestic research and development performed by your company and paid for by others in Florida,EXPS_DOM_RD_RMB_INT_FL_TOT,61.1,66.59,30.0,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-8b,Type of R&D Costs: Stock-based compensation (Foreign),EXPS_FOR_RD_CORE_STOCK_VAL,61.09,71.87,0.0,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in District of Columbia,EXPS_DOM_RD_RMB_INT_FED_DC,61.09,69.08,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+,Foreign R&D paid for by the company and others and performed by the company - Development,,61.03,67.38,25.0,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Colorado,EXPS_DOM_RD_RMB_INT_CO_TOT,61.02,65.91,33.33,RD_CHECK,Did your company perform or fund research and development?
+2-12,Research and development paid for and performed by your company in Washington,EXPS_WA_RD_INT_VAL,60.99,64.19,42.86,RD_CHECK_NO_ARCHIVE,Did your company perform or fund research and development?
+3-5,R&D performed by your company that was paid for by others - Worldwide (calc),EXPS_WORLD_RD_RMB_INT_VAL,60.98,67.33,25.0,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+2-12,Research and development paid for and performed by your company in Connecticut,EXPS_CT_RD_INT_VAL,60.96,64.15,42.86,RD_CHECK,Did your company perform or fund research and development?
+2-8m,Type of R&D Costs:  Total (Worldwide) (copy),EXPS_WORLD_RD_CORE_SUM_TYPE,60.96,69.76,11.11,RD_VAL,Company's worldwide expenses for research and development
+6-2,Total employees in South Dakota,EMP_SD_TOT_NUM,60.91,64.6,40.0,RCPT_C_ST_SD,"Construction Work by State,  South Dakota"
+3-14,Total domestic research and development performed by your company and paid for by others in Georgia,EXPS_DOM_RD_RMB_INT_GA_TOT,60.91,66.37,30.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-2a,"Does worldwide R&D expense include: Collaborative R&D reimbursed by business partners, such as through cost-sharing agreements",EXPS_WORLD_RD_COLLAB_STAT,60.9,70.47,6.67,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-12,Research and development paid for and performed by your company in Indiana,EXPS_IN_RD_INT_VAL,60.89,64.07,42.86,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+5-29c,Federally funded R&D performed in US - Total Research and Total Development (copy),,60.88,65.75,33.33,FUNDS_DEV_TOT,"Source of Research and Development Funds,  Total"
+5-33b,Foreign R&D paid for by others and performed by your company - Total Development,EXPS_FOR_RD_RMB_INT_DEV_VAL,60.85,67.66,22.22,RD_VAL,Company's worldwide expenses for research and development
+3-6,Research and development performed by your company and paid for by others in Other European Countries,EXPS_OEU_RD_RMB_INT_VAL,60.83,65.69,33.33,RD_VAL,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Nebraska,EXPS_DOM_RD_RMB_INT_NE_TOT,60.8,65.65,33.33,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+2-12,Research and development paid for and performed by your company in Iowa,EXPS_IA_RD_INT_VAL,60.75,63.91,42.86,RD_CHECK,Did your company perform or fund research and development?
+2-11,Research and development paid for and performed by your company in Germany,EXPS_DEU_RD_INT_VAL,60.73,64.83,37.5,RD_VAL,Company's worldwide expenses for research and development
+5-1,Worldwide R&D paid for by your company - New business areas or product lines (percentage),EXPS_WW_RD_CORE_NEW_PCT,60.72,68.5,16.67,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in Australia,EXPS_AUT_RD_INT_VAL,60.71,64.81,37.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+5-4b,Domestic R&D paid for and performed by your company - Total Basic research,EXPS_DOM_RD_INT_RES_BAS_VAL,60.68,70.41,5.56,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+2-11,Research and development paid for and performed by your company in India,EXPS_IND_RD_INT_VAL,60.67,64.76,37.5,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in United Kingdom,EXPS_GBR_RD_INT_VAL,60.65,65.47,33.33,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-12,Research and development paid for and performed by your company in Maine,EXPS_ME_RD_INT_VAL,60.65,63.79,42.86,RD_CHECK_YES,Did your company perform or fund research and development?
+2-11,Research and development paid for and performed by your company in Indonesia,EXPS_IDN_RD_INT_VAL,60.65,64.73,37.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-2,Total employees in New Hampshire,EMP_NH_TOT_NUM,60.65,64.29,40.0,RCPT_C_ST_NH,"Construction Work by State,  New Hampshire"
+2-12,Research and development paid for and performed by your company in Utah,EXPS_UT_RD_INT_VAL,60.63,63.77,42.86,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+2-12,Research and development paid for and performed by your company in North Dakota,EXPS_ND_RD_INT_VAL,60.62,64.7,37.5,RD_CHECK,Did your company perform or fund research and development?
+3-11h,"Domestic R&D performed by your company that was paid for by the U.S. federal government, by Agency: National Science Foundation",EXPS_DOM_RD_RMB_INT_FEDGOV_NSF,60.61,70.46,4.76,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-2,Total employees in New Mexico,EMP_NM_TOT_NUM,60.56,64.19,40.0,RCPT_C_ST_NM,"Construction Work by State,  New Mexico"
+,"Domestic R&D paid for by the company and others and performed by the company, by type of cost - Depreciation",,60.52,69.59,9.09,RD_VAL,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Utah,EXPS_DOM_RD_RMB_INT_UT_TOT,60.51,65.9,30.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Maine,EXPS_DOM_RD_RMB_INT_ME_TOT,60.5,65.88,30.0,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+4-6b,Worldwide capital expenditures: identifiable intangible assets,CAPEX_WW_IIA_VAL,60.5,66.76,25.0,CAPEX_NEW_TOT_DVAL,Capital Expenditures: All new - total
+2-11,Research and development paid for and performed by your company in Mexico,EXPS_MEX_RD_INT_VAL,60.5,64.55,37.5,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+2-9,R&D paid for by your company that was performed by others (Worldwide) (calc),EXPS_WORLD_RD_EXT_VAL,60.48,66.74,25.0,RD_VAL,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in Canada,EXPS_CAN_RD_INT_VAL,60.48,63.59,42.86,RD_CHECK,Did your company perform or fund research and development?
+2-12,Research and development paid for and performed by your company in Arkansas,EXPS_AR_RD_INT_VAL,60.47,63.58,42.86,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+,Domestic R&D paid for by the company and others and performed by the company - Basic research,,60.45,67.19,22.22,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-2,Total employees in South Carolina,EMP_SC_TOT_NUM,60.44,64.04,40.0,RCPT_C_ST_SC,"Construction Work by State,  South Carolina"
+3-14,Total domestic research and development performed by your company and paid for by others in New Mexico,EXPS_DOM_RD_RMB_INT_NM_TOT,60.4,66.25,27.27,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in Argentina,EXPS_ARG_RD_INT_VAL,60.4,64.44,37.5,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+4-2b,Depreciation: identifiable intangible assets,ASSET_DA_IIA_VAL,60.37,68.81,12.5,ASSET_TOT_END,"Depreciable assets at the end of the year,  Total Buildings and Machinery"
+3-14,Total domestic research and development performed by your company and paid for by others in Washington,EXPS_DOM_RD_RMB_INT_WA_TOT,60.35,65.7,30.0,RD_VAL,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in China,EXPS_CHN_RD_INT_VAL,60.33,64.36,37.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-12,Research and development paid for and performed by your company in Idaho,EXPS_ID_RD_INT_VAL,60.32,63.4,42.86,RD_CHECK_YES,Did your company perform or fund research and development?
+1-14,Worldwide sales and operating revenue less eliminations,RCPT_TOT_SUM_BUSINESSCODE_ELIM,60.29,65.04,33.33,RCPT_NONOP_OTH_VAL,Revenue from all other non-operating revenue
+5-4a,Domestic R&D paid for and performed by your company - Total Applied research,EXPS_DOM_RD_INT_RES_APP_VAL,60.28,69.94,5.56,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-6,Research and development performed by your company and paid for by others in India,EXPS_IND_RD_RMB_INT_VAL,60.27,64.28,37.5,RD_VAL,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Iowa,EXPS_DOM_RD_RMB_INT_IA_TOT,60.25,65.0,33.33,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+3-3j,"Domestic, foreign, and worldwide R&D paid for by others: Contract R&D - Worldwide",EXPS_WORLD_RD_RMB_CONT_VAL,60.16,68.81,11.11,RD_VAL,Company's worldwide expenses for research and development
+6-2,Total employees in North Dakota,EMP_ND_TOT_NUM,60.15,63.7,40.0,RCPT_C_ST_ND,"Construction Work by State,  North Dakota"
+3-19,Domestic R&D paid for by U.S. federal government and performed by others,EXPS_DOM_RD_RMB_EXT_FED_VAL,60.12,67.2,20.0,FUNDS_DEV_FEDGOV,"Source of Research and Development Funds,  Federal government contracts and subcontracts"
+3-14,Total domestic research and development performed by your company and paid for by others in North Dakota,EXPS_DOM_RD_RMB_INT_ND_TOT,60.06,65.37,30.0,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+2-12,Research and development paid for and performed by your company in Montana,EXPS_MT_RD_INT_VAL,60.05,63.09,42.86,RD_CHECK,Did your company perform or fund research and development?
+2-11,Research and development paid for and performed by your company in Singapore,EXPS_SGP_RD_INT_VAL,60.05,64.03,37.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-12,Research and development paid for and performed by your company in South Dakota,EXPS_SD_RD_INT_VAL,60.05,64.03,37.5,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+2-8j,Type of R&D Costs:  Contract R&D (Foreign),EXPS_FOR_RD_CORE_CTR_VAL,60.05,70.64,0.0,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+2-2d,Does worldwide R&D expense include: Technical services not an integral part of the R&D project (such as  productt support provided by R&D employees)?,EXPS_WORLD_RD_TECH_STAT,60.04,69.53,6.25,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+2-10,R&D paid for and performed by your company (Foreign) (calc),EXPS_FOR_RD_INT_VAL,60.04,68.67,11.11,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Idaho,EXPS_DOM_RD_RMB_INT_ID_TOT,59.96,65.25,30.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-3k,"Domestic, foreign, and worldwide R&D paid for by others: Other purchased services - Worldwide",EXPS_WORLD_RD_RMB_OSRV_VAL,59.95,68.76,10.0,RD_VAL,Company's worldwide expenses for research and development
+,Foreign R&D paid for by the company and others and performed by the company - Research,,59.94,66.1,25.0,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in Japan,EXPS_JPN_RD_INT_VAL,59.94,63.9,37.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-5a,R&D employees by occupation: Researchers - domestic,EMP_DOM_RD_RES_NUM,59.92,68.28,12.5,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+3-14,Total domestic research and development performed by your company and paid for by others in District of Columbia,EXPS_DOM_RD_RMB_INT_DC_TOT,59.92,65.68,27.27,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-12,Research and development paid for and performed by your company in Vermont,EXPS_VT_RD_INT_VAL,59.9,62.91,42.86,RD_CHECK,Did your company perform or fund research and development?
+3-6,Research and development performed by your company and paid for by others in Australia,EXPS_AUS_RD_RMB_INT_VAL,59.86,63.8,37.5,RD_VAL,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in Thailand,EXPS_THA_RD_INT_VAL,59.84,63.78,37.5,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+2-8e,Type of R&D Costs: Materials and supplies (Domestic),EXPS_DOM_RD_CORE_MTR_VAL,59.82,70.38,0.0,RD_EXPS_STAT,Research and Development Expenses
+2-12,Research and development paid for and performed by your company in North Carolina,EXPS_NC_RD_INT_VAL,59.82,63.76,37.5,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+6-2,Total employees in New Jersey,EMP_NJ_TOT_NUM,59.82,63.32,40.0,RCPT_C_ST_NJ,"Construction Work by State,  New Jersey"
+2-8e,Type of R&D Costs: Materials and supplies (Foreign),EXPS_FOR_RD_CORE_MTR_VAL,59.81,70.36,0.0,RD_EXPS_STAT,Research and Development Expenses
+3-14,Total domestic research and development performed by your company and paid for by others in Kansas,EXPS_DOM_RD_RMB_INT_KS_TOT,59.78,65.04,30.0,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+3-8f,"Domestic R&D performed by your company that was paid for by others, by Source of Funds: Foreign government agencies or labs",EXPS_DOM_RD_RMB_INT_FORGOV,59.78,68.57,10.0,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+2-12,Research and development paid for and performed by your company in Wyoming,EXPS_WY_RD_INT_VAL,59.76,62.75,42.86,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+2-12,Research and development paid for and performed by your company in Kentucky,EXPS_KY_RD_INT_VAL,59.73,62.7,42.86,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+3-14,Total domestic research and development performed by your company and paid for by others in Vermont,EXPS_DOM_RD_RMB_INT_VT_TOT,59.72,64.38,33.33,RD_CHECK,Did your company perform or fund research and development?
+2-12,Research and development paid for and performed by your company in Virginia,EXPS_VA_RD_INT_VAL,59.71,62.69,42.86,RD_CHECK,Did your company perform or fund research and development?
+3-14,Total domestic research and development performed by your company and paid for by others in Wyoming,EXPS_DOM_RD_RMB_INT_WY_TOT,59.7,64.35,33.33,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+3-14,Total domestic research and development performed by your company and paid for by others in Virginia,EXPS_DOM_RD_RMB_INT_VA_TOT,59.69,64.34,33.33,RD_CHECK_NO_ARCHIVE,Did your company perform or fund research and development?
+3-6,Research and development performed by your company and paid for by others in Argentina,EXPS_ARG_RD_RMB_INT_VAL,59.68,63.59,37.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+4-4a,"Acquisitions: property, plant, and equipment",ASSET_BK_MA_PPE_VAL,59.68,70.21,0.0,PREV_OWN_STAT,New Establishment Acquisition
+3-14,Total domestic research and development performed by your company and paid for by others in Montana,EXPS_DOM_RD_RMB_INT_MT_TOT,59.68,64.33,33.33,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+3-14,Total domestic research and development performed by your company and paid for by others in Hawaii,EXPS_DOM_RD_RMB_INT_HI_TOT,59.64,64.87,30.0,RD_VAL,Company's worldwide expenses for research and development
+2-8l,Type of R&D Costs:  All other costs (Foreign),EXPS_FOR_RD_CORE_OCST_VAL,59.64,70.16,0.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-12,Research and development paid for and performed by your company in Ohio,EXPS_OH_RD_INT_VAL,59.62,62.58,42.86,RD_CHECK,Did your company perform or fund research and development?
+3-14,Total domestic research and development performed by your company and paid for by others in Arkansas,EXPS_DOM_RD_RMB_INT_AR_TOT,59.61,64.24,33.33,RD_CHECK,Did your company perform or fund research and development?
+6-2,Total employees in Wyoming,EMP_WY_TOT_NUM,59.6,65.71,25.0,RCPT_C_ST_WY,"Construction Work by State,  Wyoming"
+3-14,Total domestic research and development performed by your company and paid for by others in Pennsylvania,EXPS_DOM_RD_RMB_INT_PA_TOT,59.59,64.81,30.0,RD_VAL,Company's worldwide expenses for research and development
+2-8f,Type of R&D Costs: Leased facilities and equipment (Worldwide),EXPS_WORLD_RD_CORE_RENT_VAL,59.58,68.33,10.0,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Oklahoma,EXPS_DOM_RD_RMB_INT_OK_TOT,59.57,64.78,30.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-10b,Temporary and leased R&D employees by occupation: R&D technicians,EMP_DOM_RD_TEMP_TECH_NUM,59.57,65.04,28.57,EMP_MAR12_RD_TECH,"Employment By Occupation, Research and Development, Technicians or technologists"
+,"Domestic R&D paid for by the company and others and performed by the company, by type of cost - Stock-based compensation",,59.55,68.7,7.69,RD_VAL,Company's worldwide expenses for research and development
+1-2,Date of parent company purchased,PARENTCO_ACQ_DATE,59.53,70.04,0.0,PREV_OWNER_YEAR,Year acquired from Former Owner or operator
+2-12,Research and development paid for and performed by your company in District of Columbia,EXPS_DC_RD_INT_VAL,59.51,63.39,37.5,RD_CHECK_NO,Did your company perform or fund research and development?
+3-6,Research and development performed by your company and paid for by others in Indonesia,EXPS_IDN_RD_RMB_INT_VAL,59.51,63.4,37.5,RD_VAL,Company's worldwide expenses for research and development
+3-3l,"Domestic, foreign, and worldwide R&D paid for by others: All other costs - Domestic",EXPS_DOM_RD_RMB_OCST_VAL,59.47,68.0,11.11,RD_VAL,Company's worldwide expenses for research and development
+6-2,Total employees in Vermont,EMP_VT_TOT_NUM,59.46,65.54,25.0,RCPT_C_ST_VT,"Construction Work by State,  Vermont"
+2-12,Research and development paid for and performed by your company in Arizona,EXPS_AZ_RD_INT_VAL,59.45,62.38,42.86,RD_CHECK_NO,Did your company perform or fund research and development?
+2-12,Research and development paid for and performed by your company in Minnesota,EXPS_MN_RD_INT_VAL,59.42,62.34,42.86,RD_CHECK_NO,Did your company perform or fund research and development?
+3-14,Total domestic research and development performed by your company and paid for by others in Alaska,EXPS_DOM_RD_RMB_INT_AK_TOT,59.41,64.6,30.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-6,Research and development performed by your company and paid for by others in Mexico,EXPS_MEX_RD_RMB_INT_VAL,59.39,63.25,37.5,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-2,Total employees in Nebraska,EMP_NE_TOT_NUM,59.39,65.46,25.0,RCPT_C_ST_NE,"Construction Work by State,  Nebraska"
+3-6,Research and development performed by your company and paid for by others in Germany,EXPS_DEU_RD_RMB_INT_VAL,59.36,63.22,37.5,RD_VAL,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Ohio,EXPS_DOM_RD_RMB_INT_OH_TOT,59.34,63.93,33.33,RD_CHECK_YES,Did your company perform or fund research and development?
+3-14,Total domestic research and development performed by your company and paid for by others in Minnesota,EXPS_DOM_RD_RMB_INT_MN_TOT,59.31,63.9,33.33,RD_CHECK_NO_ARCHIVE,Did your company perform or fund research and development?
+,"Domestic R&D paid for by the company and others and performed by the company, by type of cost - Materials and supplies",,59.3,68.29,8.33,RD_VAL,Company's worldwide expenses for research and development
+1-13,Net sales and operating revenues from domestic operations,RCPT_DOM_VAL,59.29,67.24,14.29,NET_REV_LSD,net revenue
+3-14,Total domestic research and development performed by your company and paid for by others in New York,EXPS_DOM_RD_RMB_INT_NY_TOT,59.26,64.9,27.27,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-3g,"Domestic, foreign, and worldwide R&D paid for by others: Depreciation and amortization on R&D property, plant, equipment, and intangible assets - Worldwide",EXPS_WORLD_RD_RMB_DPRC_VAL,59.25,68.53,6.67,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+5-33a,Foreign R&D paid for by others and performed by your company - Total Research ,EXPS_FOR_RD_RMB_INT_RES_VAL,59.24,65.78,22.22,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+,"Domestic R&D paid for by the company and others and performed by the company, by type of cost - Other purchased services",,59.23,68.21,8.33,RD_VAL,Company's worldwide expenses for research and development
+,"Domestic R&D paid for by the company and others and performed by the company, by type of cost - Expensed equipment",,59.23,68.21,8.33,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in South Dakota,EXPS_DOM_RD_RMB_INT_SD_TOT,59.22,64.86,27.27,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in Chile,EXPS_CHL_RD_INT_VAL,59.17,62.99,37.5,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+2-12,Research and development paid for and performed by your company in Pennsylvania,EXPS_PA_RD_INT_VAL,59.15,62.03,42.86,RD_CHECK,Did your company perform or fund research and development?
+,"Domestic R&D paid for by the company and others and performed by the company, by type of cost - Temporary staffing",,59.1,68.06,8.33,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in France,EXPS_FRA_RD_INT_VAL,59.07,62.88,37.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Michigan,EXPS_DOM_RD_RMB_INT_MI_TOT,59.06,63.6,33.33,RD_CHECK_YES,Did your company perform or fund research and development?
+,"Domestic R&D paid for by the company and others and performed by the company, by type of cost - Lease and rental payments",,59.04,68.1,7.69,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+5-18b,Domestic R&D performed by your company that was paid for by others -  Total Basic research,EXPS_DOM_RD_RMB_INT_BR_VAL,59.02,65.52,22.22,RD_CHECK_NO_ARCHIVE,Did your company perform or fund research and development?
+5-30a,Federally funded R&D performed in US - Total Applied research,EXPS_DOM_RD_RMB_INT_AR_FED_VAL,59.0,67.94,8.33,FUNDS_DEV_FEDGOV,"Source of Research and Development Funds,  Federal government contracts and subcontracts"
+3-14,Total domestic research and development performed by your company and paid for by others in Wisconsin,EXPS_DOM_RD_RMB_INT_WI_TOT,58.99,64.11,30.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-5c,R&D employees by occupation: R&D support staff - worldwide,EMP_WW_RD_SS_NUM,58.99,67.44,11.11,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+3-3l,"Domestic, foreign, and worldwide R&D paid for by others: All other costs - Foreign",EXPS_FOR_RD_RMB_OCST_VAL,58.96,67.4,11.11,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-8d,Type of R&D Costs: Expensed equipment [not capitalized] (Domestic),EXPS_DOM_RD_CORE_EQP_VAL,58.96,69.36,0.0,CAPEX_MACH,"Capital Expenditures, New and Used Machinery"
+2-11,Research and development paid for and performed by your company in Taiwan,EXPS_TWN_RD_INT_VAL,58.96,62.75,37.5,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Washington,EXPS_DOM_RD_RMB_INT_NONFED_WA,58.96,66.42,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-6,Research and development performed by your company and paid for by others in Thailand,EXPS_THA_RD_RMB_INT_VAL,58.96,62.75,37.5,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Arizona,EXPS_DOM_RD_RMB_INT_AZ_TOT,58.95,64.06,30.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-23,Projected R&D paid for by your company: Domestic,EXPS_PRJ_DOM_RD_VAL,58.93,67.12,12.5,RD_VAL,Company's worldwide expenses for research and development
+3-11d,"Domestic R&D performed by your company that was paid for by the U.S. federal government, by Agency: National Institutes of Health",EXPS_DOM_RD_RMB_INT_FEDGOV_NIH,58.92,68.47,4.76,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-6,Research and development performed by your company and paid for by others in Canada,EXPS_CAN_RD_RMB_INT_VAL,58.89,61.72,42.86,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+2-12,Research and development paid for and performed by your company in Alabama,EXPS_AL_RD_INT_VAL,58.89,61.72,42.86,RD_CHECK_YES,Did your company perform or fund research and development?
+2-11,Research and development paid for and performed by your company in Netherlands,EXPS_NLD_RD_INT_VAL,58.89,62.67,37.5,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-2,Total employees in North Carolina,EMP_NC_TOT_NUM,58.89,62.23,40.0,RCPT_C_ST_NC,"Construction Work by State,  North Carolina"
+5-17b,Domestic R&D performed by your company that was paid for by others -  Total Development,EXPS_DOM_RD_RMB_INT_DEV_VAL,58.87,65.34,22.22,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in Turkey,EXPS_TUR_RD_INT_VAL,58.85,62.62,37.5,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in North Carolina,EXPS_DOM_RD_RMB_INT_NC_TOT,58.85,63.94,30.0,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+2-12,Research and development paid for and performed by your company in Michigan,EXPS_MI_RD_INT_VAL,58.82,61.64,42.86,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+3-1d,Defense R&D services provided to the government and/or government contractors,EXPS_WORLD_RD_RMB_DEFGOV_VAL,58.82,67.6,9.09,FUNDS_DEV_FEDGOV,"Source of Research and Development Funds,  Federal government contracts and subcontracts"
+2-12,Research and development paid for and performed by your company in Oregon,EXPS_OR_RD_INT_VAL,58.82,61.64,42.86,RD_CHECK_NO,Did your company perform or fund research and development?
+2-12,Research and development paid for and performed by your company in Georgia,EXPS_GA_RD_INT_VAL,58.81,61.62,42.86,RD_CHECK_YES,Did your company perform or fund research and development?
+3-14,Total domestic research and development performed by your company and paid for by others in South Carolina,EXPS_DOM_RD_RMB_INT_SC_TOT,58.79,64.35,27.27,RD_VAL,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Connecticut,EXPS_DOM_RD_RMB_INT_CT_TOT,58.71,63.18,33.33,RD_CHECK,Did your company perform or fund research and development?
+3-14,Total domestic research and development performed by your company and paid for by others in California,EXPS_DOM_RD_RMB_INT_CA_TOT,58.66,63.72,30.0,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Maryland,EXPS_DOM_RD_RMB_INT_MD_TOT,58.64,63.1,33.33,RD_CHECK_YES,Did your company perform or fund research and development?
+3-6,Research and development performed by your company and paid for by others in Chile,EXPS_CHL_RD_RMB_INT_VAL,58.64,62.37,37.5,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+2-12,Research and development paid for and performed by your company in Tennessee,EXPS_TN_RD_INT_VAL,58.63,61.41,42.86,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+2-8k,Type of R&D Costs:  Other purchased services (Foreign),EXPS_FOR_RD_CORE_SRV_VAL,58.62,68.96,0.0,RD_VAL,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Kentucky,EXPS_DOM_RD_RMB_INT_KY_TOT,58.62,63.08,33.33,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+2-8a,"Type of R&D Costs: Salaries, wages and fringe benefits (Worldwide)",EXPS_WORLD_RD_CORE_WAGE_VAL,58.61,67.35,9.09,RD_VAL,Company's worldwide expenses for research and development
+6-10c,Temporary and leased R&D employees by occupation: R&D Support Staff,EMP_DOM_RD_TEMP_SS_NUM,58.59,63.88,28.57,EMP_MAR12_LSD_ADMIN,Q1 LEASED EMPLOYMENT FROM ADMIN AND SUPPORT SERVICES CLIENTS
+2-11,Research and development paid for and performed by your company in Spain,EXPS_ESP_RD_INT_VAL,58.58,62.3,37.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-12,Research and development paid for and performed by your company in West Virginia,EXPS_WV_RD_INT_VAL,58.55,62.27,37.5,RD_CHECK,Did your company perform or fund research and development?
+3-6,Research and development performed by your company and paid for by others in Japan,EXPS_JPN_RD_RMB_INT_VAL,58.52,62.23,37.5,RD_VAL,Company's worldwide expenses for research and development
+3-6,Research and development performed by your company and paid for by others in Singapore,EXPS_SGP_RD_RMB_INT_VAL,58.52,62.23,37.5,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Tennessee,EXPS_DOM_RD_RMB_INT_TN_TOT,58.51,62.95,33.33,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+2-12,Research and development paid for and performed by your company in Alaska,EXPS_AK_RD_INT_VAL,58.5,61.26,42.86,RD_CHECK_NO_ARCHIVE,Did your company perform or fund research and development?
+2-11,Research and development paid for and performed by your company in Other African Countries,EXPS_OAF_RD_INT_VAL,58.49,65.28,20.0,FUNDS_DEV_TRANSFER,"Source of Research and Development Funds,  Transfers or other payments from other establishments of your enterprise"
+2-11,Research and development paid for and performed by your company in Norway,EXPS_NOR_RD_INT_VAL,58.49,61.25,42.86,RD_CHECK,Did your company perform or fund research and development?
+3-12a,Domestic R&D performed by your company that was paid for by the U.S. federal government - Contracts ,EXPS_DOM_RD_RMB_INT_FED_CTR,58.48,63.98,27.27,FUNDS_DEV_FEDGOV,"Source of Research and Development Funds,  Federal government contracts and subcontracts"
+3-6,Research and development performed by your company and paid for by others in Turkey,EXPS_TUR_RD_RMB_INT_VAL,58.46,62.16,37.5,RD_VAL,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in Other Middle Eastern Countries,EXPS_OME_RD_INT_VAL,58.46,63.48,30.0,RD_VAL,Company's worldwide expenses for research and development
+3-8j,"Domestic R&D performed by your company that was paid for by others, by Source of Funds: All other organizations located outside the US",EXPS_DOM_RD_RMB_INT_OTHNONUS,58.44,64.6,23.53,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+5-17a,Domestic R&D performed by your company that was paid for by others - Total Research ,EXPS_DOM_RD_RMB_INT_RES_VAL,58.43,64.33,25.0,RD_CHECK,Did your company perform or fund research and development?
+3-14,Total domestic research and development performed by your company and paid for by others in Alabama,EXPS_DOM_RD_RMB_INT_AL_TOT,58.43,63.45,30.0,RD_VAL,Company's worldwide expenses for research and development
+2-12,Research and development paid for and performed by your company in Missouri,EXPS_MO_RD_INT_VAL,58.43,61.18,42.86,RD_CHECK_NO_ARCHIVE,Did your company perform or fund research and development?
+3-14,Total domestic research and development performed by your company and paid for by others in Delaware,EXPS_DOM_RD_RMB_INT_DE_TOT,58.43,63.44,30.0,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+2-12,Research and development paid for and performed by your company in Wisconsin,EXPS_WI_RD_INT_VAL,58.41,61.15,42.86,RD_CHECK_NO,Did your company perform or fund research and development?
+3-3m,"Domestic, foreign, and worldwide R&D paid for by others : Total - Worldwide (copy)",,58.4,66.94,10.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in South Africa,EXPS_ZAF_RD_INT_VAL,58.38,65.16,20.0,FUNDS_DEV_TRANSFER,"Source of Research and Development Funds,  Transfers or other payments from other establishments of your enterprise"
+2-11,Research and development paid for and performed by your company in South Korea,EXPS_SKR_RD_INT_VAL,58.37,62.79,33.33,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in Luxembourg,EXPS_LUX_RD_INT_VAL,58.34,62.01,37.5,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Louisiana,EXPS_DOM_RD_RMB_INT_LA_TOT,58.33,63.32,30.0,RD_VAL,Company's worldwide expenses for research and development
+2-8j,Type of R&D Costs:  Contract R&D (Domestic),EXPS_DOM_RD_CORE_CTR_VAL,58.32,68.61,0.0,RD_EXPS_STAT,Research and Development Expenses
+2-11,Research and development paid for and performed by your company in Austria,EXPS_AUT_RD_INT_VAL,58.31,61.98,37.5,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+2-12,Research and development paid for and performed by your company in Maryland,EXPS_MD_RD_INT_VAL,58.29,61.02,42.86,RD_CHECK,Did your company perform or fund research and development?
+2-11,Research and development paid for and performed by your company in Finland,EXPS_FIN_RD_INT_VAL,58.28,61.95,37.5,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+3-6,Research and development performed by your company and paid for by others in Norway,EXPS_NOR_RD_RMB_INT_VAL,58.24,60.95,42.86,RD_CHECK_YES,Did your company perform or fund research and development?
+2-11,Research and development paid for and performed by your company in Ireland,EXPS_IRL_RD_INT_VAL,58.24,61.9,37.5,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in Poland,EXPS_POL_RD_INT_VAL,58.23,61.89,37.5,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in Switzerland,EXPS_CHE_RD_INT_VAL,58.22,61.88,37.5,RD_VAL,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Illinois,EXPS_DOM_RD_RMB_INT_IL_TOT,58.22,62.61,33.33,RD_CHECK_NO_ARCHIVE,Did your company perform or fund research and development?
+2-11,Research and development paid for and performed by your company in Sweden,EXPS_SWE_RD_INT_VAL,58.21,61.86,37.5,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Rhode Island,EXPS_DOM_RD_RMB_INT_RI_TOT,58.19,63.65,27.27,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in West Virginia,EXPS_DOM_RD_RMB_INT_WV_TOT,58.18,63.64,27.27,RD_VAL,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Idaho,EXPS_DOM_RD_RMB_INT_NONFED_ID,58.16,65.49,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+4-8g,Domestic capital expenditures for R&D (copy),CAPEX_DOM_RD_TOT_VAL,58.14,62.52,33.33,CAPEX_OTH_NEW_WRTIN_TXT,"Capital Expenditures: Other new - total, specify"
+2-2f,Does worldwide R&D expense include: Expenses for the acquisition of in-process R&D (IPR&D) or the impairment of intangible IPR&D assets.,EXPS_WORLD_RD_INPROC_STAT,58.14,65.88,14.29,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+,Domestic R&D paid for and performed by your company - Biotechnology,,58.13,66.19,12.5,RD_CHECK,Did your company perform or fund research and development?
+3-6,Research and development performed by your company and paid for by others in Poland,EXPS_POL_RD_RMB_INT_VAL,58.13,61.77,37.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-8h,Type of R&D Costs:  Royalties and licensing fees (Foreign),EXPS_FOR_RD_CORE_ROY_VAL,58.13,68.39,0.0,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+3-6,Research and development performed by your company and paid for by others in France,EXPS_FRA_RD_RMB_INT_VAL,58.11,61.75,37.5,RD_VAL,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in Hong Kong,EXPS_HKG_RD_INT_VAL,58.05,62.41,33.33,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in Malaysia,EXPS_MYS_RD_INT_VAL,58.04,61.67,37.5,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Massachusetts,EXPS_DOM_RD_RMB_INT_MA_TOT,58.02,62.97,30.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-2,Total employees in Mississippi,EMP_MS_TOT_NUM,58.02,63.85,25.0,RCPT_C_ST_MS,"Construction Work by State,  Mississippi"
+2-2e,Does worldwide R&D expense include: Bid and proposal costs?,EXPS_WORLD_RD_BID_STAT,57.98,66.6,9.09,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Iowa,EXPS_DOM_RD_RMB_INT_NONFED_IA,57.97,65.25,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Total domestic research and development performed by your company and paid for by others in Missouri,EXPS_DOM_RD_RMB_INT_MO_TOT,57.91,62.24,33.33,RD_CHECK_NO_ARCHIVE,Did your company perform or fund research and development?
+,"Domestic R&D paid for by the company and others and performed by the company, by type of cost - Salaries, wages, and fringe benefits",,57.89,66.84,7.14,RD_VAL,Company's worldwide expenses for research and development
+3-6,Research and development performed by your company and paid for by others in United Kingdom,EXPS_GBR_RD_RMB_INT_VAL,57.89,62.22,33.33,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-3b,"Domestic, foreign, and worldwide R&D paid for by others: Stock-based compensation - Worldwide",EXPS_WORLD_RD_RMB_STCK_VAL,57.88,66.49,9.09,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+3-8k,"Domestic R&D performed by your company that was paid for by others, by Source of Funds: Total (copy)",EXPS_DOM_RD_RMB_INT_SF_TOT,57.87,68.08,0.0,CAPEX_SOFTWARE_INTDEV_VAL,"Capital Expenditures:_x000D_
+Computer Software, internally-developed"
+2-11,Research and development paid for and performed by your company in New Zealand,EXPS_NZL_RD_INT_VAL,57.86,62.19,33.33,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-12,Research and development paid for and performed by your company in Nevada,EXPS_NV_RD_INT_VAL,57.85,60.49,42.86,RD_CHECK,Did your company perform or fund research and development?
+1-14,Sales and operating revenues from domestic operations: Business Code,,57.84,64.52,20.0,OPEX_MIN_ROYALTY,Mining Operating Expenses:  Current operating expenses for royalty payments for this domestic reporting unit
+3-14,Total domestic research and development performed by your company and paid for by others in Oregon,EXPS_DOM_RD_RMB_INT_OR_TOT,57.82,62.14,33.33,RD_CHECK_NO,Did your company perform or fund research and development?
+2-12,Research and development paid for and performed by your company in Delaware,EXPS_DE_RD_INT_VAL,57.8,60.44,42.86,RD_CHECK_YES,Did your company perform or fund research and development?
+2-12,Research and development paid for and performed by your company in Massachusetts,EXPS_MA_RD_INT_VAL,57.78,60.41,42.86,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+3-6,Research and development performed by your company and paid for by others in South Africa,EXPS_ZAF_RD_RMB_INT_VAL,57.77,64.43,20.0,FUNDS_DEV_TRANSFER,"Source of Research and Development Funds,  Transfers or other payments from other establishments of your enterprise"
+3-8h,"Domestic R&D performed by your company that was paid for by others, by Source of Funds: Universities, colleges located outside the US",EXPS_DOM_RD_RMB_INT_NONUSUNI,57.77,65.18,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-5c,R&D employees by occupation: R&D support staff - domestic,EMP_DOM_RD_SS_NUM,57.73,65.96,11.11,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+3-6,Research and development performed by your company and paid for by others in China,EXPS_CHN_RD_RMB_INT_VAL,57.71,61.28,37.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-6,Research and development performed by your company and paid for by others in Spain,EXPS_ESP_RD_RMB_INT_VAL,57.7,61.26,37.5,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in Israel,EXPS_ISR_RD_INT_VAL,57.67,60.29,42.86,RD_CHECK,Did your company perform or fund research and development?
+3-3g,"Domestic, foreign, and worldwide R&D paid for by others: Depreciation and amortization on R&D property, plant, equipment, and intangible assets - Foreign",EXPS_FOR_RD_RMB_DPRC_VAL,57.67,66.67,6.67,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Minnesota,EXPS_DOM_RD_RMB_INT_NONFED_MN,57.64,64.87,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+2-2c,Does worldwide R&D expense include: paid for by customers ( customer-sponsored R&D)?,EXPS_WORLD_RD_CUST_STAT,57.64,66.34,8.33,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-8i,"Domestic R&D performed by your company that was paid for by others, by Source of Funds: All other organizations located inside the US",EXPS_DOM_RD_RMB_INT_OTHUS,57.63,64.86,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+2-12,Research and development paid for and performed by your company in Louisiana,EXPS_LA_RD_INT_VAL,57.61,60.22,42.86,RD_CHECK_YES,Did your company perform or fund research and development?
+2-12,Research and development paid for and performed by your company in California,EXPS_CA_RD_INT_VAL,57.61,60.22,42.86,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+3-14,Total domestic research and development performed by your company and paid for by others in New Hampshire,EXPS_DOM_RD_RMB_INT_NH_TOT,57.58,62.44,30.0,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+3-4,R&D paid for others and performed by others - Worldwide (calc),EXPS_WORLD_RD_RMB_EXT_VAL,57.57,65.52,12.5,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+1-14,Worldwide sales and operating revenue: Business Code,,57.57,62.69,28.57,RCPT_BUS_PCT,Source of Revenue: Business
+3-22,Projected R&D costs that will be paid for by the U.S. federal government to be performed in the U.S.,EXPS_DOM_RD_RMB_INT_FED_PRJ,57.57,64.52,18.18,FUNDS_DEV_FEDGOV,"Source of Research and Development Funds,  Federal government contracts and subcontracts"
+2-21,Monetary gifts to U.S. universities that included support for R&D,GIFT_USUNI_STAT,57.56,65.19,14.29,EXPS_GRANTS_VAL,"Contributions, Gifts, and Grants Paid"
+3-14,Total domestic research and development performed by your company and paid for by others in Nevada,EXPS_DOM_RD_RMB_INT_NV_TOT,57.45,62.3,30.0,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+6-2,Total employees in Nevada,EMP_NV_TOT_NUM,57.44,63.16,25.0,RCPT_C_ST_NV,"Construction Work by State,  Nevada"
+6-2,Total employees in Montana,EMP_MT_TOT_NUM,57.44,63.17,25.0,RCPT_C_ST_MT,"Construction Work by State,  Montana"
+3-6,Research and development performed by your company and paid for by others in Malaysia,EXPS_MYS_RD_RMB_INT_VAL,57.42,60.94,37.5,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-8d,Type of R&D Costs: Expensed equipment [not capitalized] (Foreign),EXPS_FOR_RD_CORE_EQP_VAL,57.38,67.51,0.0,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-6,"Total Foreign R&D performed by your company that was paid for by others, by country where performed",EXPS_FOR_RD_RMB_INT_TOT_VAL,57.38,65.75,10.0,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in South Dakota,EXPS_DOM_RD_RMB_INT_NONFED_SD,57.38,64.72,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+2-11,Research and development paid for and performed by your company in Belgium,EXPS_BEL_RD_INT_VAL,57.37,60.88,37.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-6,Research and development performed by your company and paid for by others in Other African Countries,EXPS_OAF_RD_RMB_INT_VAL,57.35,63.94,20.0,FUNDS_DEV_TRANSFER,"Source of Research and Development Funds,  Transfers or other payments from other establishments of your enterprise"
+3-14,Total domestic research and development performed by your company and paid for by others in New Jersey,EXPS_DOM_RD_RMB_INT_NJ_TOT,57.31,62.13,30.0,RD_CHECK_NO,Did your company perform or fund research and development?
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Iowa,EXPS_DOM_RD_RMB_INT_FED_IA,57.31,64.48,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-2,Total research and development employees in North Dakota,EMP_ND_RD_NUM,57.29,62.35,28.57,RCPT_C_ST_ND,"Construction Work by State,  North Dakota"
+,Domestic R&D paid for and performed by your company - Software products or software embedded in other projects or products,,57.23,65.56,10.0,CAPEX_SOFTWARE_INTDEV_VAL,"Capital Expenditures:_x000D_
+Computer Software, internally-developed"
+6-2,Total employees in Alaska,EMP_AK_TOT_NUM,57.23,62.92,25.0,RCPT_C_ST_AK,"Construction Work by State,  Alaska"
+2-12,Research and development paid for and performed by your company in Illinois,EXPS_IL_RD_INT_VAL,57.22,59.75,42.86,RD_CHECK_YES,Did your company perform or fund research and development?
+6-2,Total employees in Kansas,EMP_KS_TOT_NUM,57.22,62.91,25.0,RCPT_C_ST_KS,"Construction Work by State,  Kansas"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Minnesota,EXPS_DOM_RD_RMB_INT_FED_MN,57.21,64.36,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+2-12,Research and development paid for and performed by your company in Hawaii,EXPS_HI_RD_INT_VAL,57.2,59.74,42.86,RD_CHECK,Did your company perform or fund research and development?
+3-6,Research and development performed by your company and paid for by others in Taiwan,EXPS_TWN_RD_RMB_INT_VAL,57.19,60.66,37.5,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Indiana,EXPS_DOM_RD_RMB_INT_NONFED_IN,57.17,64.31,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+,Projected R&D paid for by the company and performed by the company: Domestic,,57.11,65.23,11.11,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-3h,"Domestic, foreign, and worldwide R&D paid for by others: Royalties and licensing fees - Worldwide",EXPS_WORLD_RD_RMB_ROY_VAL,57.06,65.53,9.09,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-3,Total research and development employees in South Africa,EMP_ZAF_RD_NUM,57.05,60.5,37.5,FUNDS_DEV_TOT,"Source of Research and Development Funds,  Total"
+5-4c,Domestic R&D paid for and performed by your company - Total Applied research and Total Basic research (copy),EXPS_DOM_RD_INT_RES_VAL,57.04,66.22,5.0,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-3d,"Domestic, foreign, and worldwide R&D paid for by others : Expensed equipment - Foreign",EXPS_FOR_RD_RMB_EQP_VAL,57.02,65.32,10.0,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Nebraska,EXPS_DOM_RD_RMB_INT_NONFED_NE,57.0,64.12,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+2-12,Research and development paid for and performed by your company in South Carolina,EXPS_SC_RD_INT_VAL,57.0,60.44,37.5,RD_CHECK_NO_ARCHIVE,Did your company perform or fund research and development?
+3-6,Research and development performed by your company and paid for by others in South Korea,EXPS_SKR_RD_RMB_INT_VAL,56.99,61.17,33.33,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+5-18a,Domestic R&D performed by your company that was paid for by others - Total Applied research ,EXPS_DOM_RD_RMB_INT_AR_VAL,56.99,63.12,22.22,RD_CHECK_NO,Did your company perform or fund research and development?
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Colorado,EXPS_DOM_RD_RMB_INT_FED_CO,56.98,61.74,30.0,RD_CHECK,Did your company perform or fund research and development?
+3-6,Research and development performed by your company and paid for by others in Ireland,EXPS_IRL_RD_RMB_INT_VAL,56.97,60.41,37.5,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-6,Research and development performed by your company and paid for by others in Finland,EXPS_FIN_RD_RMB_INT_VAL,56.96,60.4,37.5,RD_VAL,Company's worldwide expenses for research and development
+6-5d,R&D employees by occupation: Total domestic R&D employees (copy),,56.94,65.02,11.11,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Arkansas,EXPS_DOM_RD_RMB_INT_NONFED_AR,56.91,64.02,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-5c,R&D employees by occupation: R&D support staff - foreign,EMP_FOR_RD_SS_NUM,56.9,64.99,11.11,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+3-3e,"Domestic, foreign, and worldwide R&D paid for by others: Materials and Supplies - Domestic",EXPS_DOM_RD_RMB_MTR_VAL,56.9,65.17,10.0,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+3-6,Research and development performed by your company and paid for by others in Israel,EXPS_ISR_RD_RMB_INT_VAL,56.89,59.37,42.86,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+6-1b,All other Employees  - Total Domestic,EMP_DOM_NONRD_NUM,56.88,61.03,33.33,EMP_MAR12,Total Employment
+2-11,Research and development paid for and performed by your company in Russia,EXPS_RUS_RD_INT_VAL,56.87,60.29,37.5,RD_VAL,Company's worldwide expenses for research and development
+3-6,Research and development performed by your company and paid for by others in New Zealand,EXPS_NZL_RD_RMB_INT_VAL,56.84,60.99,33.33,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Texas,EXPS_DOM_RD_RMB_INT_NONFED_TX,56.82,63.9,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-6,Research and development performed by your company and paid for by others in Netherlands,EXPS_NLD_RD_RMB_INT_VAL,56.82,60.23,37.5,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Kansas,EXPS_DOM_RD_RMB_INT_FED_KS,56.8,63.89,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-2,Total employees in Maine,EMP_MA_TOT_NUM,56.77,62.38,25.0,RCPT_C_ST_ME,"Construction Work by State,  Maine"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in New York,EXPS_DOM_RD_RMB_INT_FED_NY,56.71,63.93,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-3g,"Domestic, foreign, and worldwide R&D paid for by others: Depreciation and amortization on R&D property, plant, equipment, and intangible assets - Domestic",EXPS_DOM_RD_RMB_DPRC_VAL,56.7,65.53,6.67,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-2,Total employees in Iowa,EMP_IA_TOT_NUM,56.69,62.29,25.0,RCPT_C_ST_IA,"Construction Work by State,  Iowa"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Massachusetts,EXPS_DOM_RD_RMB_INT_NONFED_MA,56.68,63.75,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in North Dakota,EXPS_DOM_RD_RMB_INT_NONFED_ND,56.67,63.89,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-3d,"Domestic, foreign, and worldwide R&D paid for by others : Expensed equipment - Domestic",EXPS_DOM_RD_RMB_EQP_VAL,56.67,64.91,10.0,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Kansas,EXPS_DOM_RD_RMB_INT_NONFED_KS,56.67,63.73,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-2,Total research and development employees in New Hampshire,EMP_NH_RD_NUM,56.67,61.63,28.57,RCPT_C_ST_NH,"Construction Work by State,  New Hampshire"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Vermont,EXPS_DOM_RD_RMB_INT_NONFED_VT,56.61,63.66,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Idaho,EXPS_DOM_RD_RMB_INT_FED_ID,56.6,63.64,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+1-6,Discontinued operations,DISCON_OPS_STAT,56.6,66.59,0.0,OPSTAT_DATE,"Operational Status,  Ceased/Sold Operation Date"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Nevada,EXPS_DOM_RD_RMB_INT_FED_NV,56.57,63.61,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Oklahoma,EXPS_DOM_RD_RMB_INT_NONFED_OK,56.56,63.6,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-2,Total employees in Connecticut,EMP_CT_TOT_NUM,56.53,62.1,25.0,RCPT_C_ST_CT,"Construction Work by State,  Connecticut"
+3-6,Research and development performed by your company and paid for by others in Other Middle Eastern Countries,EXPS_OME_RD_RMB_INT_VAL,56.53,61.22,30.0,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-12,Research and development paid for and performed by your company in New Mexico,EXPS_NM_RD_INT_VAL,56.52,59.88,37.5,RD_CHECK_YES,Did your company perform or fund research and development?
+2-20b,Your company's foreign parent,EXPS_DOM_RD_EXT_FP_VAL,56.52,62.96,20.0,AFFIL_SPL_OWN_DOM,Is the company owned or controlled by another domestic company?
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Massachusetts,EXPS_DOM_RD_RMB_INT_FED_MA,56.51,63.54,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Nebraska,EXPS_DOM_RD_RMB_INT_FED_NE,56.5,63.53,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in South Dakota,EXPS_DOM_RD_RMB_INT_FED_SD,56.5,63.69,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-6,Research and development performed by your company and paid for by others in Hong Kong,EXPS_HKG_RD_RMB_INT_VAL,56.49,60.57,33.33,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+3-1i,All other R&D services not included above provided to the federal government or to others not owned by your company,EXPS_WORLD_RD_RMB_OTHGOV_VAL,56.46,65.45,5.56,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Alaska,EXPS_DOM_RD_RMB_INT_NONFED_AK,56.44,63.46,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-11i,"Domestic R&D performed by your company that was paid for by the U.S. federal government, by Agency: Other amount",EXPS_DOM_RD_RMB_INT_FEDGOV_OTH,56.43,65.41,5.56,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+2-12,Research and development paid for and performed by your company in Rhode Island,EXPS_RI_RD_INT_VAL,56.43,59.76,37.5,RD_CHECK_NO_ARCHIVE,Did your company perform or fund research and development?
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Kentucky,EXPS_DOM_RD_RMB_INT_NONFED_KY,56.42,63.44,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-6,Research and development performed by your company and paid for by others in Sweden,EXPS_SWE_RD_RMB_INT_VAL,56.42,59.76,37.5,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-6,Research and development performed by your company and paid for by others in Austria,EXPS_AUT_RD_RMB_INT_VAL,56.34,59.66,37.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-8b,Type of R&D Costs: Stock-based compensation (Domestic),EXPS_DOM_RD_CORE_STOCK_VAL,56.31,66.25,0.0,RD_VAL,Company's worldwide expenses for research and development
+3-6,Research and development performed by your company and paid for by others in Luxembourg,EXPS_LUX_RD_RMB_INT_VAL,56.31,59.63,37.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-2,Total employees in Alabama,EMP_AL_TOT_NUM,56.3,61.82,25.0,RCPT_C_ST_AL,"Construction Work by State,  Alabama"
+2-8a,"Type of R&D Costs: Salaries, wages and fringe benefits (Foreign)",EXPS_FOR_RD_CORE_WAGE_VAL,56.3,66.23,0.0,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+3-14,Total domestic research and development performed by your company and paid for by others in Mississippi,EXPS_DOM_RD_RMB_INT_MS_TOT,56.3,60.35,33.33,RD_CHECK,Did your company perform or fund research and development?
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in North Carolina,EXPS_DOM_RD_RMB_INT_FED_NC,56.25,61.36,27.27,RD_CHECK,Did your company perform or fund research and development?
+3-11a,"Domestic R&D performed by your company that was paid for by the U.S. federal government, by Agency: Department of Defense",EXPS_DOM_RD_RMB_INT_FEDGOV_DOD,56.25,65.29,5.0,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-11b,"Domestic R&D performed by your company that was paid for by the U.S. federal government, by Agency: Department of Energy",EXPS_DOM_RD_RMB_INT_FEDGOV_DOE,56.23,65.27,5.0,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-6,Research and development performed by your company and paid for by others in Switzerland,EXPS_CHE_RD_RMB_INT_VAL,56.23,59.54,37.5,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-12,Research and development paid for and performed by your company in Florida,EXPS_FL_RD_INT_VAL,56.2,58.56,42.86,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Texas,EXPS_DOM_RD_RMB_INT_FED_TX,56.17,63.14,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+2-12,Research and development paid for and performed by your company in New Hampshire,EXPS_NH_RD_INT_VAL,56.17,59.47,37.5,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Alabama,EXPS_DOM_RD_RMB_INT_NONFED_AL,56.17,63.14,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Arkansas,EXPS_DOM_RD_RMB_INT_FED_AR,56.16,63.12,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-3m,"Domestic, foreign, and worldwide R&D paid for by others : Total - Domestic (copy)",,56.14,64.28,10.0,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+,Projected R&D costs that will be paid for by Non-U.S. government sources to be performed in the U.S.,,56.13,64.67,7.69,FUNDS_DEV_FEDGOV,"Source of Research and Development Funds,  Federal government contracts and subcontracts"
+6-2,Total employees in Colorado,EMP_CO_TOT_NUM,56.12,61.61,25.0,RCPT_C_ST_CO,"Construction Work by State,  Colorado"
+2-11,Research and development paid for and performed by your company in Hungary,EXPS_HUN_RD_INT_VAL,56.1,58.43,42.86,RD_CHECK,Did your company perform or fund research and development?
+4-6b,Foreign capital expenditures: identifiable intangible assets,CAPEX_FOR_IIA_VAL,56.09,60.95,28.57,CAPEX_OTH_USED_VAL,Capital Expenditures: Other used - total
+2-8k,Type of R&D Costs:  Other purchased services (Domestic),EXPS_DOM_RD_CORE_SRV_VAL,56.09,65.98,0.0,RD_EXPS_STAT,Research and Development Expenses
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Alaska,EXPS_DOM_RD_RMB_INT_FED_AK,56.08,63.03,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+2-11,Research and development paid for and performed by your company in Italy,EXPS_ITA_RD_INT_VAL,56.08,59.36,37.5,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-11,Research and development paid for and performed by your company in Czech Republic,EXPS_CZE_RD_INT_VAL,56.07,60.08,33.33,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Nevada,EXPS_DOM_RD_RMB_INT_NONFED_NV,56.04,62.99,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-2,Total research and development employees in Wyoming,EMP_WY_RD_NUM,56.03,62.98,16.67,RCPT_C_ST_WY,"Construction Work by State,  Wyoming"
+,Domestic R&D paid for by the company and others and performed by the company and others,,56.02,63.7,12.5,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+5-11,Domestic R&D paid for and performed by your company (percentage) - Biotechnology,EXPS_DOM_RD_INT_BIOTCH_PCT,56.0,64.12,10.0,RD_VAL,Company's worldwide expenses for research and development
+6-2,Total employees in Hawaii,EMP_HI_TOT_NUM,55.99,61.46,25.0,RCPT_C_ST_HI,"Construction Work by State,  Hawaii"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in North Dakota,EXPS_DOM_RD_RMB_INT_FED_ND,55.99,63.09,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-2,Total research and development employees in South Dakota,EMP_SD_RD_NUM,55.98,60.82,28.57,RCPT_C_ST_SD,"Construction Work by State,  South Dakota"
+4-8e,"Domestic capital expenditures for R&D, by type of asset: Other intellectual property",CAPEX_DOM_RD_IPP_VAL,55.98,60.81,28.57,CAPEX_MACH_OTH,"Capital Expenditures, Others"
+3-11j,"Domestic R&D performed by your company that was paid for by the U.S. federal government, by Agency: Total (copy)",,55.94,64.93,5.0,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-2,Total employees in Arkansas,EMP_AR_TOT_NUM,55.94,61.4,25.0,RCPT_C_ST_AR,"Construction Work by State,  Arkansas"
+6-3,Total research and development employees in Other African Countries,EMP_OAF_RD_NUM,55.93,59.18,37.5,FUNDS_DEV_TOT,"Source of Research and Development Funds,  Total"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Ohio,EXPS_DOM_RD_RMB_INT_NONFED_OH,55.91,62.83,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Virginia,EXPS_DOM_RD_RMB_INT_NONFED_VA,55.91,62.84,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Indiana,EXPS_DOM_RD_RMB_INT_FED_IN,55.91,62.84,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-6,Research and development performed by your company and paid for by others in Belgium,EXPS_BEL_RD_RMB_INT_VAL,55.85,59.09,37.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-1f,Medical nonclinical R&D services provided to others,EXPS_WORLD_RD_RMB_MED_VAL,55.84,62.75,16.67,PAT_CARE_LAB_HEALTH_PCT,"Patient Care, Laboratory services paid by other health care providers"
+2-12,Research and development paid for and performed by your company in New York,EXPS_NY_RD_INT_VAL,55.81,59.04,37.5,RD_CHECK_NO,Did your company perform or fund research and development?
+2-8m,Type of R&D Costs:  Total (Foreign) (copy),EXPS_FOR_RD_CORE_SUM_TYPE,55.79,65.63,0.0,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+3-3m,"Domestic, foreign, and worldwide R&D paid for by others : Total - Foreign (copy)",,55.78,63.86,10.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-6,Research and development performed by your company and paid for by others in Czech Republic,EXPS_CZE_RD_RMB_INT_VAL,55.78,59.74,33.33,RD_VAL,Company's worldwide expenses for research and development
+6-2,Total employees in Oklahoma,EMP_OK_TOT_NUM,55.77,61.2,25.0,RCPT_C_ST_OK,"Construction Work by State,  Oklahoma"
+2-10,R&D paid for and performed by your company (Domestic) (calc),EXPS_DOM_RD_INT_VAL,55.75,63.62,11.11,RD_VAL,Company's worldwide expenses for research and development
+4-9,Domestic capital expenditures for R&D paid for by others,CAPEX_DOM_RD_TOT_EXT_STAT,55.74,58.52,40.0,CAPEX_OTH_USED_WRTIN_TXT,"Capital Expenditures: Other used - total, specify"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Connecticut,EXPS_DOM_RD_RMB_INT_FED_CT,55.7,62.59,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-3f,"Domestic, foreign, and worldwide R&D paid for by others: Materials and Supplies - Foreign",EXPS_FOR_RD_RMB_RENT_VAL,55.69,63.76,10.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-2,Total employees in Pennsylvania,EMP_PA_TOT_NUM,55.69,61.11,25.0,RCPT_C_ST_PA,"Construction Work by State,  Pennsylvania"
+3-3e,"Domestic, foreign, and worldwide R&D paid for by others: Materials and Supplies - Foreign",EXPS_FOR_RD_RMB_MTR_VAL,55.69,63.76,10.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-2,Total employees in Oregon,EMP_OR_TOT_NUM,55.66,61.07,25.0,RCPT_C_ST_OR,"Construction Work by State,  Oregon"
+2-12,Research and development paid for and performed by your company in New Jersey,EXPS_NJ_RD_INT_VAL,55.64,58.85,37.5,RD_CHECK_NO_ARCHIVE,Did your company perform or fund research and development?
+6-2,Total research and development employees in New Mexico,EMP_NM_RD_NUM,55.63,60.41,28.57,RCPT_C_ST_NM,"Construction Work by State,  New Mexico"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Colorado,EXPS_DOM_RD_RMB_INT_NONFED_CO,55.61,62.49,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+2-8h,Type of R&D Costs:  Royalties and licensing fees (Domestic),EXPS_DOM_RD_CORE_ROY_VAL,55.58,65.38,0.0,RD_EXPS_STAT,Research and Development Expenses
+3-1c,R&D paid for by government or private foundation grants,EXPS_WORLD_RD_RMB_GRANTS_VAL,55.57,63.77,9.09,FUNDS_DEV_FEDGOV,"Source of Research and Development Funds,  Federal government contracts and subcontracts"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Montana,EXPS_DOM_RD_RMB_INT_FED_MT,55.56,62.42,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Georgia,EXPS_DOM_RD_RMB_INT_NONFED_GA,55.56,62.42,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Montana,EXPS_DOM_RD_RMB_INT_NONFED_MT,55.54,62.4,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Vermont,EXPS_DOM_RD_RMB_INT_FED_VT,55.53,62.39,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-2,Total employees in Maryland,EMP_MD_TOT_NUM,55.52,60.91,25.0,RCPT_C_ST_MD,"Construction Work by State,  Maryland"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Utah,EXPS_DOM_RD_RMB_INT_NONFED_UT,55.51,62.36,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-2,Total employees in Minnesota,EMP_MN_TOT_NUM,55.51,60.89,25.0,RCPT_C_ST_MN,"Construction Work by State,  Minnesota"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Louisiana,EXPS_DOM_RD_RMB_INT_NONFED_LA,55.48,62.33,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-11e,"Domestic R&D performed by your company that was paid for by the U.S. federal government, by Agency: Dept. of Homeland Security",EXPS_DOM_RD_RMB_INT_FEDGOV_DHS,55.48,64.43,4.76,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Oregon,EXPS_DOM_RD_RMB_INT_NONFED_OR,55.45,62.29,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-3j,"Domestic, foreign, and worldwide R&D paid for by others: Contract R&D - Domestic",EXPS_DOM_RD_RMB_CONT_VAL,55.44,63.27,11.11,RD_VAL,Company's worldwide expenses for research and development
+,Foreign R&D paid for by the company and others and performed by the company and others,,55.44,63.02,12.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-8f,Type of R&D Costs: Leased facilities and equipment (Foreign),EXPS_FOR_RD_CORE_RENT_VAL,55.44,65.22,0.0,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in New Mexico,EXPS_DOM_RD_RMB_INT_NONFED_NM,55.43,62.43,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+4-7b,Domestic capital expenditures for R&D: identifiable intangible assets,CAPEX_DOM_RD_IIA_VAL,55.43,63.01,12.5,ASSET_CAPEX_VAL,"Domestic Depreciable Asset Data:_x000D_
+Total capex"
+6-2,Total employees in Arizona,EMP_AZ_TOT_NUM,55.4,60.76,25.0,RCPT_C_ST_AZ,"Construction Work by State,  Arizona"
+3-3a,"Domestic, foreign, and worldwide R&D paid for by others: Salaries Wages and fringe benefits - Worldwide",EXPS_WORLD_RD_RMB_WAGE_VAL,55.4,63.7,8.33,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in New Jersey,EXPS_DOM_RD_RMB_INT_FED_NJ,55.39,62.37,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Virginia,EXPS_DOM_RD_RMB_INT_FED_VA,55.38,62.21,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Utah,EXPS_DOM_RD_RMB_INT_FED_UT,55.37,62.2,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-2,Total employees in Wisconsin,EMP_WI_TOT_NUM,55.35,60.7,25.0,RCPT_C_ST_WI,"Construction Work by State,  Wisconsin"
+2-12,Research and development paid for and performed by your company in Mississippi,EXPS_MS_RD_INT_VAL,55.34,57.54,42.86,RD_CHECK,Did your company perform or fund research and development?
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Pennsylvania,EXPS_DOM_RD_RMB_INT_NONFED_PA,55.33,62.15,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in New York,EXPS_DOM_RD_RMB_INT_NONFED_NY,55.33,62.3,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Connecticut,EXPS_DOM_RD_RMB_INT_NONFED_CT,55.33,62.15,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-2,Total employees in Louisiana,EMP_LA_TOT_NUM,55.29,60.63,25.0,RCPT_C_ST_LA,"Construction Work by State,  Louisiana"
+,Domestic R&D paid for by the company and others and performed by the company - Biotechnology,,55.27,63.07,11.11,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Louisiana,EXPS_DOM_RD_RMB_INT_FED_LA,55.26,62.07,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in California,EXPS_DOM_RD_RMB_INT_FED_CA,55.22,62.02,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-2,Total employees in Kentucky,EMP_KY_TOT_NUM,55.22,60.55,25.0,RCPT_C_ST_KY,"Construction Work by State,  Kentucky"
+1-3,End time period covered,YEAR_END_DATE,55.2,59.06,33.33,YEAR_END_DATE,Reporting Period End Date
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Rhode Island,EXPS_DOM_RD_RMB_INT_NONFED_RI,55.2,62.16,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Delaware,EXPS_DOM_RD_RMB_INT_FED_DE,55.2,59.65,30.0,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+6-2,Total employees in Missouri,EMP_MO_TOT_NUM,55.17,60.49,25.0,RCPT_C_ST_MO,"Construction Work by State,  Missouri"
+6-5d,R&D employees by occupation: Total R&D employees (copy),,55.17,62.69,12.5,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Oregon,EXPS_DOM_RD_RMB_INT_FED_OR,55.17,61.97,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in New Mexico,EXPS_DOM_RD_RMB_INT_FED_NM,55.17,62.12,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+2-8i,Type of R&D Costs:  Collaborative R&D Payments (Worldwide),EXPS_WORLD_RD_CORE_CLB_VAL,55.16,64.9,0.0,RD_EXPS_STAT,Research and Development Expenses
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Pennsylvania,EXPS_DOM_RD_RMB_INT_FED_PA,55.13,61.92,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-2,Total research and development employees in West Virginia,EMP_WV_RD_NUM,55.12,59.8,28.57,RCPT_C_ST_WV,"Construction Work by State,  West Virginia"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Kentucky,EXPS_DOM_RD_RMB_INT_FED_KY,55.11,61.89,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-3b,"Domestic, foreign, and worldwide R&D paid for by others: Stock-based compensation - Foreign",EXPS_FOR_RD_RMB_STCK_VAL,55.1,63.22,9.09,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-4,R&D paid for by your company (calc),EXPS_WORLD_RD_CORE_VAL,55.1,61.88,16.67,CAPEX_CO_VAL,Total Capital Expenditures for Company
+3-12c,Domestic R&D performed by your company that was paid for by the U.S. federal government - Total Contracts vs. Grants (copy),,55.1,61.29,20.0,FUNDS_DEV_FEDGOV,"Source of Research and Development Funds,  Federal government contracts and subcontracts"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Missouri,EXPS_DOM_RD_RMB_INT_FED_MO,55.09,61.87,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Missouri,EXPS_DOM_RD_RMB_INT_NONFED_MO,55.08,61.85,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+4-1b,Assets: goodwill,ASSET_NET_WW_GW_VAL,55.07,60.38,25.0,ASSET_RETIRED,"Depreciable assets sold, retired, scrapped, destroyed, etc.   Total Buildings and Machinery"
+6-2,Total employees in Florida,EMP_FL_TOT_NUM,55.06,60.36,25.0,RCPT_C_ST_FL,"Construction Work by State,  Florida"
+3-6,Research and development performed by your company and paid for by others in Russia,EXPS_RUS_RD_RMB_INT_VAL,55.04,58.14,37.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Delaware,EXPS_DOM_RD_RMB_INT_NONFED_DE,55.03,62.98,10.0,RCPT_C_ST_DE,"Construction Work by State,  Delaware"
+6-2,Total employees in Tennessee,EMP_TN_TOT_NUM,55.02,60.32,25.0,RCPT_C_ST_TN,"Construction Work by State,  Tennessee"
+3-3j,"Domestic, foreign, and worldwide R&D paid for by others: Contract R&D - Foreign",EXPS_FOR_RD_RMB_CONT_VAL,55.01,62.75,11.11,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Tennessee,EXPS_DOM_RD_RMB_INT_NONFED_TN,55.0,61.77,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in West Virginia,EXPS_DOM_RD_RMB_INT_FED_WV,54.95,61.86,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+1-14,Total Worldwide net sales and operating revenues (copy),RCPT_TOT_SUM_BUSINESSCODE,54.95,62.44,12.5,NET_REV_LSD,net revenue
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in California,EXPS_DOM_RD_RMB_INT_NONFED_CA,54.93,61.69,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Wyoming,EXPS_DOM_RD_RMB_INT_NONFED_WY,54.92,61.67,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-2,Total research and development employees in South Carolina,EMP_SC_RD_NUM,54.91,59.55,28.57,RCPT_C_ST_SC,"Construction Work by State,  South Carolina"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Maryland,EXPS_DOM_RD_RMB_INT_NONFED_MD,54.9,61.64,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-11c,"Domestic R&D performed by your company that was paid for by the U.S. federal government, by Agency: NASA",EXPS_DOM_RD_RMB_INT_FEDGOV_NASA,54.84,63.59,5.26,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Maine,EXPS_DOM_RD_RMB_INT_NONFED_ME,54.83,61.57,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Wisconsin,EXPS_DOM_RD_RMB_INT_NONFED_WI,54.83,61.57,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+1-14,Total domestic net sales and operating revenues (copy),RCPT_DOM_SUM_BUSINESSCODE,54.81,62.27,12.5,NET_REV_LSD,net revenue
+3-3k,"Domestic, foreign, and worldwide R&D paid for by others: Other purchased services - Foreign",EXPS_FOR_RD_RMB_OSRV_VAL,54.81,62.72,10.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Illinois,EXPS_DOM_RD_RMB_INT_NONFED_IL,54.81,61.55,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+2-8l,Type of R&D Costs:  All other costs (Domestic),EXPS_DOM_RD_CORE_OCST_VAL,54.81,64.48,0.0,RD_EXPS_STAT,Research and Development Expenses
+6-3,Total research and development employees in India,EMP_IND_RD_NUM,54.8,60.06,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+2-20c,Other companies located outside the US,EXPS_DOM_RD_EXT_FOR_VAL,54.79,64.46,0.0,AFFIL_SPL_OWN_DOM_NO_ARCHIVE,Is the company owned or controlled by another domestic company?
+5-3c,Domestic R&D paid for and performed by your company - Total Research and Total Development (copy),,54.78,64.44,0.0,CAPEX_SOFTWARE_INTDEV_VAL,"Capital Expenditures:_x000D_
+Computer Software, internally-developed"
+3-3k,"Domestic, foreign, and worldwide R&D paid for by others: Other purchased services - Domestic",EXPS_DOM_RD_RMB_OSRV_VAL,54.76,62.66,10.0,RD_VAL,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Maryland,EXPS_DOM_RD_RMB_INT_FED_MD,54.75,61.47,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Ohio,EXPS_DOM_RD_RMB_INT_FED_OH,54.74,61.45,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in South Carolina,EXPS_DOM_RD_RMB_INT_NONFED_SC,54.73,61.18,18.18,RCPT_C_ST_SC,"Construction Work by State,  South Carolina"
+3-3h,"Domestic, foreign, and worldwide R&D paid for by others: Royalties and licensing fees - Foreign",EXPS_FOR_RD_RMB_ROY_VAL,54.66,62.7,9.09,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-2,Total research and development employees in North Carolina,EMP_NC_RD_NUM,54.65,59.25,28.57,RCPT_C_ST_NC,"Construction Work by State,  North Carolina"
+2-8g,"Type of R&D Costs: Depreciation and amortization on R&D property, plant, equipment, and intangible assets (Worldwide)",EXPS_WORLD_RD_CORE_DPRC_VAL,54.65,64.3,0.0,RD_EXPS_STAT,Research and Development Expenses
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Illinois,EXPS_DOM_RD_RMB_INT_FED_IL,54.64,61.34,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in New Jersey,EXPS_DOM_RD_RMB_INT_NONFED_NJ,54.63,61.48,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+2-8i,Type of R&D Costs:  Collaborative R&D Payments (Foreign),EXPS_FOR_RD_CORE_CLB_VAL,54.63,64.27,0.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-2,Total research and development employees in Nevada,EMP_NV_RD_NUM,54.62,61.32,16.67,RCPT_C_ST_NV,"Construction Work by State,  Nevada"
+3-6,Research and development performed by your company and paid for by others in Italy,EXPS_ITA_RD_RMB_INT_VAL,54.62,57.64,37.5,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Alabama,EXPS_DOM_RD_RMB_INT_FED_AL,54.6,61.3,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Rhode Island,EXPS_DOM_RD_RMB_INT_FED_RI,54.59,61.44,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in West Virginia,EXPS_DOM_RD_RMB_INT_NONFED_WV,54.54,61.38,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-11f,"Domestic R&D performed by your company that was paid for by the U.S. federal government, by Agency: Dept. of Transportation",EXPS_DOM_RD_RMB_INT_FEDGOV_DOT,54.53,63.27,5.0,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-2,Total employees in Idaho,EMP_ID_TOT_NUM,54.48,59.68,25.0,RCPT_C_ST_ID,"Construction Work by State,  Idaho"
+,Domestic R&D paid for by the company and others and performed by others,,54.47,61.88,12.5,RD_VAL,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Oklahoma,EXPS_DOM_RD_RMB_INT_FED_OK,54.45,61.12,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+2-17,"Domestic R&D paid for and performed by your company, by business code (Total) (copy)",EXPS_DOM_RD_CORE_SUM_BC,54.43,64.03,0.0,CAPEX_SOFTWARE_INTDEV_VAL,"Capital Expenditures:_x000D_
+Computer Software, internally-developed"
+6-3,Total research and development employees in Ireland,EMP_IRL_RD_NUM,54.43,56.47,42.86,FUNDS_DEV_TOT,"Source of Research and Development Funds,  Total"
+6-3,Total employees in Canada,EMP_CAN_TOT_NUM,54.42,55.2,50.0,EMP_JUN12,"Second Quarter Employment, Construction Workers and Other Construction Employees Total"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Michigan,EXPS_DOM_RD_RMB_INT_NONFED_MI,54.42,61.09,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+,Domestic R&D paid for by sources located outside the United States and performed by the company,,54.39,62.63,7.69,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+6-2,Total research and development employees in Nebraska,EMP_NE_RD_NUM,54.32,60.96,16.67,RCPT_C_ST_NE,"Construction Work by State,  Nebraska"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Georgia,EXPS_DOM_RD_RMB_INT_FED_GA,54.32,60.97,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-1c,"Total Employees, R&D employees and all others - Total domestic (copy)",EMP_DOM_TOT_NUM,54.26,59.42,25.0,EMP_MAR12,Total Employment
+6-2,Total research and development employees in Vermont,EMP_VT_RD_NUM,54.25,60.88,16.67,RCPT_C_ST_VT,"Construction Work by State,  Vermont"
+6-2,Total employees in Utah,EMP_UT_TOT_NUM,54.25,59.41,25.0,RCPT_C_ST_UT,"Construction Work by State,  Utah"
+6-5d,R&D employees by occupation: Total foreign R&D employees (copy),,54.22,61.83,11.11,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-2,Total employees in Virginia,EMP_VA_TOT_NUM,54.2,59.35,25.0,RCPT_C_ST_VA,"Construction Work by State,  Virginia"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in New Hampshire,EXPS_DOM_RD_RMB_INT_NONFED_NH,54.12,60.88,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+2-11,Research and development paid for and performed by your company in Denmark,EXPS_DNK_RD_INT_VAL,54.1,59.72,22.22,FUNDS_DEV_TRANSFER,"Source of Research and Development Funds,  Transfers or other payments from other establishments of your enterprise"
+5-18c,Domestic R&D performed by your company that was paid for by others - Total Applied research and Total Basic research (copy),EXPS_DOM_RD_RMB_INT_RES_VAL,54.09,60.43,18.18,RD_CHECK,Did your company perform or fund research and development?
+3-11g,"Domestic R&D performed by your company that was paid for by the U.S. federal government, by Agency: Environmental Protection Agency",EXPS_DOM_RD_RMB_INT_FEDGOV_EPA,54.01,62.66,5.0,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Florida,EXPS_DOM_RD_RMB_INT_NONFED_FL,54.0,60.59,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-3b,"Domestic, foreign, and worldwide R&D paid for by others: Stock-based compensation - Domestic",EXPS_DOM_RD_RMB_STCK_VAL,53.98,61.9,9.09,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-21,Projected R&D costs that will be paid for by others to be performed in the U.S.,EXPS_DOM_RD_RMB_INT_TOT_PRJ,53.93,63.44,0.0,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+3-6,Research and development performed by your company and paid for by others in Hungary,EXPS_HUN_RD_RMB_INT_VAL,53.89,56.78,37.5,RD_VAL,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Arizona,EXPS_DOM_RD_RMB_INT_FED_AZ,53.88,60.45,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+nan,Was any of the revenue reported in Questions 7-7 or 7-8 received from companies or organizations located outside the United States?,RCPT_UTPAT_FOR_STAT,53.87,63.37,0.0,SERVICES_EXPORTED_Y_ARCHIVE,"Did this establishment provide services to foreign businesses in $$00 (that is, exported services)?"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Wyoming,EXPS_DOM_RD_RMB_INT_FED_WY,53.85,60.42,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-3h,"Domestic, foreign, and worldwide R&D paid for by others: Royalties and licensing fees - Domestic",EXPS_DOM_RD_RMB_ROY_VAL,53.84,61.73,9.09,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+6-2,Total employees in Georgia,EMP_GA_TOT_NUM,53.81,58.89,25.0,RCPT_C_ST_GA,"Construction Work by State,  Georgia"
+3-3f,"Domestic, foreign, and worldwide R&D paid for by others: Leased facilities and equipment - Domestic",EXPS_DOM_RD_RMB_RENT_VAL,53.79,61.68,9.09,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+3-2b,R&D costs paid for by others incurred - Foreign,EXPS_FOR_RD_RMB_TOT_VAL,53.79,63.28,0.0,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in New Hampshire,EXPS_DOM_RD_RMB_INT_FED_NH,53.74,60.44,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-1j,Total worldwide costs paid for by others ,EXPS_WORLD_RD_RMB_TOT_VAL,53.71,60.98,12.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Arizona,EXPS_DOM_RD_RMB_INT_NONFED_AZ,53.69,60.22,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Hawaii,EXPS_DOM_RD_RMB_INT_NONFED_HI,53.68,60.21,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in South Carolina,EXPS_DOM_RD_RMB_INT_FED_SC,53.68,60.37,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Wisconsin,EXPS_DOM_RD_RMB_INT_FED_WI,53.67,60.2,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+5-30c,Federally funded R&D performed in US - Total Applied research and Total Basic research (copy),,53.66,59.92,18.18,FUNDS_DEV_TOT,"Source of Research and Development Funds,  Total"
+6-2,Total employees in District of Columbia,EMP_DC_TOT_NUM,53.63,56.04,40.0,RCPT_C_ST_DC,"Construction Work by State,  District of Columbia"
+6-3,Total research and development employees in Belgium,EMP_BEL_RD_NUM,53.6,58.64,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Maine,EXPS_DOM_RD_RMB_INT_FED_ME,53.59,60.11,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+1-14,Sales and operating revenues from domestic operations less eliminations,RCPT_DOM_SUM_BUSINESSCODE_ELIM,53.58,60.83,12.5,RCPT_NONOP_OTH_VAL,Revenue from all other non-operating revenue
+2-2g,Does worldwide R&D expense include: Phase IV clinical trials?,EXPS_WORLD_RD_P4CT_STAT,53.57,61.55,8.33,RD_VAL,Company's worldwide expenses for research and development
+2-8g,"Type of R&D Costs: Depreciation and amortization on R&D property, plant, equipment, and intangible assets (Foreign)",EXPS_FOR_RD_CORE_DPRC_VAL,53.53,62.98,0.0,RD_EXPS_STAT,Research and Development Expenses
+6-3,Total research and development employees in Israel,EMP_ISR_RD_NUM,53.52,58.55,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Michigan,EXPS_DOM_RD_RMB_INT_FED_MI,53.48,59.98,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+2-20a,Companies located inside the US,EXPS_DOM_RD_EXT_US_VAL,53.45,62.88,0.0,AFFIL_SPL_OWN_DOM_NO,Is the company owned or controlled by another domestic company?
+6-10a,Temporary and leased R&D employees by occupation: Researchers,EMP_DOM_RD_TEMP_RES_NUM,53.44,57.83,28.57,EXPS_TEMPSTAF_VAL,Temporary Staff and Leased Employee Expense
+3-6,Research and development performed by your company and paid for by others in Denmark,EXPS_DNK_RD_RMB_INT_VAL,53.44,58.95,22.22,FUNDS_DEV_TRANSFER,"Source of Research and Development Funds,  Transfers or other payments from other establishments of your enterprise"
+6-3,Total research and development employees in United Kingdom,EMP_GBR_RD_NUM,53.4,58.9,22.22,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Hawaii,EXPS_DOM_RD_RMB_INT_FED_HI,53.38,59.86,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-3,Total research and development employees in Other Middle Eastern Countries,EMP_OMD_RD_NUM,53.38,59.27,20.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-10d,Temporary and leased R&D employees by occupation: Total,EMP_DOM_RD_TEMP_TOT_NUM,53.37,60.59,12.5,EMP_MAR12_RD_TECH,"Employment By Occupation, Research and Development, Technicians or technologists"
+5-10,Domestic R&D paid for and performed by your company (percentage) - Software products or software embedded in other projects or products,EXPS_DOM_RD_INT_SOFT_PCT,53.35,61.41,7.69,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+1-1,Has your company ceased operations?,OPSTAT_CEASED_STAT,53.34,58.34,25.0,OPSTAT_CEASED_DATE,Operational Status: Ceased operation date
+6-3,Total research and development employees in Canada,EMP_CAN_RD_NUM,53.32,58.32,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+2-22,Amount of monetary gifts to U.S. universities that was for R&D,GIFT_USUNI_VAL,53.32,62.73,0.0,GRANTS_TRANSFERS_TOT,"Amount of grants, transferred contributions, and similar payments"
+6-2,How many total employees by state including DC,,53.27,60.15,14.29,RCPT_C_ST_DC,"Construction Work by State,  District of Columbia"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Tennessee,EXPS_DOM_RD_RMB_INT_FED_TN,53.23,59.68,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Florida,EXPS_DOM_RD_RMB_INT_FED_FL,53.22,59.67,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+3-14,Total Federally funded R&D performed by state (copy),,53.22,56.74,33.33,RCPT_C_ST_TOT_PCT,"Construction Work by State,  Total"
+7-4,Charges paid by foreign subsidiary for R&D performed by parent company,REV_RD_FOR_CSTSHR_VAL,53.22,61.01,9.09,RD_VAL,Company's worldwide expenses for research and development
+,Domestic R&D paid for by the company and others and performed by the company - Software products or software embedded in other projects or products,,53.2,60.82,10.0,CAPEX_SOFTWARE_INTDEV_VAL,"Capital Expenditures:_x000D_
+Computer Software, internally-developed"
+2-8f,Type of R&D Costs: Leased facilities and equipment (Domestic),EXPS_DOM_RD_CORE_RENT_VAL,53.14,62.51,0.0,RD_EXPS_STAT,Research and Development Expenses
+6-2,Total employees in Indiana,EMP_IN_TOT_NUM,53.12,58.08,25.0,RCPT_C_ST_IN,"Construction Work by State,  Indiana"
+6-2,Total research and development employees in New Jersey,EMP_NJ_RD_NUM,53.12,57.45,28.57,RCPT_C_ST_NJ,"Construction Work by State,  New Jersey"
+5-5,Domestic R&D paid for and performed by your company (percentage) - Energy applications,EXPS_DOM_RD_INT_ENRG_PCT,53.12,60.89,9.09,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+2-8a,"Type of R&D Costs: Salaries, wages and fringe benefits (Domestic)",EXPS_DOM_RD_CORE_WAGE_VAL,53.1,62.47,0.0,RD_EXPS_STAT,Research and Development Expenses
+3-7,"Funded R&D performed in US, by business code (Total) (copy)",EXPS_DOM_RD_RMB_SUM_BC (business code abbreviated to BC),53.09,60.7,10.0,FUNDS_DEV_TOT,"Source of Research and Development Funds,  Total"
+5-12,Domestic R&D paid for and performed by your company (percentage) - Nanotechnology,EXPS_DOM_RD_INT_NANTCH_PCT,53.09,60.5,11.11,RD_CHECK,Did your company perform or fund research and development?
+6-6,R&D scientists and engineers : Educational attainment (PhD) domestic,EMP_DOM_RD_RES_PHD_NUM,53.09,58.54,22.22,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+3-8c,"Domestic R&D performed by your company that was paid for by others, by Source of Funds: Other companies located outside of the US",EXPS_DOM_RD_RMB_INT_OUTUS,53.08,61.09,7.69,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+2-2b,Does worldwide R&D expense include: R&D paid for by grants (government or private foundations)?,EXPS_WORLD_RD_GRANT_STAT,53.06,62.43,0.0,FUNDS_DEV_TOT,"Source of Research and Development Funds,  Total"
+2-8i,Type of R&D Costs:  Collaborative R&D Payments (Domestic),EXPS_DOM_RD_CORE_CLB_VAL,53.05,62.41,0.0,RD_EXPS_STAT,Research and Development Expenses
+3-14,Domestic research and development performed by your company and paid for by the U.S. federal government in Mississippi,EXPS_DOM_RD_RMB_INT_FED_MS,53.04,59.46,16.67,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-2,Total employees in Delaware,EMP_DE_TOT_NUM,53.01,57.95,25.0,RCPT_C_ST_DE,"Construction Work by State,  Delaware"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in North Carolina,EXPS_DOM_RD_RMB_INT_NONFED_NC,53.0,59.57,15.79,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+,Domestic R&D performed by your company that was paid for by others  - Software products or software embedded in other projects or products,,53.0,60.39,11.11,EXPS_EXSOFT_VAL,Expensed Purchases of Software
+4-4d,Acquisitions: total,ASSET_BK_MA_TOT_VAL,52.99,58.81,20.0,CAPEX_NEW_TOT_DVAL,Capital Expenditures: All new - total
+6-3,Total employees in South Africa,EMP_ZAF_TOT_NUM,52.97,57.91,25.0,EMP_MAR12,Total Employment
+3-14,Nonfederal funded R&D performed by state,EXPS_DOM_RD_RMB_INT_NONFED,52.96,62.31,0.0,FUNDS_DEV_FEDGOV,"Source of Research and Development Funds,  Federal government contracts and subcontracts"
+6-3,Total research and development employees in Australia,EMP_AUS_RD_NUM,52.93,57.86,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-2,Total employees in Michigan,EMP_MI_TOT_NUM,52.89,57.81,25.0,RCPT_C_ST_MI,"Construction Work by State,  Michigan"
+2-3,Sum of costs reported in Question 2-2,EXPS_WORLD_RD_XTRA_VAL,52.86,62.19,0.0,COST_MAT_TOT,"Cost of Materials,  Total"
+6-3,Total research and development employees in Switzerland,EMP_CHE_RD_NUM,52.83,57.75,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-2,Total research and development employees in Alaska,EMP_AK_RD_NUM,52.81,59.18,16.67,RCPT_C_ST_AK,"Construction Work by State,  Alaska"
+3-3a,"Domestic, foreign, and worldwide R&D paid for by others: Salaries Wages and fringe benefits - Foreign",EXPS_FOR_RD_RMB_WAGE_VAL,52.8,60.64,8.33,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-1a,R&D employees - Total worldwide,EMP_WW_RD_NUM,52.79,59.59,14.29,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-2,Total employees in Ohio,EMP_OH_TOT_NUM,52.78,56.22,33.33,EMP_MAR12,Total Employment
+6-3,Total research and development employees in Malaysia,EMP_MYS_RD_NUM,52.61,57.49,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-2,Total research and development employees in Oklahoma,EMP_OK_RD_NUM,52.61,58.96,16.67,RCPT_C_ST_OK,"Construction Work by State,  Oklahoma"
+6-2,Total employees in Texas,EMP_TX_TOT_NUM,52.6,57.47,25.0,RCPT_C_ST_TX,"Construction Work by State,  Texas"
+3-12b,Domestic R&D performed by your company that was paid for by the U.S. federal government - Grants,EXPS_DOM_RD_RMB_INT_FED_GRANTS,52.58,60.88,5.56,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-2,Total employees in Rhode Island,EMP_RI_TOT_NUM,52.53,58.27,20.0,RCPT_C_ST_RI,"Construction Work by State,  Rhode Iskand"
+7-3,Charges paid to foreign subsidiary for R&D performed by foreign subsidiary,EXPS_RD_FOR_CSTSHR_VAL,52.51,61.77,0.0,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+3-3i,"Domestic, foreign, and worldwide R&D paid for by others: Collaborative R&D payments - Worldwide",EXPS_WORLD_RD_RMB_CLB_VAL,52.48,59.98,10.0,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+3-10,"Domestic R&D performed by your company that was paid for by other companies, by industry of funding company: Amount",,52.48,60.14,9.09,RD_VAL,Company's worldwide expenses for research and development
+3-2c,R&D costs paid for by others incurred - Total Domestic and Foreign (calc) (copy),,52.45,61.71,0.0,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-6,R&D scientists and engineers : Educational attainment (PhD) worldwide,EMP_WW_RD_RES_PHD_NUM,52.44,57.77,22.22,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+2-7c,R&D paid for by your company (calc) (copy),EXPS_WORLD_RD_CORE_SUM_GEO,52.4,61.65,0.0,CAPEX_SOFTWARE_INTDEV_VAL,"Capital Expenditures:_x000D_
+Computer Software, internally-developed"
+6-3,Total research and development employees in Mexico,EMP_MEX_RD_NUM,52.38,57.22,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+1-3,Begin time period Covered,YEAR_START_DATE,52.36,58.65,16.67,YEAR_START_DATE,Reporting Period Start Date
+6-2,Total research and development employees in Ohio,EMP_OH_RD_NUM,52.36,57.19,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-3,Total research and development employees in Singapore,EMP_SGP_RD_NUM,52.33,57.15,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+5-8,Domestic R&D paid for and performed by your company (percentage) - Health or medical applications,EXPS_DOM_RD_INT_MED_PCT,52.2,59.81,9.09,RD_CHECK_NO,Did your company perform or fund research and development?
+2-6,Total of R&D paid for by your company by business code (copy),EXPS_WORLD_RD_CORE_SUM_BC (business code abbreviated to BC),52.2,59.45,11.11,CAPEX_SOFTWARE_TOT_VAL,"Capital Expenditures:_x000D_
+Computer Software, total"
+2-8g,"Type of R&D Costs: Depreciation and amortization on R&D property, plant, equipment, and intangible assets (Domestic)",EXPS_DOM_RD_CORE_DPRC_VAL,52.17,61.38,0.0,RD_EXPS_STAT,Research and Development Expenses
+6-3,Total research and development employees in France,EMP_FRA_RD_NUM,52.16,56.95,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-2,Total research and development employees in Indiana,EMP_IN_RD_NUM,52.11,56.9,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-3,Total employees in Netherlands,EMP_NLD_TOT_NUM,52.11,55.43,33.33,EMP_MAR12_NUM,Total Employment
+6-2,Total research and development employees in Arkansas,EMP_AR_RD_NUM,52.09,58.34,16.67,RCPT_C_ST_AR,"Construction Work by State,  Arkansas"
+2-8m,Type of R&D Costs:  Total (Domestic) (copy),EXPS_DOM_RD_CORE_SUM_TYPE,52.03,61.21,0.0,RD_VAL,Company's worldwide expenses for research and development
+6-3,Total research and development employees in Thailand,EMP_THA_RD_NUM,52.0,53.61,42.86,FUNDS_DEV_TOT,"Source of Research and Development Funds,  Total"
+3-14,Domestic research and development performed by your company and paid for by nonfederal sources in Mississippi,EXPS_DOM_RD_RMB_INT_NONFED_MS,51.99,59.4,10.0,RCPT_C_ST_MS,"Construction Work by State,  Mississippi"
+6-2,Total research and development employees in Iowa,EMP_IA_RD_NUM,51.99,58.22,16.67,RCPT_C_ST_IA,"Construction Work by State,  Iowa"
+6-2,Total research and development employees in Kansas,EMP_KS_RD_NUM,51.95,58.18,16.67,RCPT_C_ST_KS,"Construction Work by State,  Kansas"
+4-4c,Acquisitions: identifiable intangible assets,ASSET_BK_MA_IIA_VAL,51.93,58.15,16.67,ASSET_OTHACQ_WRTIN_TXT,"Domestic Depreciable Asset Data:_x000D_
+Specified additions and acquisitions"
+3-8a,"Domestic R&D performed by your company that was paid for by others, by Source of Funds: Other companies located inside the US",EXPS_DOM_RD_RMB_INT_INUS,51.93,59.74,7.69,RD_VAL,Company's worldwide expenses for research and development
+1-9,Employees of domestic operations,EMP_DOM_TOT_NUM,51.93,59.14,11.11,EMP_MAR12_SALES,"Employment By Occupation, Sales employees (and support staff) selling directly to customers from this location"
+6-3,Total employees in Puerto Rico,EMP_PRI_TOT_NUM,51.92,56.04,28.57,RCPT_CONTRACT_FOOD,"Contract Work done by customer in Puerto Rico, Hotels, restaurants, food services, and drinking places"
+2-17,"Domestic R&D paid for and performed by your company, by business code",,51.91,61.07,0.0,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-3,Total research and development employees in Spain,EMP_ESP_RD_NUM,51.9,56.64,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+2-9,R&D paid for by your company that was performed by others (Foreign) (calc),EXPS_FOR_RD_EXT_VAL,51.89,59.09,11.11,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-2,Total research and development employees in Mississippi,EMP_MS_RD_NUM,51.88,58.1,16.67,RCPT_C_ST_MS,"Construction Work by State,  Mississippi"
+6-3,Total employees in Ireland,EMP_IRL_TOT_NUM,51.84,55.11,33.33,EMP_MAR12_NUM,Total Employment
+6-2,Total research and development employees in Rhode Island,EMP_RI_RD_NUM,51.83,58.46,14.29,RCPT_C_ST_RI,"Construction Work by State,  Rhode Iskand"
+3-3a,"Domestic, foreign, and worldwide R&D paid for by others: Salaries Wages and fringe benefits - Domestic",EXPS_DOM_RD_RMB_WAGE_VAL,51.81,59.48,8.33,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-2,Total research and development employees in District of Columbia,EMP_DC_RD_NUM,51.81,54.34,37.5,FUNDS_DEV_TOT,"Source of Research and Development Funds,  Total"
+4-3d,Impairment: total,ASSET_RV_TOT_VAL,51.78,52.1,50.0,PAT_CARE_TOT_PCT,"Patient Care, Total"
+6-3,Total research and development employees in Hungary,EMP_HUN_RD_NUM,51.76,56.49,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-3,Total research and development employees in Netherlands,EMP_NLD_RD_NUM,51.71,56.42,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-2,Total employees in California,EMP_CA_TOT_NUM,51.7,56.41,25.0,RCPT_C_ST_CA,"Construction Work by State,  California"
+6-2,Total research and development employees in Hawaii,EMP_HI_RD_NUM,51.69,57.87,16.67,RCPT_C_ST_HI,"Construction Work by State,  Hawaii"
+2-9,R&D paid for by your company that was performed by others (Domestic) (calc),EXPS_DOM_RD_EXT_VAL,51.68,55.76,28.57,RCPT_TRANSFER_PY,Value of products shipped to other domestic plants of your company for further processing  Prior Year
+6-2,Total research and development employees in Oregon,EMP_OR_RD_NUM,51.68,57.86,16.67,RCPT_C_ST_OR,"Construction Work by State,  Oregon"
+6-2,Total research and development employees in Idaho,EMP_ID_RD_NUM,51.67,57.85,16.67,RCPT_C_ST_ID,"Construction Work by State,  Idaho"
+6-3,Total research and development employees in Indonesia,EMP_IDN_RD_NUM,51.65,56.35,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-3,Total research and development employees in Brazil,EMP_BRA_RD_NUM,51.62,56.31,25.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-1b,All other Employees  - Total Foreign,EMP_FOR_NONRD_NUM,51.55,54.76,33.33,EMP_MAR12,Total Employment
+6-2,Total research and development employees in Louisiana,EMP_LA_RD_NUM,51.54,57.7,16.67,RCPT_C_ST_LA,"Construction Work by State,  Louisiana"
+6-2,Total research and development employees in Maine,EMP_MA_RD_NUM,51.52,57.67,16.67,RCPT_C_ST_ME,"Construction Work by State,  Maine"
+5-25,Domestic R&D performed by your company that was paid for by others (percentage) - biotechnology,EXPS_DOM_RD_RMB_INT_BIOTCH_PCT,51.5,58.63,11.11,RD_CHECK,Did your company perform or fund research and development?
+6-2,Total employees in New York,EMP_NY_TOT_NUM,51.48,56.15,25.0,EMP_MAR12,Total Employment
+6-6,R&D scientists and engineers : Educational attainment (PhD) foreign,EMP_FOR_RD_RES_PHD_NUM,51.47,56.63,22.22,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+5-26,Domestic R&D performed by your company that was paid for by others (percentage)- nanotechnology,EXPS_DOM_RD_RMB_INT_NANTCH_PCT,51.44,58.55,11.11,RD_CHECK_YES,Did your company perform or fund research and development?
+6-2,Total employees in Illinois,EMP_IL_TOT_NUM,51.44,56.1,25.0,RCPT_C_ST_IL,"Construction Work by State,  Illinois"
+,Domestic R&D performed by your company that was paid for by the federal government - Software products or software embedded in other projects or products,,51.44,59.67,4.76,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+6-3,Total research and development employees in Germany,EMP_DEU_RD_NUM,51.43,56.09,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-3,Total research and development employees in Other European Countries,EMP_OEU_RD_NUM,51.42,56.58,22.22,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-3,Total research and development employees in Other Asian Countries,EMP_OAP_RD_NUM,51.4,56.55,22.22,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+5-17c,Domestic R&D performed by your company that was paid for by others - Total Research and Total Development (copy),,51.39,60.46,0.0,CAPEX_SOFTWARE_INTDEV_VAL,"Capital Expenditures:_x000D_
+Computer Software, internally-developed"
+6-3,Total research and development employees in Chile,EMP_CHL_RD_NUM,51.38,56.04,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+3-3c,"Domestic, foreign, and worldwide R&D paid for by others : Leased employers and temporary staffing working on R&D - Domestic",EXPS_DOM_RD_RMB_TEMP_VAL,51.34,56.87,20.0,PRCH_TEMPSTAF,Purchased services for temporary staff and leased employees  (Professional Employer Organizations and staffing agencies for personnel)
+5-7,Domestic R&D paid for and performed by your company (percentage) - Defense applications,EXPS_DOM_RD_INT_DEF_PCT,51.31,58.61,10.0,RD_CHECK_NO_ARCHIVE,Did your company perform or fund research and development?
+3-5,R&D performed by your company that was paid for by others - Foreign (calc),EXPS_FOR_RD_RMB_INT_VAL,51.26,58.35,11.11,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+4-3a,"Impairment: property, plant, and equipment",ASSET_RV_PPE_VAL,51.21,60.25,0.0,ASSET_TOT_END,"Depreciable assets at the end of the year,  Total Buildings and Machinery"
+6-2,Total research and development employees in Georgia,EMP_GA_RD_NUM,51.19,57.28,16.67,RCPT_C_ST_GA,"Construction Work by State,  Georgia"
+6-3,Total research and development employees in New Zealand,EMP_NZL_RD_NUM,51.19,56.3,22.22,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-2,Total research and development employees in Michigan,EMP_MI_RD_NUM,51.11,55.72,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-3,Total employees in Israel,EMP_ISR_TOT_NUM,51.05,54.18,33.33,EMP_MAR12_NUM,Total Employment
+6-2,Total employees in Washington,EMP_WA_TOT_NUM,51.03,55.62,25.0,RCPT_C_ST_WA,"Construction Work by State,  Washington"
+6-2,Total research and development employees in Wisconsin,EMP_WI_RD_NUM,51.02,57.08,16.67,RCPT_C_ST_WI,"Construction Work by State,  Wisconsin"
+nan,Were any of the payments reported in Questions 7-10 or 7-11 made to companies or organizations located outside the United States?,EXPS_UTPAT_FOR_STAT,50.97,59.97,0.0,SERVICES_IMPORTED_Y_ARCHIVE,"Did this establishment purchase services from foreign businesses in $$99 (that is, imported services)?"
+6-3,Total employees in Indonesia,EMP_IDN_TOT_NUM,50.96,54.07,33.33,EMP_MAR12,Total Employment
+6-7d,Domestic FTE R&D employees: Total ,EMP_DOM_RD_FTE_TOT_NUM,50.91,52.84,40.0,EMP_JUN12,"Second Quarter Employment, Construction Workers and Other Construction Employees Total"
+6-3,Total research and development employees in Norway,EMP_NOR_RD_NUM,50.89,55.46,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+4-1c,Assets: identifiable intangible assets,ASSET_NET_WW_IIA_VAL,50.88,56.33,20.0,ASSET_RETIRED,"Depreciable assets sold, retired, scrapped, destroyed, etc.   Total Buildings and Machinery"
+6-3,Total research and development employees in Luxembourg,EMP_LUX_RD_NUM,50.88,55.44,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-2,Total research and development employees in Montana,EMP_MT_RD_NUM,50.84,56.87,16.67,RCPT_C_ST_MT,"Construction Work by State,  Montana"
+3-3i,"Domestic, foreign, and worldwide R&D paid for by others: Collaborative R&D payments - Foreign",EXPS_FOR_RD_RMB_CLB_VAL,50.79,59.76,0.0,FUNDS_DEV_FEDGOV,"Source of Research and Development Funds,  Federal government contracts and subcontracts"
+5-13,Domestic R&D paid for and performed by your company (percentage) - Artificial intelligence (AI),EXPS_DOM_RD_INT_AI_PCT,50.78,58.27,8.33,RD_VAL,Company's worldwide expenses for research and development
+3-20,Projected R&D costs that will be paid for by others,EXPS_WORLD_RD_RMB_TOT_VAL_PRJ,50.76,59.71,0.0,RD_EXPS_STAT,Research and Development Expenses
+6-3,Total research and development employees in Taiwan,EMP_TWN_RD_NUM,50.75,54.67,28.57,EMP_MAR12_RD_TECH,"Employment By Occupation, Research and Development, Technicians or technologists"
+6-3,Total research and development employees in Other Latin American Countries,EMP_OLA_RD_NUM,50.73,56.16,20.0,RD_VAL,Company's worldwide expenses for research and development
+4-3c,Impairment: identifiable intangible assets,ASSET_RV_IIA_VAL,50.71,57.45,12.5,ASSET_TOT_END,"Depreciable assets at the end of the year,  Total Buildings and Machinery"
+6-2,Total research and development employees in Tennessee,EMP_TN_RD_NUM,50.69,56.69,16.67,RCPT_C_ST_TN,"Construction Work by State,  Tennessee"
+3-1e,Phase I-III medical clinical trial services,EXPS_WORLD_RD_RMB_MEDTRIAL_VAL,50.69,53.76,33.33,PAT_CARE_OUT_TEST_PCT,"Patient Care, Outpatient medical and diagnostic testing services"
+6-3,Total research and development employees in Finland,EMP_FIN_RD_NUM,50.67,55.2,25.0,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+6-3,Total research and development employees in Austria,EMP_AUT_RD_NUM,50.64,55.17,25.0,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-2,Total research and development employees in Texas,EMP_TX_RD_NUM,50.61,55.12,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-2,Total research and development employees in Washington,EMP_WA_RD_NUM,50.61,55.13,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-3,Total research and development employees in Puerto Rico,EMP_PRI_RD_NUM,50.61,55.62,22.22,RCPT_CONTRACT_FOOD,"Contract Work done by customer in Puerto Rico, Hotels, restaurants, food services, and drinking places"
+6-2,Total research and development employees in Kentucky,EMP_KY_RD_NUM,50.59,56.57,16.67,RCPT_C_ST_KY,"Construction Work by State,  Kentucky"
+6-3,Total research and development employees in Denmark,EMP_DNK_RD_NUM,50.5,54.99,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+3-8b,"Domestic R&D performed by your company that was paid for by others, by Source of Funds: Your company's foreign parent",EXPS_DOM_RD_RMB_INT_FP,50.49,57.93,8.33,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+6-2,Total employees in Massachusetts,EMP_MA_TOT_NUM,50.45,59.35,0.0,RCPT_C_ST_MA,"Construction Work by State,  Massachusettes"
+6-2,Total research and development employees in Florida,EMP_FL_RD_NUM,50.41,56.36,16.67,RCPT_C_ST_FL,"Construction Work by State,  Florida"
+6-3,Total employees in Singapore,EMP_SGP_TOT_NUM,50.29,53.29,33.33,EMP_MAR12_NUM,Total Employment
+6-2,Total research and development employees in Alabama,EMP_AL_RD_NUM,50.28,56.21,16.67,RCPT_C_ST_AL,"Construction Work by State,  Alabama"
+6-2,Total research and development employees in Pennsylvania,EMP_PA_RD_NUM,50.28,56.21,16.67,RCPT_C_ST_PA,"Construction Work by State,  Pennsylvania"
+6-3,Total research and development employees in Argentina,EMP_ARG_RD_NUM,50.17,54.61,25.0,RD_VAL,Company's worldwide expenses for research and development
+5-24,Domestic R&D performed by your company that was paid for by others (percentage) - Software products or software embedded in other projects or products,EXPS_DOM_RD_RMB_INT_SOFT_PCT,50.17,57.25,10.0,EXPS_EXSOFT_VAL,Expensed Purchases of Software
+6-2,Total research and development employees in Colorado,EMP_CO_RD_NUM,50.13,56.03,16.67,RCPT_C_ST_CO,"Construction Work by State,  Colorado"
+6-2,Total research and development employees in California,EMP_CA_RD_NUM,50.11,54.54,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-2,Total research and development employees in Connecticut,EMP_CT_RD_NUM,50.09,55.99,16.67,RCPT_C_ST_CT,"Construction Work by State,  Connecticut"
+6-2,Total research and development employees in Utah,EMP_UT_RD_NUM,50.07,55.96,16.67,RCPT_C_ST_UT,"Construction Work by State,  Utah"
+6-3,Total research and development employees in Poland,EMP_POL_RD_NUM,50.05,54.47,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+,Domestic R&D paid for by the company and others and performed by the company - Nanotechnology,,49.96,56.58,12.5,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+6-2,Total research and development employees in Minnesota,EMP_MN_RD_NUM,49.94,55.81,16.67,RCPT_C_ST_MN,"Construction Work by State,  Minnesota"
+5-31,Domestic R&D performed by your company that was paid for by the federal government (percentage) - Software products or software embedded in other projects or products,EXPS_DOM_RD_RMB_INT_FEDGOV_SOFT_PCT,49.93,57.93,4.55,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+2-19,Foreign R&D performance paid for by domestic operations,EXPS_FOR_RD_INT_PBD_VAL,49.88,58.68,0.0,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+3-2a,R&D costs paid for by others incurred - Domestic ,EXPS_DOM_RD_RMB_TOT_VAL,49.88,58.68,0.0,RD_EXPS_STAT,Research and Development Expenses
+6-3,Total employees in Belgium,EMP_BEL_TOT_NUM,49.85,52.77,33.33,EMP_MAR12,Total Employment
+1-9,Employees of foreign operations,EMP_FOR_TOT_NUM,49.84,55.11,20.0,AFFIL_FOR_NAME,"Name of the foreign entity (company, individual, government, etc.)"
+6-1c,"Total Employees, R&D employees and all others - Total worldwide (copy)",EMP_WW_TOT_NUM,49.8,56.38,12.5,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-3,Total employees in Hungary,EMP_HUN_TOT_NUM,49.79,52.7,33.33,EMP_MAR12,Total Employment
+nan,What percentage of the nonprovisional utility patent applications reported in Question 7-2 was for inventions that originated within your company’s organized R&D activities,PAT_APP_NPROV_RD_PCT,49.72,57.31,6.67,RD_CHECK_YES,Did your company perform or fund research and development?
+3-3i,"Domestic, foreign, and worldwide R&D paid for by others: Collaborative R&D payments - Domestic",EXPS_DOM_RD_RMB_CLB_VAL,49.69,58.46,0.0,FUNDS_DEV_FEDGOV,"Source of Research and Development Funds,  Federal government contracts and subcontracts"
+6-2,Total research and development employees in Illinois,EMP_IL_RD_NUM,49.67,54.03,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-3,Total research and development employees in Hong Kong,EMP_HKG_RD_NUM,49.63,54.47,22.22,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-3,Total research and development employees in South Korea,EMP_SKR_RD_NUM,49.6,54.43,22.22,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+3-16,Funded R&D performed at largest location,EXPS_DOM_RD_RMB_INT_LRG,49.6,58.36,0.0,FUNDS_DEV_NO_ARCHIVE,Did this establishment receive funds for research and development?
+5-19,Domestic R&D performed by your company that was paid for by others  (percentage) - Energy applications,EXPS_DOM_RD_RMB_INT_ENRG_PCT,49.59,56.58,10.0,RD_CHECK,Did your company perform or fund research and development?
+5-22,Domestic R&D performed by your company that was paid for by others (percentage) - Health or medical applications,EXPS_DOM_RD_RMB_INT_MED_PCT,49.5,56.63,9.09,RD_CHECK_YES,Did your company perform or fund research and development?
+6-3,Total employees in Poland,EMP_POL_TOT_NUM,49.47,52.32,33.33,EMP_MAR12_NUM,Total Employment
+3-3c,"Domestic, foreign, and worldwide R&D paid for by others : Leased employers and temporary staffing working on R&D - Worldwide",EXPS_WORLD_RD_RMB_TEMP_VAL,49.43,56.8,7.69,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-3,Total research and development employees in Sweden,EMP_SWE_RD_NUM,49.43,53.74,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-3,Total employees in Sweden,EMP_SWE_TOT_NUM,49.42,58.14,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+6-3,Total research and development employees in Turkey,EMP_TUR_RD_NUM,49.37,53.68,25.0,RD_VAL_GE3MIL_ARCHIVE,Company's worldwide expenses for research and development
+4-1d,Assets: total,ASSET_NET_WW_TOT_VAL,49.37,53.67,25.0,CAPEX_USED_TOT_DVAL,Capital Expenditures: All used - total
+5-6,Domestic R&D paid for and performed by your company (percentage) - Environmental protection applications,EXPS_DOM_RD_INT_ENV_PCT,49.34,56.57,8.33,RD_VAL,Company's worldwide expenses for research and development
+6-3,How many employees by country including Puerto Rico,,49.32,53.61,25.0,RCPT_CONTRACT_FOOD,"Contract Work done by customer in Puerto Rico, Hotels, restaurants, food services, and drinking places"
+1-9,Worldwide employees (copy),EMP_WW_TOT_NUM,49.31,53.6,25.0,EMP_MAR12_HQOTH,"Employment By Occupation, All other headquarter employees"
+3-13,Domestic R&D performed by your company that was paid for by nonfederal sources (calc),EXPS_DOM_RD_RMB_INT_NONFED,49.31,57.03,5.56,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+4-4b,Acquisitions: goodwill,ASSET_BK_MA_GW_VAL,49.3,53.59,25.0,ASSET_OTHACQ_WRTIN_TXT,"Domestic Depreciable Asset Data:_x000D_
+Specified additions and acquisitions"
+6-3,Total research and development employees in Czech Republic,EMP_CZE_RD_NUM,49.28,54.05,22.22,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-2,Total research and development employees in Arizona,EMP_AZ_RD_NUM,49.23,54.98,16.67,RCPT_C_ST_AZ,"Construction Work by State,  Arizona"
+2-20d,US federal government agencies and labs,EXPS_DOM_RD_EXT_FEDGOV_VAL,49.19,53.95,22.22,FUNDS_DEV_FEDGOV,"Source of Research and Development Funds,  Federal government contracts and subcontracts"
+3-14,Total Federally & nonfederal funded R&D performed by state (copy),,49.15,57.83,0.0,FUNDS_DEV_FEDGOV,"Source of Research and Development Funds,  Federal government contracts and subcontracts"
+6-2,Total research and development employees in Maryland,EMP_MD_RD_NUM,49.13,53.39,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+3-3c,"Domestic, foreign, and worldwide R&D paid for by others : Leased employers and temporary staffing working on R&D - Foreign",EXPS_FOR_RD_RMB_TEMP_VAL,48.99,54.1,20.0,PRCH_TEMPSTAF,Purchased services for temporary staff and leased employees  (Professional Employer Organizations and staffing agencies for personnel)
+6-2,Total research and development employees in Missouri,EMP_MO_RD_NUM,48.97,54.67,16.67,RCPT_C_ST_MO,"Construction Work by State,  Missouri"
+6-2,Total research and development employees in New York,EMP_NY_RD_NUM,48.92,53.63,22.22,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-3,Total research and development employees in Italy,EMP_ITA_RD_NUM,48.9,53.11,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+nan,How much did your company pay others in 2024 to purchase utility patents?,EXPS_UTPAT_VAL,48.88,53.58,22.22,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+6-3,Total employees in Argentina,EMP_ARG_TOT_NUM,48.83,57.45,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+3-1a,R&D reimbursed by your company's foreign owner,EXPS_WORLD_RD_RMB_FP_VAL,48.77,55.17,12.5,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+5-9,Domestic R&D paid for and performed by your company (percentage) - Agricultural applications,EXPS_DOM_RD_INT_AGR_PCT,48.77,55.77,9.09,RD_VAL_GE3MIL,Company's worldwide expenses for research and development
+6-2,Total research and development employees in Delaware,EMP_DE_RD_NUM,48.76,54.43,16.67,RCPT_C_ST_DE,"Construction Work by State,  Delaware"
+3-18,Funded R&D performed at second largest location,EXPS_DOM_RD_RMB_INT_2LRG,48.65,57.23,0.0,FUNDS_DEV_YES,Did this establishment receive funds for research and development?
+6-2,How many R&D employees by state including DC,,48.64,54.29,16.67,RCPT_C_ST_DC,"Construction Work by State,  District of Columbia"
+6-3,Total employees in United Kingdom,EMP_GBR_TOT_NUM,48.64,57.22,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+6-3,Total research and development employees in Japan,EMP_JPN_RD_NUM,48.63,52.8,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-2,Total research and development employees in Virginia,EMP_VA_RD_NUM,48.53,54.15,16.67,RCPT_C_ST_VA,"Construction Work by State,  Virginia"
+6-3,Total research and development employees in China,EMP_CHN_RD_NUM,48.47,52.61,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-3,Total employees in Hong Kong,EMP_HKG_TOT_NUM,48.4,53.41,20.0,EMP_MAR12_HQOTH,"Employment By Occupation, All other headquarter employees"
+6-3,Total employees in New Zealand,EMP_NZL_TOT_NUM,48.25,56.76,0.0,PAY_ANN_PRDWRK_VAL,Annual Payroll - Production Workers
+6-9,Domestic R&D scientists and engineers - Temporary Visa,EMP_DOM_RD_RES_VISA_NUM,47.99,52.04,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+nan,How much did your company pay others in 2024 to license utility patents?,EXPS_UTPAT_LIC_VAL,47.95,52.49,22.22,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+6-1a,R&D employees - Total domestic,EMP_DOM_RD_NUM,47.93,52.86,20.0,EMP_SUM_AVGOTH,Manufacturing:  Sum of Average Annual Production Workers and Other non production employees
+3-7,Funded R&D performed in US by business code,,47.79,56.22,0.0,FUNDS_DEV_NONFED,"Source of Research and Development Funds,  Non-federal sources outside your enterprise_x000D_
+(Include receipts from other enterprises, state and local governments, and other organizations.)"
+5-21,Domestic R&D performed by your company that was paid for by others (percentage) - Defense applications,EXPS_DOM_RD_RMB_INT_DEF_PCT,47.76,54.42,10.0,RD_CHECK_NO_ARCHIVE,Did your company perform or fund research and development?
+3-4,R&D paid for others and performed by others - Foreign (calc),EXPS_FOR_RD_RMB_EXT_VAL,47.75,56.18,0.0,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+6-3,Total employees in China,EMP_CHN_TOT_NUM,47.71,56.13,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+6-3,Total employees in France,EMP_FRA_TOT_NUM,47.63,56.04,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+6-3,Total employees in Malaysia,EMP_MYS_TOT_NUM,47.58,50.1,33.33,EMP_MAR12,Total Employment
+6-3,Total employees in Denmark,EMP_DNK_TOT_NUM,47.58,55.97,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+6-3,Total employees in Chile,EMP_CHL_TOT_NUM,47.55,55.94,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+6-3,Total employees in Taiwan,EMP_TWN_TOT_NUM,47.53,50.04,33.33,EMP_MAR12,Total Employment
+6-3,Total employees in Other African Countries,EMP_OAF_TOT_NUM,47.52,51.5,25.0,EMP_MAR12,Total Employment
+6-3,Total employees in Austria,EMP_AUT_TOT_NUM,47.49,49.99,33.33,EMP_MAR12,Total Employment
+6-3,Total research and development employees in Russia,EMP_RUS_RD_NUM,47.48,51.45,25.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+3-5,R&D performed by your company that was paid for by others - Domestic (calc),EXPS_DOM_RD_RMB_INT_VAL,47.45,53.87,11.11,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+6-7c,Domestic FTE R&D employees: Part-time employees working on R&D ,EMP_DOM_RD_PTRD_NUM,47.45,52.29,20.0,EMP_MAR12_OTHWRK_M,"First  Quarter Employment,  Other Manufacturing Employees"
+nan,How much revenue did your company receive in 2024 from the sale of utility patents?,RCPT_UTPAT_VAL,47.21,52.02,20.0,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+6-3,Total employees in Other European Countries,EMP_OEU_TOT_NUM,47.18,51.98,20.0,EMP_MAR12_HQOTH,"Employment By Occupation, All other headquarter employees"
+6-3,Total employees in India,EMP_IND_TOT_NUM,47.12,55.43,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+6-3,How many R&D employees by country including Puerto Rico,,47.01,50.26,28.57,RCPT_CONTRACT_M,"Contract Work done by customer in Puerto Rico,  Other manufacturing establishments"
+2-24,Projected purchased R&D services and payments to business partners for collaborative R&D,EXPS_PRJ_DOM_RD_EXT_VAL,47.0,55.29,0.0,RD_CHECK_NO,Did your company perform or fund research and development?
+5-27,Domestic R&D performed by your company that was paid for by others (percentage) - artificial intelligence (AI),EXPS_DOM_RD_RMB_INT_AI_PCT,46.88,53.69,8.33,RD_VAL_LT3MIL_ARCHIVE,Company's worldwide expenses for research and development
+6-3,Total employees in Japan,EMP_JPN_TOT_NUM,46.81,55.07,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+6-3,Total employees in Norway,EMP_NOR_TOT_NUM,46.79,55.04,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+6-3,Total employees in Australia,EMP_AUS_TOT_NUM,46.73,54.98,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+6-3,Total employees in Mexico,EMP_MEX_TOT_NUM,46.61,54.83,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+nan,Made use of open source patents or other freely available IP not owned by your company,IP_UOS_STAT,46.56,54.77,0.0,COST_SUBCONTRACT,Work done for you by others on your materials (work contracted to others)
+6-7a,Domestic FTE R&D employees: Full-time R&D employees,EMP_DOM_RD_FTE_FTRD_NUM,46.53,50.33,25.0,EMP_MAR12_OTHWRK_M,"First  Quarter Employment,  Other Manufacturing Employees"
+2-20g,All other organizations located inside the US,EXPS_DOM_RD_EXT_OTHUS_VAL,46.53,54.74,0.0,SURVEY_LFO_FOREIGN_YES_ARCHIVE,"Legal Form of Organization,  Foreign Control,   Was this establishment a Controlled Foreign Corporation?"
+2-20i,R&D paid for by your company that was performed by others - by type of organization (copy),,46.52,52.77,11.11,RD_CHECK,Did your company perform or fund research and development?
+6-1c,"Total Employees, R&D employees and all others - Total foreign (copy)",EMP_FOR_TOT_NUM,46.5,54.7,0.0,RD_VAL,Company's worldwide expenses for research and development
+1-5,Foreign operations,FOR_SUBSIDIARIES_STAT,46.48,50.28,25.0,AFFIL_FOR_NAME,"Name of the foreign entity (company, individual, government, etc.)"
+6-3,Total employees in Spain,EMP_ESP_TOT_NUM,46.4,54.59,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+5-23,Domestic R&D performed by your company that was paid for by others (percentage) - Agricultural applications,EXPS_DOM_RD_RMB_INT_AGR_PCT,46.16,52.54,10.0,RD_CHECK_YES_ARCHIVE,Did your company perform or fund research and development?
+nan,How much revenue did your company receive in 2024 from utility patent licensing?,RCPT_UTPAT_LIC_VAL,46.15,50.76,20.0,RD_CHECK_NO,Did your company perform or fund research and development?
+6-3,Total employees in Other Asian Countries,EMP_OAP_TOT_NUM,46.14,50.76,20.0,EMP_MAR12_HQOTH,"Employment By Occupation, All other headquarter employees"
+nan,How many utility patents were issued to your company in 2024 by the USPTO?,PAT_ISSUE_NUM,45.74,53.81,0.0,ROBOT_PURCHASE_PY,Number of industrial robots PURCHASED for this plant  Prior Year
+3-1b,Collaborative R&D reimbursed by business partners,EXPS_WORLD_RD_RMB_CLB_VAL,45.7,53.77,0.0,FUNDS_DEV_TRANSFER,"Source of Research and Development Funds,  Transfers or other payments from other establishments of your enterprise"
+3-4,R&D paid for others and performed by others - Domestic (calc),EXPS_DOM_RD_RMB_EXT_VAL,45.59,53.63,0.0,COST_SUBCONTRACT,Work done for you by others on your materials (work contracted to others)
+6-3,Total employees in Brazil,EMP_BRA_TOT_NUM,45.56,53.6,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+3-9,"R&D that was paid for by other companies: Add Questions 3-8, lines a, b and c (calc)",,45.47,53.49,0.0,RD_CHECK_YES,Did your company perform or fund research and development?
+6-3,Total employees in Germany,EMP_DEU_TOT_NUM,45.46,53.48,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+6-1a,R&D employees - Total foreign,EMP_FOR_RD_NUM,45.41,53.42,0.0,RD_VAL_LT3MIL,Company's worldwide expenses for research and development
+6-3,Total employees in Other Latin American Countries,EMP_OLA_TOT_NUM,45.39,49.87,20.0,EMP_MAR12,Total Employment
+6-2,Total research and development employees in Massachusetts,EMP_MA_RD_NUM,45.33,53.33,0.0,RCPT_C_ST_MA,"Construction Work by State,  Massachusettes"
+3-1h,Prototypes of customer's products,EXPS_WORLD_RD_RMB_PROT_VAL,45.27,47.37,33.33,RCPT_CLIENT_U_IND,"Class of Customer, Industrial"
+6-3,Total employees in South Korea,EMP_SKR_TOT_NUM,45.24,53.22,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+4-3b,Impairment: goodwill,ASSET_RV_GW_VAL,45.15,53.12,0.0,ASSET_TOT_END,"Depreciable assets at the end of the year,  Total Buildings and Machinery"
+6-4b,R&D employees by sex: Male Worldwide,EMP_WW_RD_MALE_NUM,45.07,53.02,0.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-3,Total employees in Switzerland,EMP_CHE_TOT_NUM,45.06,53.01,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+1-8,Worldwide employees,EMP_WW_TOT_NUM,45.01,52.96,0.0,EMP_MAR12,Total Employment
+6-3,Total employees in Finland,EMP_FIN_TOT_NUM,44.93,52.86,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+6-4c,R&D employees by sex: Total Female and male worldwide (copy),EMP_WW_RD_NUM,44.85,52.76,0.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-3,Total employees in Czech Republic,EMP_CZE_TOT_NUM,44.78,48.27,25.0,EMP_MAR12,Total Employment
+6-3,Total employees in Italy,EMP_ITA_TOT_NUM,44.64,52.52,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+6-3,Total employees in Other Middle Eastern Countries,EMP_OMD_TOT_NUM,44.46,49.36,16.67,EMP_MAR12_TOT_S,"Employment By Occupation, Service Total"
+6-4a,R&D employees by sex: Female worldwide,EMP_WW_RD_FEM_NUM,44.22,52.02,0.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+nan,Acquired more than 50% ownership in another company for the primary purpose of acquiring their IP,IP_ACQ_GT50_STAT,44.17,50.01,11.11,AFFIL_FOR_GE10_STAT,Foreign Ownership or Control: Status
+5-20,Domestic R&D performed by your company that was paid for by others  (percentage) - Environmental protection applications,EXPS_DOM_RD_RMB_INT_ENV_PCT,44.07,50.37,8.33,RD_VAL,Company's worldwide expenses for research and development
+2-14,R&D performed at largest domestic location,LRG_DOM_LOC_VAL,44.04,51.81,0.0,AIES_LOCATION_SUMMARY,Summary of the locations for a company
+6-3,Total employees in Russia,EMP_RUS_TOT_NUM,43.98,51.74,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+6-3,Total employees in Thailand,EMP_THA_TOT_NUM,43.91,51.66,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+2-20e,US state and local government agencies and labs,EXPS_DOM_RD_EXT_STATEGOV_VAL,43.83,49.96,9.09,FUNDS_DEV_FEDGOV,"Source of Research and Development Funds,  Federal government contracts and subcontracts"
+7-1,File for research and experimentation IRS tax credit in tax year (survey year)? (yes/no),INC_RD_TAX_STAT,43.5,49.41,10.0,INITIATED_SURVEY,Date respondent initiated survey
+2-16,R&D performed at second largest domestic location,2ND_LRG_DOM_VAL,43.25,50.88,0.0,MFG_ESTAB_NUM,Number of manufacturing establishments
+6-3,Total employees in Turkey,EMP_TUR_TOT_NUM,42.8,50.36,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+6-3,Total employees in Luxembourg,EMP_LUX_TOT_NUM,42.7,50.23,0.0,EMP_AVG_PRDWRK,Average number of annual production workers at this establishment
+7-2,File for research and experimentation state tax credit in (survey year)?  (yes/no),STATE_RD_TAX_STAT,42.68,48.45,10.0,INITIATED_SURVEY,Date respondent initiated survey
+nan,What percentage of your company’s inventions considered for patenting in 2024 resulted in nonprovisional utility patent applications?,PAT_APP_NPROV_PCT,42.49,48.72,7.14,RD_CHECK_NO,Did your company perform or fund research and development?
+6-4c,R&D employees by sex: Total Female and male domestic (copy),EMP_DOM_RD_NUM,41.58,48.92,0.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-4b,R&D employees by sex: Male domestic,EMP_DOM_RD_MALE_NUM,41.18,48.44,0.0,OWNSTAT_MF_ARCHIVE,What is the gender of majority ownership of this establishment?
+3-1g,Non-defense custom software development,EXPS_WORLD_RD_RMB_SOFT_VAL,41.0,42.35,33.33,COMPUTER_SALE_SOFTWARE_PCT,"Computer System Integration, Sale of custom software produced by this establishment"
+6-4a,R&D employees by sex: Female domestic,EMP_DOM_RD_FEM_NUM,40.85,48.06,0.0,OWNSTAT_WOMEN_ARCHIVE,What is the gender of majority ownership of this establishment?
+6-8c,Domestic FTE Researchers: Part-time researchers working on R&D,EMP_DOM_RD_RES_PTRD_NUM,40.01,47.08,0.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-4b,R&D employees by sex: Male foreign,EMP_FOR_RD_MALE_NUM,39.85,46.88,0.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-4a,R&D employees by sex: Female foreign,EMP_FOR_RD_FEM_NUM,39.69,46.7,0.0,OWNSTAT_MF_ARCHIVE,What is the gender of majority ownership of this establishment?
+nan,percentage of the nonprovisional utility patents applied for in foreign jurisdictions,PAT_APP_NPROV_FJ_PCT,39.12,44.41,9.09,AFFIL_FOR_STOCK_10TO24,"What percent of voting stock was owned directly or indirectly by a foreign entity (company, individual, government)?"
+6-4c,R&D employees by sex: Total Female and male foreign (copy),EMP_FOR_RD_NUM,38.99,45.87,0.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+2-20h,All other organizations outside the US,EXPS_DOM_RD_EXT_OTHFOR_VAL,38.46,45.24,0.0,SURVEY_LFO_FOREIGN,"Legal Form of Organization,  Foreign Control,   Was this establishment a Controlled Foreign Corporation?"
+nan,Acquired any financial interest in another company in order to gain access to their IP,IP_ACQ_FI_STAT,38.41,45.19,0.0,AFFIL_FOR_GE10_STAT,Foreign Ownership or Control: Status
+6-7b,Domestic FTE R&D employees: Other full-time employees not working solely on R&D ,EMP_DOM_RD_FTE_FTOTH_NUM,37.99,44.7,0.0,EXPS_TEMPSTAF_VAL,Temporary Staff and Leased Employee Expense
+6-8b,Domestic FTE Researchers: Other full-time researchers not working solely on R&D,EMP_DOM_RD_RES_OTHRD_NUM,37.63,44.27,0.0,EMP_MAR12_RD_SCI,"Employment By Occupation, Research and Development, Scientists or engineers"
+6-8a,Domestic FTE Researchers: Full-time researchers,EMP_DOM_RD_RES_FTRD_NUM,37.11,43.66,0.0,EMP_MAR12_LSD_FINANCE,Q1 LEASED EMPLOYMENT FOR FINANCE AND INSURANCE CLIENTS
+nan,total number of patents your company applied for from the USPTO,PAT_APP_TOT_NUM,36.04,40.44,11.11,ROBOT_PURCHASE_PY,Number of industrial robots PURCHASED for this plant  Prior Year
+nan,"Allowed free use of patents or other IP owned by your company (for example, open source software)",IP_PFU_STAT,35.27,40.23,7.14,RD_CHECK,Did your company perform or fund research and development?
+nan,"of the total, how many were nonprovisional utility patent applications?",PAT_APP_NPROV_NUM,35.09,41.29,0.0,ROBOT_PURCHASE_PY,Number of industrial robots PURCHASED for this plant  Prior Year
+6-8d,Domestic FTE Researchers: Total,EMP_DOM_RD_RES_FTE_TOT_NUM,34.42,40.49,0.0,EMP_MAR12_LSD_FINANCE,Q1 LEASED EMPLOYMENT FOR FINANCE AND INSURANCE CLIENTS
+3-23,Who completed this section?,,33.95,39.94,0.0,CERT_DATE_FROM_YEAR,"Certification,  Year covered by this report (from)"
+5-34,Who completed this section?,,33.95,39.94,0.0,CERT_DATE_FROM_YEAR,"Certification,  Year covered by this report (from)"
+4-10,Who completed this section?,,33.95,39.94,0.0,CERT_DATE_FROM_YEAR,"Certification,  Year covered by this report (from)"
+2-25,Who completed this section?,,33.95,39.94,0.0,CERT_DATE_FROM_YEAR,"Certification,  Year covered by this report (from)"
+7-5,Who completed this section?,,33.95,39.94,0.0,CERT_DATE_FROM_YEAR,"Certification,  Year covered by this report (from)"
+2-20f,"Universities, colleges, and academic researchers located inside the US",EXPS_DOM_RD_EXT_USUNI_VAL,33.92,39.91,0.0,FUNDS_DEV_FEDGOV,"Source of Research and Development Funds,  Federal government contracts and subcontracts"
+2-5,IR&D ,EXPS_WORLD_RD_RECOUP_VAL,31.83,37.45,0.0,ARU_INDUSTRY,Alternate Reporting Unit:   Industry description
+nan,Participated in cross-licensing agreements — the agreements in which two or more parties grant a license to each other for the use of the subject matter claimed in one or more of the patents owned by each party,IP_CLA_STAT,31.63,37.21,0.0,COST_SUBCONTRACT,Work done for you by others on your materials (work contracted to others)
