@@ -12,3 +12,5 @@ Then download these:
 %pip install openpyxl
 
 the file: semanticMatching.py is the merger class that can run all 3 different functions.
+
+In there, the main function contains multiple example of how to run it.
