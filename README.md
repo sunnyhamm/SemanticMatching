@@ -13,4 +13,8 @@ Then download these:
 
 the file: semanticMatching.py is the merger class that can run all 3 different functions.
 
-In there, the main function contains multiple example of how to run it.
+In the semanticMatching.py, the main function contains multiple example of how to run it.
+
+the data are in the data folder and the result are printed in the result folder.
+
+Each functions has its own result file.
