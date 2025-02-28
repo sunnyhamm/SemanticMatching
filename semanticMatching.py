@@ -88,6 +88,7 @@ class MatchingFunction:
         results_df = pd.DataFrame(results)
         sorted_df = results_df.sort_values(by=['similarity_score'], ascending=[False])
         sorted_df['similarity_score'] = sorted_df['similarity_score'].apply(lambda x: str(x) + '%')
+        sorted_df = sorted_df.drop_duplicates(subset=["descriptionA", "descriptionB"]).reset_index(drop=True)
         return sorted_df
     '''
     datasetA - str: filename of the dataset
@@ -175,6 +176,7 @@ class MatchingFunction:
         # Sort results by similarity score
         sorted_df = results_df.sort_values(by=['similarity_score'], ascending=[False])
         sorted_df['similarity_score'] = sorted_df['similarity_score'].apply(lambda x: str(x) + '%')
+        sorted_df = sorted_df.drop_duplicates(subset=["descriptionA", "descriptionB"]).reset_index(drop=True)
         return sorted_df
 
     def fast_jaccard_similarity(self, X1, X2):
@@ -277,7 +279,6 @@ class MatchingFunction:
 
             # Combine all data into a single row
             full_row = [
-                row_idx + 1,  # Index (for reference)
                 row[descriptionA],  # Original description
                 matched_mdr_definition,  # Matched description
                 round(combined_score * 100, 2),  # Combined score
@@ -297,18 +298,67 @@ class MatchingFunction:
             expanded_rows.append(full_row)
 
         df_final = pd.DataFrame(expanded_rows, columns=[
-            "Index", "DatasetA Description", "Matched DatasetB Description", 
-            "Combined Score", "Cosine Score", "Jaccard Score"] + rowsToPrintA + rowsToPrintB)
+            "descriptionA", "descriptionB", 
+            "similarity_score", "Cosine Score", "Jaccard Score"] + rowsToPrintA + rowsToPrintB)
 
         print("Processing completed.")
         
-        df_final = df_final.sort_values(by=["Combined Score"], ascending=False).reset_index(drop=True)
-        df_final['Combined Score'] = df_final['Combined Score'].apply(lambda x: str(x) + '%')
+        df_final = df_final.sort_values(by=["similarity_score"], ascending=False).reset_index(drop=True)
+        df_final['similarity_score'] = df_final['similarity_score'].apply(lambda x: str(x) + '%')
         df_final['Cosine Score'] = df_final['Cosine Score'].apply(lambda x: str(x) + '%')
         df_final['Jaccard Score'] = df_final['Jaccard Score'].apply(lambda x: str(x) + '%')
+        df_final = df_final.drop_duplicates(subset=["descriptionA", "descriptionB"]).reset_index(drop=True)
         return df_final
 
+    def compare_csv_files(self, csv_files, output_csv="comparison_results.csv"):
+        """
+        Compare multiple CSV files and display differences side by side.
+
+        :param csv_files: Dictionary where keys are CSV filenames and values are score column names
+                        Example: {"file1.csv": "Cosine Score", "file2.csv": "Jaccard Score"}
+        :param output_csv: Name of the output CSV file (default: "comparison_results.csv")
+        :return: None
+        """
         
+        dataframes = []
+        file_list = list(csv_files.keys())  # Convert dict_keys to a list
+        
+        for file, score_column in csv_files.items():
+            # Read CSV
+            df = pd.read_csv(file)
+
+            # Keep only relevant columns
+            df = df[["descriptionA", "descriptionB", score_column]]
+
+            # Rename score column to include file name
+            df.rename(columns={score_column: f"{score_column} ({file})"}, inplace=True)
+
+            dataframes.append(df)
+
+        # Deduplicate and normalize text
+        for i in range(len(dataframes)):
+            print(f"Before deduplication, {file_list[i]} has {len(dataframes[i])} rows")
+            dataframes[i] = dataframes[i].drop_duplicates(subset=["descriptionA", "descriptionB"]).reset_index(drop=True)
+            print(f"After deduplication, {file_list[i]} has {len(dataframes[i])} rows")
+
+        for df in dataframes:
+            df["descriptionA"] = df["descriptionA"].astype(str).str.strip().str.lower()
+            df["descriptionB"] = df["descriptionB"].astype(str).str.strip().str.lower()
+
+        # Merge and track row count
+        merged_df = dataframes[0]
+        print(f"Initial rows: {len(merged_df)}")
+
+        for i, df in enumerate(dataframes[1:], start=2):
+            print(f"Merging file {file_list[i-1]}: {len(df)} rows")
+            merged_df = pd.merge(merged_df, df, on=["descriptionA", "descriptionB"], how="inner")
+            print(f"After merging file {file_list[i-1]}, total rows: {len(merged_df)}")
+
+        # Save the final comparison results
+        merged_df.to_csv(output_csv, index=False)
+        print(f"Comparison CSV file created: {output_csv}")
+
+
 
 if __name__ == '__main__':
     matcher = MatchingFunction()
@@ -370,3 +420,13 @@ if __name__ == '__main__':
     )
     
     results.to_csv('result/cosineJaccardSimilarity.csv')
+
+    
+    
+    csv_files = {
+        "result/cosineSimilarity.csv": "similarity_score",
+        "result/cosineJaccardSimilarity.csv": "similarity_score",
+        "result/cosineSimilarityMultiple.csv": "similarity_score"
+    }
+
+    matcher.compare_csv_files(csv_files, output_csv="result/comparison_results.csv")
