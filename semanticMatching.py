@@ -23,14 +23,14 @@ class MatchingFunction:
     '''
     def cosineSimilarity(self, datasetA, datasetB, descriptionA, descriptionB, filteredRowsA = {}, 
                          filteredRowsB = {}, rowsToPrintA = [], rowsToPrintB = [], 
-                         sheetNameA = 0, sheetNameB = 0, headerA = 0, headerB = 0):
+                         sheetNameA = 0, sheetNameB = 0, headerA = 0, headerB = 0, variableNameA = [], variableNameB = []):
         if datasetA not in self.dfSets:
             self.dfSets[datasetA] = pd.read_excel(datasetA, sheet_name=sheetNameA, header=headerA)
         if datasetB not in self.dfSets:
             self.dfSets[datasetB] = pd.read_excel(datasetB, sheet_name=sheetNameB, header=headerB)
         
-        dfA = self.dfSets[datasetA][[descriptionA] + rowsToPrintA + list(filteredRowsA.keys())]
-        dfB = self.dfSets[datasetB][[descriptionB] + rowsToPrintB + list(filteredRowsB.keys())]
+        dfA = self.dfSets[datasetA][[descriptionA] + rowsToPrintA + list(filteredRowsA.keys()) + variableNameA]
+        dfB = self.dfSets[datasetB][[descriptionB] + rowsToPrintB + list(filteredRowsB.keys()) + variableNameB]
         
         if descriptionA not in dfA.columns:
             print('no description for datasetA')
@@ -71,6 +71,8 @@ class MatchingFunction:
             most_similar_idx = similarities.argmax().item()
             similarity_score = round(similarities[0][most_similar_idx].item() * 100, 1)
             result = {
+                "VariableNameA": dfA.iloc[i][variableNameA[0]] if variableNameA and variableNameA[0] in dfA.columns else None,
+                "VariableNameB": dfB.iloc[most_similar_idx][variableNameB[0]] if variableNameB and variableNameB[0] in dfB.columns else None,
                 "descriptionA": dfA[descriptionA].iloc[i],
                 "descriptionB": dfB[descriptionB].iloc[most_similar_idx],
                 "similarity_score": similarity_score
@@ -104,15 +106,16 @@ class MatchingFunction:
     '''
     def cosineSimilarityMultiple(self, datasetA, datasetB, descriptionsListA, descriptionsListB, 
                                  filteredRowsA={}, filteredRowsB={}, rowsToPrintA=[], rowsToPrintB=[], 
-                                 sheetNameA=0, sheetNameB=0, headerA=0, headerB=0):
+                                 sheetNameA=0, sheetNameB=0, headerA=0, headerB=0
+                                 , variableNameA = [""], variableNameB = [""]):
         print(f'Loading the data')
         if datasetA not in self.dfSets:
             self.dfSets[datasetA] = pd.read_excel(datasetA, sheet_name=sheetNameA, header=headerA)
         if datasetB not in self.dfSets:
             self.dfSets[datasetB] = pd.read_excel(datasetB, sheet_name=sheetNameB, header=headerB)
         
-        dfA = self.dfSets[datasetA][descriptionsListA + rowsToPrintA + list(filteredRowsA.keys())]
-        dfB = self.dfSets[datasetB][descriptionsListB + rowsToPrintB + list(filteredRowsB.keys())]
+        dfA = self.dfSets[datasetA][descriptionsListA + rowsToPrintA + list(filteredRowsA.keys()) + variableNameA]
+        dfB = self.dfSets[datasetB][descriptionsListB + rowsToPrintB + list(filteredRowsB.keys()) + variableNameB]
 
         print(f"Shape of dfA before filtering: {dfA.shape}")
         print(f"Shape of dfB before filtering: {dfB.shape}")
@@ -155,6 +158,8 @@ class MatchingFunction:
             similarity_score = round(similarities[0][most_similar_idx].item() * 100, 1)
 
             result = {
+                "VariableNameA": dfA.iloc[i][variableNameA[0]] if variableNameA and variableNameA[0] in dfA.columns else None,
+                "VariableNameB": dfB.iloc[most_similar_idx][variableNameB[0]] if variableNameB and variableNameB[0] in dfB.columns else None,
                 "descriptionA": dfA['totalDescription'].iloc[i],
                 "descriptionB": dfB['totalDescription'].iloc[most_similar_idx],
                 "similarity_score": similarity_score
@@ -197,17 +202,18 @@ class MatchingFunction:
     headerA - int: header of the file
     headerB - int: header of the file
     '''
-    def cosineJaccardSimilarity(self, datasetA, datasetB, filteredRowsA, filteredRowsB, 
-                                descriptionA, descriptionB, rowsToPrintA=[], rowsToPrintB=[], 
-                                sheetNameA=0, sheetNameB=0, headerA=0, headerB=0):
+    def cosineJaccardSimilarity(self, datasetA, datasetB, descriptionA, descriptionB, 
+                                filteredRowsA = {}, filteredRowsB = {}, rowsToPrintA=[], 
+                                rowsToPrintB=[], sheetNameA=0, sheetNameB=0, headerA=0, headerB=0, 
+                                variableNameA = [""], variableNameB = [""]):
         print(f'Loading the data')
         if datasetA not in self.dfSets:
             self.dfSets[datasetA] = pd.read_excel(datasetA, sheet_name=sheetNameA, header=headerA)
         if datasetB not in self.dfSets:
             self.dfSets[datasetB] = pd.read_excel(datasetB, sheet_name=sheetNameB, header=headerB)
 
-        dfA = self.dfSets[datasetA][[descriptionA] + rowsToPrintA + list(filteredRowsA.keys())]
-        dfB = self.dfSets[datasetB][[descriptionB] + rowsToPrintB + list(filteredRowsB.keys())]
+        dfA = self.dfSets[datasetA][variableNameA + [descriptionA] + rowsToPrintA + list(filteredRowsA.keys())]
+        dfB = self.dfSets[datasetB][variableNameB + [descriptionB] + rowsToPrintB + list(filteredRowsB.keys())]
 
         if descriptionA not in dfA.columns:
             print('No description for datasetA')
@@ -263,7 +269,7 @@ class MatchingFunction:
             cosine_score = 0.0
             jaccard_score_value = 0.0
             matched_mdr_definition = None
-            matched_row_data = None  # To store rowsToPrintB values
+            matched_row_data = []
 
             if match_idx < dfB.shape[0]:
                 matched_row = dfB.iloc[match_idx]
@@ -278,28 +284,25 @@ class MatchingFunction:
                 matched_row_data = [matched_row[col] for col in rowsToPrintB]
 
             # Combine all data into a single row
-            full_row = [
+            full_row = [row[col] for col in variableNameA] + [matched_row[col] for col in variableNameB] + [
                 row[descriptionA],  # Original description
                 matched_mdr_definition,  # Matched description
                 round(combined_score * 100, 2),  # Combined score
                 round(cosine_score * 100, 2),  # Cosine similarity score
                 round(jaccard_score_value * 100, 2)  # Jaccard similarity score
             ]
-
-            # Append additional row information from dataset A
             full_row.extend([row[col] for col in rowsToPrintA])
-
-            # Append additional row information from dataset B if available
-            if matched_row_data:
-                full_row.extend(matched_row_data)
-            else:
-                full_row.extend([""] * len(rowsToPrintB))  # Placeholder if no match found
+            full_row.extend(matched_row_data if matched_row_data else [""] * len(rowsToPrintB))
 
             expanded_rows.append(full_row)
 
-        df_final = pd.DataFrame(expanded_rows, columns=[
-            "descriptionA", "descriptionB", 
-            "similarity_score", "Cosine Score", "Jaccard Score"] + rowsToPrintA + rowsToPrintB)
+        # Debugging prints to check column alignment
+        expected_columns = ["VariableNameA", "VariableNameB", "descriptionA", "descriptionB", "similarity_score", "Cosine Score", "Jaccard Score"] + rowsToPrintA + rowsToPrintB
+        print(f"Expected columns count: {len(expected_columns)}")
+        print(f"Actual row length: {len(expanded_rows[0]) if expanded_rows else 'No data'}")
+        print(expanded_rows[0])
+
+        df_final = pd.DataFrame(expanded_rows, columns=expected_columns)
 
         print("Processing completed.")
         
@@ -310,49 +313,59 @@ class MatchingFunction:
         df_final = df_final.drop_duplicates(subset=["descriptionA", "descriptionB"]).reset_index(drop=True)
         return df_final
 
+
+
     def compare_csv_files(self, csv_files, output_csv="comparison_results.csv"):
         """
-        Compare multiple CSV files and display differences side by side.
+        Compare multiple CSV files and display differences side by side, matching only on VariableNameA while maintaining row order.
 
-        :param csv_files: Dictionary where keys are CSV filenames and values are score column names
-                        Example: {"file1.csv": "Cosine Score", "file2.csv": "Jaccard Score"}
+        :param csv_files: Dictionary where keys are CSV filenames and values are lists containing score column names
+                        Example: {"file1.csv": ["VariableNameB", "Similarity Score", "Actual Result"], "file2.csv": ["VariableNameB", "Similarity Score", "Actual Result"]}
         :param output_csv: Name of the output CSV file (default: "comparison_results.csv")
         :return: None
         """
-        
         dataframes = []
         file_list = list(csv_files.keys())  # Convert dict_keys to a list
-        
-        for file, score_column in csv_files.items():
-            # Read CSV
+
+        for file, columns in csv_files.items():
+            # Read CSV while preserving row order
             df = pd.read_csv(file)
 
             # Keep only relevant columns
-            df = df[["descriptionA", "descriptionB", score_column]]
+            df = df[["VariableNameA"] + columns]
 
-            # Rename score column to include file name
-            df.rename(columns={score_column: f"{score_column} ({file})"}, inplace=True)
+            # Rename columns to include file name
+            df.rename(columns={
+                columns[0]: f"VariableNameB ({file})",
+                columns[1]: f"Similarity Score ({file})",
+                columns[2]: f"Actual Result ({file})"
+            }, inplace=True)
 
             dataframes.append(df)
 
-        # Deduplicate and normalize text
-        for i in range(len(dataframes)):
-            print(f"Before deduplication, {file_list[i]} has {len(dataframes[i])} rows")
-            dataframes[i] = dataframes[i].drop_duplicates(subset=["descriptionA", "descriptionB"]).reset_index(drop=True)
-            print(f"After deduplication, {file_list[i]} has {len(dataframes[i])} rows")
-
-        for df in dataframes:
-            df["descriptionA"] = df["descriptionA"].astype(str).str.strip().str.lower()
-            df["descriptionB"] = df["descriptionB"].astype(str).str.strip().str.lower()
-
-        # Merge and track row count
+        # Start merging using the first dataframe as the base
         merged_df = dataframes[0]
-        print(f"Initial rows: {len(merged_df)}")
+        expected_rows = len(merged_df)  # Expected row count from the first file
+        print(f"Initial rows: {expected_rows}")
 
         for i, df in enumerate(dataframes[1:], start=2):
             print(f"Merging file {file_list[i-1]}: {len(df)} rows")
-            merged_df = pd.merge(merged_df, df, on=["descriptionA", "descriptionB"], how="inner")
+            merged_df = pd.merge(merged_df, df, on=["VariableNameA"], how="outer", sort=False)
             print(f"After merging file {file_list[i-1]}, total rows: {len(merged_df)}")
+
+        # Ensure only `VariableNameA` values that exist in all files are retained
+        for file in file_list:
+            merged_df = merged_df[merged_df[f"VariableNameB ({file})"].notna()]  # Ensure all VariableNameB exist
+
+        # Drop duplicate rows while keeping the first occurrence
+        merged_df = merged_df.drop_duplicates(subset=["VariableNameA"]).reset_index(drop=True)
+
+        # Restore original sorting order based on the first file
+        merged_df = merged_df.set_index("VariableNameA").reindex(dataframes[0]["VariableNameA"]).reset_index()
+
+        # Create match columns
+        for file in file_list:
+            merged_df[f"Match ({file})"] = (merged_df["VariableNameA"] == merged_df[f"Actual Result ({file})"]).astype(int)
 
         # Save the final comparison results
         merged_df.to_csv(output_csv, index=False)
@@ -363,70 +376,55 @@ class MatchingFunction:
 if __name__ == '__main__':
     matcher = MatchingFunction()
 
-    results = matcher.cosineSimilarityMultiple(
-        datasetB="data/BERD data dictionary working BWS 2.xlsx",
-        datasetA="data/mdr Variables 1.xlsx",
-        descriptionsListB=['2023 Description'],
-        descriptionsListA=["definition"],
-        filteredRowsB={},
-        filteredRowsA={"statistical_program_cycle_frame_type": ["Business Frame"]},
-        rowsToPrintB=['New Variable Name'],
-        rowsToPrintA=["name"]
-    )
-    
     # results = matcher.cosineSimilarityMultiple(
     #     datasetB="data/ABS-MOPS Variables - December 11 2024.xlsm",
-    #     datasetA="data/mdr Variables 1.xlsx",
-    #     descriptionsListB=['Provide a brief description of the variable, this will alert staff entering content of its intended purpose\n\nNOTE: Maximum number of characters should be 500'],        descriptionsListA=["definition"],
-    #     rowsToPrintB=['Legacy Variable', 'Unique Name for Variable \nOn upload, will verify with those already in database to ensure unique and alert to those that are not\n\nNOTE: \n1) Variable Names should be all caps with no spaces\n2) Variables can not end with _# or _## as those are reserved for handling of repeating persons.'],
-    #     rowsToPrintA=["name"],
+    #     datasetA="data/MDR View 02-27-2025.xlsx",
+    #     descriptionsListB=['Provide a brief description of the variable, this will alert staff entering content of its intended purpose\n\nNOTE: Maximum number of characters should be 500'],
+    #     descriptionsListA=["description"],
+    #     rowsToPrintB=['Unique Name for Variable \nOn upload, will verify with those already in database to ensure unique and alert to those that are not\n\nNOTE: \n1) Variable Names should be all caps with no spaces\n2) Variables can not end with _# or _## as those are reserved for handling of repeating persons.'],
+    #     variableNameA=["variable_name"],
+    #     variableNameB=["Legacy Variable"],
     #     sheetNameB='Data Sheet',
     #     headerB=13,
+    #     filteredRowsA={"frame": ["Business Frame"]}
     # )
-    results.to_csv('result/cosineSimilarityMultiple.csv')
+    # results.to_csv('result/cosineSimilarityMultiple.csv')
     # results = matcher.cosineSimilarity(
     #     datasetB="data/ABS-MOPS Variables - December 11 2024.xlsm",
-    #     datasetA="data/mdr Variables 1.xlsx",
+    #     datasetA="data/MDR View 02-27-2025.xlsx",
     #     descriptionB='Provide a brief description of the variable, this will alert staff entering content of its intended purpose\n\nNOTE: Maximum number of characters should be 500',
-    #     descriptionA="definition",
-    #     rowsToPrintB=['Legacy Variable', 'Unique Name for Variable \nOn upload, will verify with those already in database to ensure unique and alert to those that are not\n\nNOTE: \n1) Variable Names should be all caps with no spaces\n2) Variables can not end with _# or _## as those are reserved for handling of repeating persons.'],
-    #     rowsToPrintA=["name"],
+    #     descriptionA="description",
+    #     rowsToPrintB=['Unique Name for Variable \nOn upload, will verify with those already in database to ensure unique and alert to those that are not\n\nNOTE: \n1) Variable Names should be all caps with no spaces\n2) Variables can not end with _# or _## as those are reserved for handling of repeating persons.'],
+    #     variableNameA=["variable_name"],
+    #     variableNameB=["Legacy Variable"],
     #     sheetNameB='Data Sheet',
     #     headerB=13,
-    #     filteredRowsA={"statistical_program_cycle_frame_type": ["Business Frame"]}
+    #     filteredRowsA={"frame": ["Business Frame"]}
     # )
-    results = matcher.cosineSimilarity(
-        datasetB="data/BERD data dictionary working BWS 2.xlsx",
-        datasetA="data/mdr Variables 1.xlsx",
-        descriptionB='2023 Description',
-        descriptionA="definition",
-        filteredRowsB={},
-        filteredRowsA={"statistical_program_cycle_frame_type": ["Business Frame"]},
-        rowsToPrintB=['New Variable Name'],
-        rowsToPrintA=["name"]
-    )
     
-    results.to_csv('result/cosineSimilarity.csv')
+    # results.to_csv('result/cosineSimilarity.csv')
     
-    results = matcher.cosineJaccardSimilarity(
-        datasetB="data/BERD data dictionary working BWS 2.xlsx",
-        datasetA="data/mdr Variables 1.xlsx",
-        descriptionB='2023 Description',
-        descriptionA="definition",
-        filteredRowsB={},
-        filteredRowsA={"statistical_program_cycle_frame_type": ["Business Frame"]},
-        rowsToPrintB=['New Variable Name'],
-        rowsToPrintA=["name"]
-    )
+    # results = matcher.cosineJaccardSimilarity(
+    #     datasetB="data/ABS-MOPS Variables - December 11 2024.xlsm",
+    #     datasetA="data/MDR View 02-27-2025.xlsx",
+    #     descriptionB='Provide a brief description of the variable, this will alert staff entering content of its intended purpose\n\nNOTE: Maximum number of characters should be 500',
+    #     descriptionA="description",
+    #     rowsToPrintB=['Unique Name for Variable \nOn upload, will verify with those already in database to ensure unique and alert to those that are not\n\nNOTE: \n1) Variable Names should be all caps with no spaces\n2) Variables can not end with _# or _## as those are reserved for handling of repeating persons.'],
+    #     variableNameA=["variable_name"],
+    #     variableNameB=["Legacy Variable"],
+    #     sheetNameB='Data Sheet',
+    #     headerB=13,
+    #     filteredRowsA={"frame": ["Business Frame"]}
+    # )
     
-    results.to_csv('result/cosineJaccardSimilarity.csv')
+    # results.to_csv('result/cosineJaccardSimilarity.csv')
 
     
     
     csv_files = {
-        "result/cosineSimilarity.csv": "similarity_score",
-        "result/cosineJaccardSimilarity.csv": "similarity_score",
-        "result/cosineSimilarityMultiple.csv": "similarity_score"
+        "result/cosineSimilarity.csv": ["VariableNameB","similarity_score", "result"],
+        "result/cosineJaccardSimilarity.csv": ["VariableNameB","similarity_score", "result"],
+        "result/cosineSimilarityMultiple.csv": ["VariableNameB","similarity_score", "result"],
     }
 
     matcher.compare_csv_files(csv_files, output_csv="result/comparison_results.csv")
