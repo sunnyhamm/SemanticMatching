@@ -2,11 +2,13 @@ import pandas as pd
 from sentence_transformers import SentenceTransformer, util
 from sklearn.feature_extraction.text import CountVectorizer
 import torch
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 class MatchingFunction:
     def __init__(self):
         self.dfSets = {}
-        self.model = SentenceTransformer('all-MiniLM-L6-v2')
+        self.model = SentenceTransformer('all-mpnet-base-v2').to(device)
+        # self.model2 = SentenceTransformer('all-mpnet-base-v2').to(device)
     '''
     datasetA - str: filename of the dataset
     datasetB - str: filename of the dataset
@@ -61,8 +63,8 @@ class MatchingFunction:
         
         print(f'model learning ...')
         # Encode the existing descriptions from the MDR dataset into embeddings
-        definitionEmbeddingsB = self.model.encode(dfB[descriptionB].tolist())
-        definitionEmbeddingsA = self.model.encode(dfA[descriptionA].tolist())
+        definitionEmbeddingsB = self.model.encode(dfB[descriptionB].tolist(), convert_to_tensor=True).to(device)
+        definitionEmbeddingsA = self.model.encode(dfA[descriptionA].tolist(), convert_to_tensor=True).to(device)
         # Initialize a list to store results
         results = []
 
@@ -146,8 +148,8 @@ class MatchingFunction:
         print(f"Shape of dfB after removing empty descriptions: {dfB.shape}")
 
         # Compute embeddings
-        definitionEmbeddingsA = self.model.encode(dfA['totalDescription'].tolist(), convert_to_tensor=True)
-        definitionEmbeddingsB = self.model.encode(dfB['totalDescription'].tolist(), convert_to_tensor=True)
+        definitionEmbeddingsA = self.model.encode(dfA['totalDescription'].tolist(), convert_to_tensor=True).to(device)
+        definitionEmbeddingsB = self.model.encode(dfB['totalDescription'].tolist(), convert_to_tensor=True).to(device)
 
         results = []
 
@@ -242,8 +244,8 @@ class MatchingFunction:
 
         print(f'Model learning ...')
 
-        dfAEmbeddings = self.model.encode(dfA[descriptionA].tolist(), convert_to_tensor=True)
-        dfBEmbeddings = self.model.encode(dfB[descriptionB].tolist(), convert_to_tensor=True)
+        dfAEmbeddings = self.model.encode(dfA[descriptionA].tolist(), convert_to_tensor=True).to(device)
+        dfBEmbeddings = self.model.encode(dfB[descriptionB].tolist(), convert_to_tensor=True).to(device)
 
         # Compute cosine similarity
         similarity_matrix = util.cos_sim(dfAEmbeddings, dfBEmbeddings)
@@ -371,11 +373,198 @@ class MatchingFunction:
         merged_df.to_csv(output_csv, index=False)
         print(f"Comparison CSV file created: {output_csv}")
 
+def merge_and_save_qfr_results():
+    # File paths
+    input_files = [
+        'result/QFRcosineSimilarityMultiple.csv',
+        'result/QFRcosineSimilarity.csv',
+        'result/QFRcosineJaccardSimilarity.csv'
+    ]
+    output_file = 'result/QFRresult.xlsx'
+    mapping_file = 'data/QFR_Variable_Mapping_20250205.xlsx'
+    
+    # Read the mapping file
+    mapping_df = pd.read_excel(mapping_file, usecols=['New Variable Name', 'Old Variable Name'])
+    
+    # Create a dictionary mapping Old Variable Name to New Variable Name
+    mapping_dict = mapping_df.set_index('Old Variable Name')['New Variable Name'].to_dict()
 
+    # Define the correct column order
+    final_columns = [
+        "Variable Source", "MDR's Variable", "Actual MDR's Variable",
+        "MDR's Description", "Source's Description", "similarity_score",
+        "Correctness", "Total Correct (All Samples)", "Total Correct (Above 70%)"
+    ]
 
+    # Open an Excel writer instance with XlsxWriter
+    with pd.ExcelWriter(output_file, engine='xlsxwriter') as writer:
+        for file in input_files:
+            # Read CSV without including the index column
+            first_row = pd.read_csv(file, nrows=1)
+            if 'Unnamed: 0' in first_row.columns:
+                df = pd.read_csv(file, index_col=0)  # Ignore the index column
+            else:
+                df = pd.read_csv(file)
+
+            # Ensure required columns exist before processing
+            if 'Variable Source' not in df.columns or "MDR's Variable" not in df.columns or "similarity_score" not in df.columns:
+                raise KeyError(f"Required columns not found in {file}")
+
+            # Convert similarity_score to numeric (remove % and convert to float)
+            df['similarity_score'] = df['similarity_score'].astype(str).str.rstrip('%').astype(float)
+
+            # Map 'Variable Source' to 'New Variable Name'
+            df['Actual MDR\'s Variable'] = df['Variable Source'].map(mapping_dict).fillna('')
+
+            # Create the 'Correctness' column (1 if MDR's Variable matches Actual MDR's Variable, else 0)
+            df['Correctness'] = (df["MDR's Variable"] == df["Actual MDR's Variable"]).astype(int)
+
+            # Calculate overall total correct and samples
+            total_correct = df['Correctness'].sum()
+            total_samples = len(df)
+
+            # Filter rows where similarity_score ≥ 70%
+            df_filtered = df[df['similarity_score'] >= 70]
+
+            # Calculate the total number of correct matches (only considering similarity_score ≥ 70%)
+            total_correct_above_threshold = df_filtered['Correctness'].sum()
+            total_samples_above_threshold = len(df_filtered)
+
+            # Create the new "Total Correct" columns
+            df['Total Correct (All Samples)'] = ''  # Empty by default
+            df['Total Correct (Above 70%)'] = ''  # Empty by default
+
+            # Set values in row 2 (index 0)
+            df.loc[0, 'Total Correct (All Samples)'] = f"{total_correct} / {total_samples}" if total_samples > 0 else "0 / 0"
+            df.loc[0, 'Total Correct (Above 70%)'] = f"{total_correct_above_threshold} / {total_samples_above_threshold}" if total_samples_above_threshold > 0 else "0 / 0"
+
+            # Keep only the required columns and reorder them
+            df = df[final_columns]  # Select only the relevant columns
+
+            # Define sheet name (extract filename without extension)
+            sheet_name = file.split('/')[-1].replace('.csv', '')
+
+            # Write the dataframe to a separate sheet
+            df.to_excel(writer, sheet_name=sheet_name, index=False)  # Ensuring index is not written
+
+            # Auto-adjust column widths **only based on header length**
+            worksheet = writer.sheets[sheet_name]
+            for i, col in enumerate(final_columns):
+                header_length = len(col) + 2  # +2 for padding
+                worksheet.set_column(i, i, header_length)
+
+    print(f"Excel file '{output_file}' created successfully")
+
+def merge_and_save_abs_mops_results():
+    # File paths
+    input_files = [
+        'result/ABS-MOPScosineJaccardSimilarity.csv',
+        'result/ABS-MOPScosineSimilarity.csv',
+        'result/ABS-MOPScosineSimilarityMultiple.csv'
+    ]
+    output_file = 'result/ABS-MOPSresult.xlsx'
+    
+    # Define the correct column order
+    final_columns = [
+        "Variable Source", "MDR's Variable", "Actual MDR's Variable",
+        "Source's Description", "similarity_score",
+        "Correctness", "Total Correct (All Samples)", "Total Correct (Above 70%)"
+    ]
+
+    # Open an Excel writer instance with XlsxWriter
+    with pd.ExcelWriter(output_file, engine='xlsxwriter') as writer:
+        for file in input_files:
+            # Read CSV without including the index column
+            first_row = pd.read_csv(file, nrows=1)
+            if 'Unnamed: 0' in first_row.columns:
+                df = pd.read_csv(file, index_col=0)  # Ignore the index column
+            else:
+                df = pd.read_csv(file)
+
+            # Ensure required columns exist before processing
+            if 'Variable Source' not in df.columns or "MDR's Variable" not in df.columns or "similarity_score" not in df.columns or "Actual MDR's Variable" not in df.columns:
+                raise KeyError(f"Required columns not found in {file}")
+
+            # Convert similarity_score to numeric (remove % and convert to float)
+            df['similarity_score'] = df['similarity_score'].astype(str).str.rstrip('%').astype(float)
+
+            # Create the 'Correctness' column (1 if MDR's Variable matches Actual MDR's Variable, else 0)
+            df['Correctness'] = (df["MDR's Variable"] == df["Actual MDR's Variable"]).astype(int)
+
+            # Calculate overall total correct and samples
+            total_correct = df['Correctness'].sum()
+            total_samples = len(df)
+
+            # Filter rows where similarity_score ≥ 70%
+            df_filtered = df[df['similarity_score'] >= 70]
+
+            # Calculate the total number of correct matches (only considering similarity_score ≥ 70%)
+            total_correct_above_threshold = df_filtered['Correctness'].sum()
+            total_samples_above_threshold = len(df_filtered)
+
+            # Create the new "Total Correct" columns
+            df['Total Correct (All Samples)'] = ''  # Empty by default
+            df['Total Correct (Above 70%)'] = ''  # Empty by default
+
+            # Set values in row 2 (index 0)
+            df.loc[0, 'Total Correct (All Samples)'] = f"{total_correct} / {total_samples}" if total_samples > 0 else "0 / 0"
+            df.loc[0, 'Total Correct (Above 70%)'] = f"{total_correct_above_threshold} / {total_samples_above_threshold}" if total_samples_above_threshold > 0 else "0 / 0"
+
+            # Keep only the required columns and reorder them
+            df = df[final_columns]  # Select only the relevant columns
+
+            # Define sheet name (extract filename without extension)
+            sheet_name = file.split('/')[-1].replace('.csv', '').replace('ABS-MOPS', 'ABSMOP')
+
+            # Write the dataframe to a separate sheet
+            df.to_excel(writer, sheet_name=sheet_name, index=False)  # Ensuring index is not written
+
+            # Auto-adjust column widths **only based on header length**
+            worksheet = writer.sheets[sheet_name]
+            for i, col in enumerate(final_columns):
+                header_length = len(col) + 2  # +2 for padding
+                worksheet.set_column(i, i, header_length)
+
+    print(f" Excel file '{output_file}' created successfully.")
 if __name__ == '__main__':
     matcher = MatchingFunction()
 
+    # results = matcher.cosineSimilarityMultiple(
+    #     datasetB="data/QFR_DataSet for Matching to MDR.xlsx",
+    #     datasetA="data/MDR View 02-27-2025.xlsx",
+    #     descriptionsListB=['LABEL', 'DESCRP1', 'QUESTION'],
+    #     descriptionsListA=["description"],
+    #     variableNameA=["variable_name"],
+    #     variableNameB=["Legacy Variable Name"],
+    #     filteredRowsA={"frame": ["Business Frame"]}
+    # )
+    # results.to_csv('result/QFRcosineSimilarityMultiple.csv')
+
+    # results = matcher.cosineSimilarity(
+    #     datasetB="data/QFR_DataSet for Matching to MDR.xlsx",
+    #     datasetA="data/MDR View 02-27-2025.xlsx",
+    #     descriptionB = 'DESCRP1',
+    #     descriptionA="description",
+    #     variableNameA=["variable_name"],
+    #     variableNameB=["Legacy Variable Name"],
+    #     filteredRowsA={"frame": ["Business Frame"]}
+    # )
+    # results.to_csv('result/QFRcosineSimilarity.csv')
+    # results = matcher.cosineJaccardSimilarity(
+    #     datasetB="data/QFR_DataSet for Matching to MDR.xlsx",
+    #     datasetA="data/MDR View 02-27-2025.xlsx",
+    #     descriptionB = 'DESCRP1',
+    #     descriptionA="description",
+    #     variableNameA=["variable_name"],
+    #     variableNameB=["Legacy Variable Name"],
+    #     filteredRowsA={"frame": ["Business Frame"]}
+    # )
+    # results.to_csv('result/QFRcosineJaccardSimilarity.csv')
+    # Run the function
+    # merge_and_save_qfr_results()
+    '''
+    analysis for cosine similarity
+    '''
     # results = matcher.cosineSimilarityMultiple(
     #     datasetB="data/ABS-MOPS Variables - December 11 2024.xlsm",
     #     datasetA="data/MDR View 02-27-2025.xlsx",
@@ -388,7 +577,7 @@ if __name__ == '__main__':
     #     headerB=13,
     #     filteredRowsA={"frame": ["Business Frame"]}
     # )
-    # results.to_csv('result/cosineSimilarityMultiple.csv')
+    # results.to_csv('result/ABS-MOPScosineSimilarityMultiple.csv')
     # results = matcher.cosineSimilarity(
     #     datasetB="data/ABS-MOPS Variables - December 11 2024.xlsm",
     #     datasetA="data/MDR View 02-27-2025.xlsx",
@@ -402,7 +591,7 @@ if __name__ == '__main__':
     #     filteredRowsA={"frame": ["Business Frame"]}
     # )
     
-    # results.to_csv('result/cosineSimilarity.csv')
+    # results.to_csv('result/ABS-MOPScosineSimilarity.csv')
     
     # results = matcher.cosineJaccardSimilarity(
     #     datasetB="data/ABS-MOPS Variables - December 11 2024.xlsm",
@@ -417,14 +606,16 @@ if __name__ == '__main__':
     #     filteredRowsA={"frame": ["Business Frame"]}
     # )
     
-    # results.to_csv('result/cosineJaccardSimilarity.csv')
+    # results.to_csv('result/ABS-MOPScosineJaccardSimilarity.csv')
 
     
-    
-    csv_files = {
-        "result/cosineSimilarity.csv": ["VariableNameB","similarity_score", "result"],
-        "result/cosineJaccardSimilarity.csv": ["VariableNameB","similarity_score", "result"],
-        "result/cosineSimilarityMultiple.csv": ["VariableNameB","similarity_score", "result"],
-    }
+    # Run the function
+    merge_and_save_abs_mops_results()
 
-    matcher.compare_csv_files(csv_files, output_csv="result/comparison_results.csv")
+    # csv_files = {
+    #     "result/cosineSimilarity.csv": ["VariableNameB","similarity_score", "result"],
+    #     "result/cosineJaccardSimilarity.csv": ["VariableNameB","similarity_score", "result"],
+    #     "result/cosineSimilarityMultiple.csv": ["VariableNameB","similarity_score", "result"],
+    # }
+
+    # matcher.compare_csv_files(csv_files, output_csv="result/comparison_results.csv")
