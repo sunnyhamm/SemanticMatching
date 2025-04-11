@@ -1,0 +1,8 @@
+MDR Variable,MDR Description,ABS-MOPS Variable Name,ABS-MOPS Description,Similarity Score,Name Match,Description Match
+RCPT_TOT_VAL,"Sales, Shipments, Receipts, or Revenue",RCPT_TOT_VAL,Sales Receipts and Operating Revenue-101,0.7539757490158081,1,0
+EXPS_DEPR_VAL,Depreciation and Amortization Charges,EXPS_DEPR_VAL,"Depreciation,Depletion, Amortization-102",0.7414655685424805,1,0
+EXPS_INTEREST_VAL,Operating Interest Expense,EXPS_OP_COST_OTH_VAL,Other Operating Cost and Expenses    103,0.6651463508605957,0,0
+AFFIL_OWNER_EIN_NUM,Ownership or Controlling Company: EIN,AFFIL_OWNER_EIN_NUM,EI of company who owns,0.6602610349655151,1,0
+EIN_NUM,EIN to which the establishment is linked,EIN_NUM,EI of corp,0.577307939529419,1,0
+OPSTAT,"Operational Status, What is this establishment's operation status?",OPSTAT,Corp status active/discontinued/merged,0.564284086227417,1,0
+EIN_NUM,Employer Identification Number,EIN_NUM,EI of corp,0.45045095682144165,1,0

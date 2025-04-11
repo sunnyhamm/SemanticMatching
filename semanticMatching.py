@@ -1,6 +1,9 @@
 import pandas as pd
+import gensim.downloader as api
 from sentence_transformers import SentenceTransformer, util
 from sklearn.feature_extraction.text import CountVectorizer
+from gensim.utils import simple_preprocess
+from concurrent.futures import ThreadPoolExecutor
 import torch
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -8,7 +11,101 @@ class MatchingFunction:
     def __init__(self):
         self.dfSets = {}
         self.model = SentenceTransformer('all-mpnet-base-v2').to(device)
-        # self.model2 = SentenceTransformer('all-mpnet-base-v2').to(device)
+        self.word2vec = api.load("word2vec-google-news-300")  # Pretrained Word2Vec
+
+    def hybridSimilarity(self, datasetA, datasetB, descriptionA, descriptionB, 
+                        filteredRowsA={}, filteredRowsB={}, rowsToPrintA=[], rowsToPrintB=[], 
+                        sheetNameA=0, sheetNameB=0, headerA=0, headerB=0, 
+                        variableNameA=[], variableNameB=[], top_k=5):
+
+        # Load datasets if not already in cache
+        if datasetA not in self.dfSets:
+            self.dfSets[datasetA] = pd.read_excel(datasetA, sheet_name=sheetNameA, header=headerA)
+        if datasetB not in self.dfSets:
+            self.dfSets[datasetB] = pd.read_excel(datasetB, sheet_name=sheetNameB, header=headerB)
+
+        dfA = self.dfSets[datasetA][[descriptionA] + rowsToPrintA + list(filteredRowsA.keys()) + variableNameA]
+        dfB = self.dfSets[datasetB][[descriptionB] + rowsToPrintB + list(filteredRowsB.keys()) + variableNameB]
+
+        # Validate that description columns exist
+        if descriptionA not in dfA.columns or descriptionB not in dfB.columns:
+            print("Error: Missing descriptions in datasetA or datasetB")
+            return None
+
+        print("Filtering rows...")
+        for item, values in filteredRowsA.items():
+            if item in dfA.columns:
+                dfA = dfA[dfA[item].isin(values)]
+        for item, values in filteredRowsB.items():
+            if item in dfB.columns:
+                dfB = dfB[dfB[item].isin(values)]
+
+        dfA = dfA.dropna(subset=[descriptionA]).reset_index(drop=True)
+        dfB = dfB.dropna(subset=[descriptionB]).reset_index(drop=True)
+
+        print(f"Computing Cosine Similarity on {len(dfA)} descriptions from datasetA and {len(dfB)} descriptions from datasetB...")
+
+        # Encode descriptions using SentenceTransformer for Cosine Similarity
+        embeddingsA = self.model.encode(dfA[descriptionA].tolist(), convert_to_tensor=True).to(device)
+        embeddingsB = self.model.encode(dfB[descriptionB].tolist(), convert_to_tensor=True).to(device)
+
+        # Compute cosine similarities
+        cosine_sim_matrix = util.pytorch_cos_sim(embeddingsA, embeddingsB)
+
+        # Find top-k cosine similarity matches for each row
+        top_matches = torch.topk(cosine_sim_matrix, top_k, dim=1)
+
+        # Tokenize text descriptions for WMD
+        dfA["tokenized"] = dfA[descriptionA].apply(lambda x: simple_preprocess(str(x)))
+        dfB["tokenized"] = dfB[descriptionB].apply(lambda x: simple_preprocess(str(x)))
+
+        print(f"Computing WMD on {top_k} best cosine matches per description...")
+
+        # Function to compute WMD for top-k matches
+        def compute_wmd(index):
+            tokensA = dfA["tokenized"].iloc[index]
+            if not tokensA:
+                return {
+                    "VariableNameA": None,
+                    "VariableNameB": None,
+                    "descriptionA": dfA.iloc[index][descriptionA],
+                    "descriptionB": "",
+                    "wmd_distance": float('inf')  # Assign max distance if empty
+                }
+
+            best_match = None
+            min_distance = float('inf')
+
+            for match_idx in top_matches.indices[index].tolist():  # Iterate over top-k matches
+                tokensB = dfB["tokenized"].iloc[match_idx]
+                if not tokensB:
+                    continue
+
+                try:
+                    distance = self.word2vec.wmdistance(tokensA, tokensB)
+                    if distance < min_distance:
+                        min_distance = distance
+                        best_match = dfB.iloc[match_idx]
+                except Exception as e:
+                    print(f"Error computing WMD for index {index}: {e}")
+                    continue
+
+            return {
+                "VariableNameA": dfA.iloc[index][variableNameA[0]] if variableNameA and variableNameA[0] in dfA.columns else None,
+                "VariableNameB": best_match[variableNameB[0]] if best_match is not None and variableNameB and variableNameB[0] in dfB.columns else None,
+                "descriptionA": dfA.iloc[index][descriptionA],
+                "descriptionB": best_match[descriptionB] if best_match is not None else "",
+                "wmd_distance": round(min_distance, 3) if min_distance != float('inf') else None
+            }
+
+        # Use ThreadPoolExecutor for parallel processing
+        with ThreadPoolExecutor(max_workers=4) as executor:
+            results = list(executor.map(compute_wmd, range(len(dfA))))
+
+        results_df = pd.DataFrame(results)
+        sorted_df = results_df.sort_values(by=["wmd_distance"], ascending=True, na_position='last')
+
+        return sorted_df
     '''
     datasetA - str: filename of the dataset
     datasetB - str: filename of the dataset
@@ -466,7 +563,7 @@ def merge_and_save_abs_mops_results():
     
     # Define the correct column order
     final_columns = [
-        "Variable Source", "MDR's Variable", "Actual MDR's Variable",
+        "Variable Source", "MDR's Variable", "Actual MDR's Variable", "MDR's Description",
         "Source's Description", "similarity_score",
         "Correctness", "Total Correct (All Samples)", "Total Correct (Above 70%)"
     ]
@@ -482,7 +579,7 @@ def merge_and_save_abs_mops_results():
                 df = pd.read_csv(file)
 
             # Ensure required columns exist before processing
-            if 'Variable Source' not in df.columns or "MDR's Variable" not in df.columns or "similarity_score" not in df.columns or "Actual MDR's Variable" not in df.columns:
+            if 'Variable Source' not in df.columns or "MDR's Variable" not in df.columns or "similarity_score" not in df.columns or "Actual MDR's Variable" not in df.columns or "MDR's Description" not in df.columns:
                 raise KeyError(f"Required columns not found in {file}")
 
             # Convert similarity_score to numeric (remove % and convert to float)
@@ -526,8 +623,94 @@ def merge_and_save_abs_mops_results():
                 worksheet.set_column(i, i, header_length)
 
     print(f" Excel file '{output_file}' created successfully.")
+
+def merge_and_save_berd_results():
+    # File paths
+    input_files = [
+        'result/BERDcosineJaccardSimilarity.csv', 
+        'result/BERDcosineSimilarity.csv', 
+        'result/BERDcosineSimilarityMultiple.csv'
+    ]
+    output_file = 'result/BERDresult.xlsx'
+    
+    # Define the correct column order (excluding "Actual MDR's Variable" and correctness-related columns)
+    final_columns = [
+        "Variable Source", "MDR's Variable", "MDR's Description", "Source's Description", "similarity_score"
+    ]
+    
+    # Open an Excel writer instance with XlsxWriter
+    with pd.ExcelWriter(output_file, engine='xlsxwriter') as writer:
+        for file in input_files:
+            # Read CSV without including the index column
+            first_row = pd.read_csv(file, nrows=1)
+            if 'Unnamed: 0' in first_row.columns:
+                df = pd.read_csv(file, index_col=0)  # Ignore the index column
+            else:
+                df = pd.read_csv(file)
+            
+            # Ensure required columns exist before processing
+            if 'Variable Source' not in df.columns or "MDR's Variable" not in df.columns or 'similarity_score' not in df.columns or "MDR's Description" not in df.columns:
+                raise KeyError(f"Required columns not found in {file}")
+            
+            # Convert similarity_score to numeric (remove % and convert to float)
+            df['similarity_score'] = df['similarity_score'].astype(str).str.rstrip('%').astype(float)
+            
+            # Keep only the required columns and reorder them
+            df = df[final_columns]  # Select only the relevant columns
+            
+            # Define sheet name (extract filename without extension)
+            sheet_name = file.split('/')[-1].replace('.csv', '').replace('BERD', 'BERD_')
+            
+            # Write the dataframe to a separate sheet
+            df.to_excel(writer, sheet_name=sheet_name, index=False)  # Ensuring index is not written
+            
+            # Auto-adjust column widths **only based on header length**
+            worksheet = writer.sheets[sheet_name]
+            for i, col in enumerate(final_columns):
+                header_length = len(col) + 2  # +2 for padding
+                worksheet.set_column(i, i, header_length)
+
 if __name__ == '__main__':
     matcher = MatchingFunction()
+
+    '''
+    analysis for BERD
+    '''
+    # results = matcher.cosineSimilarityMultiple(
+    #     datasetB="data/BERD data dictionary working BWS 2.xlsx",
+    #     datasetA="data/MDR View 02-27-2025.xlsx",
+    #     descriptionsListB=['2023 Description'],
+    #     descriptionsListA=["description"],
+    #     variableNameA=["variable_name"],
+    #     variableNameB=["New Variable Name"],
+    #     filteredRowsA={"frame": ["Business Frame"]}
+    # )
+    # results.to_csv('result/BERDcosineSimilarityMultiple.csv')
+
+    # results = matcher.cosineSimilarity(
+    #     datasetB="data/BERD data dictionary working BWS 2.xlsx",
+    #     datasetA="data/MDR View 02-27-2025.xlsx",
+    #     descriptionB='2023 Description',
+    #     descriptionA="description",
+    #     variableNameA=["variable_name"],
+    #     variableNameB=["New Variable Name"],
+    #     filteredRowsA={"frame": ["Business Frame"]}
+    # )
+    # results.to_csv('result/BERDcosineSimilarity.csv')
+
+    # results = matcher.cosineJaccardSimilarity(
+    #     datasetB="data/BERD data dictionary working BWS 2.xlsx",
+    #     datasetA="data/MDR View 02-27-2025.xlsx",
+    #     descriptionB='2023 Description',
+    #     descriptionA="description",
+    #     variableNameA=["variable_name"],
+    #     variableNameB=["New Variable Name"],
+    #     filteredRowsA={"frame": ["Business Frame"]}
+    # )
+    # results.to_csv('result/BERDcosineJaccardSimilarity.csv')
+    '''
+    analysis for QFR
+    '''
 
     # results = matcher.cosineSimilarityMultiple(
     #     datasetB="data/QFR_DataSet for Matching to MDR.xlsx",
@@ -578,20 +761,20 @@ if __name__ == '__main__':
     #     filteredRowsA={"frame": ["Business Frame"]}
     # )
     # results.to_csv('result/ABS-MOPScosineSimilarityMultiple.csv')
-    # results = matcher.cosineSimilarity(
-    #     datasetB="data/ABS-MOPS Variables - December 11 2024.xlsm",
-    #     datasetA="data/MDR View 02-27-2025.xlsx",
-    #     descriptionB='Provide a brief description of the variable, this will alert staff entering content of its intended purpose\n\nNOTE: Maximum number of characters should be 500',
-    #     descriptionA="description",
-    #     rowsToPrintB=['Unique Name for Variable \nOn upload, will verify with those already in database to ensure unique and alert to those that are not\n\nNOTE: \n1) Variable Names should be all caps with no spaces\n2) Variables can not end with _# or _## as those are reserved for handling of repeating persons.'],
-    #     variableNameA=["variable_name"],
-    #     variableNameB=["Legacy Variable"],
-    #     sheetNameB='Data Sheet',
-    #     headerB=13,
-    #     filteredRowsA={"frame": ["Business Frame"]}
-    # )
+    results = matcher.hybridSimilarity(
+        datasetB="data/ABS-MOPS Variables - December 11 2024.xlsm",
+        datasetA="data/MDR View 02-27-2025.xlsx",
+        descriptionB='Provide a brief description of the variable, this will alert staff entering content of its intended purpose\n\nNOTE: Maximum number of characters should be 500',
+        descriptionA="description",
+        rowsToPrintB=['Unique Name for Variable \nOn upload, will verify with those already in database to ensure unique and alert to those that are not\n\nNOTE: \n1) Variable Names should be all caps with no spaces\n2) Variables can not end with _# or _## as those are reserved for handling of repeating persons.'],
+        variableNameA=["variable_name"],
+        variableNameB=["Legacy Variable"],
+        sheetNameB='Data Sheet',
+        headerB=13,
+        filteredRowsA={"frame": ["Business Frame"]}
+    )
     
-    # results.to_csv('result/ABS-MOPScosineSimilarity.csv')
+    results.to_csv('result/ABS-MOPShybridSimilarity.csv')
     
     # results = matcher.cosineJaccardSimilarity(
     #     datasetB="data/ABS-MOPS Variables - December 11 2024.xlsm",
@@ -609,8 +792,8 @@ if __name__ == '__main__':
     # results.to_csv('result/ABS-MOPScosineJaccardSimilarity.csv')
 
     
-    # Run the function
-    merge_and_save_abs_mops_results()
+    # # Run the function
+    # merge_and_save_berd_results()
 
     # csv_files = {
     #     "result/cosineSimilarity.csv": ["VariableNameB","similarity_score", "result"],
