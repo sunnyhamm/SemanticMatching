@@ -3,13 +3,15 @@ Instruction:
 Create a brand new environment using conda
 
 Then download these:
-%pip install pandas
-%pip install numpy
-%pip install torch
-%pip install sentence_transformers
-%pip install scipy
-%pip install scikit-learn
-%pip install openpyxl
+%pip install pandas==2.2.3
+%pip install numpy==1.26.4
+%pip install torch==2.6.0
+%pip install sentence_transformers==4.1.0
+%pip install scipy==1.13.1
+%pip install scikit-learn==1.6.1
+%pip install openpyxl==3.1.5
+
+(versions are recorded at the time code was created, other versions might work too) 
 
 the file: semanticMatching.py is the merger class that can run all 3 different functions.
 
