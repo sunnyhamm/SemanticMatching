@@ -15,15 +15,15 @@ matcher = MatchingFunction()
 
 def read_clean_model(input_df, mdr_df):
 
-    input_columns_to_check = ["Legacy Variable", "Variable Name *", "Description *"]
+    input_columns_to_check = ["variable", "description"]
     mdr_columns_to_check = ["name", "definition"]
 
     # drop missing, drop dups
     input_df = input_df.dropna(subset=input_columns_to_check)
     mdr_df = mdr_df.dropna(subset=mdr_columns_to_check)
     
-    input_df = input_df.drop_duplicates(subset=["Variable Name *"])
-    mdr_df = mdr_df.drop_duplicates(subset=["name"])
+    input_df = input_df.drop_duplicates(subset=['variable'])
+    mdr_df = mdr_df.drop_duplicates(subset=['name'])
     
     # Remove place holders like TBD
     
@@ -45,16 +45,21 @@ def read_clean_model(input_df, mdr_df):
     mdr_df['derived'] = 'no'
     mask_derived = (mdr_df['name'].str.contains('|'.join(derived_data_type_list), case=False, na=False))
     mdr_df.loc[mask_derived, 'derived'] = 'yes'
+    mdr_df = mdr_df[mdr_df['derived'] == 'no']
     
     input_df['derived'] = 'no'
-    mask_derived = (input_df['Legacy Variable'].str.contains('|'.join(derived_data_type_list), case=False, na=False)) | (input_df['Variable Name *'].str.contains('|'.join(derived_data_type_list), case=False, na=False))
+    mask_derived = (input_df['variable'].str.contains('|'.join(derived_data_type_list), case=False, na=False)) 
     input_df.loc[mask_derived, 'derived'] = 'yes'
+    input_df = input_df[input_df['derived'] == 'no']
+
+    print(input_df.shape)
+    print(mdr_df.shape)
 
     ## Model learning ...
     model = SentenceTransformer('all-MiniLM-L6-v2').to(device)
     
     # Encode the existing descriptions from the MDR dataset into embeddings
-    definitionEmbeddingsB = model.encode(input_df['Description *'].tolist(), convert_to_tensor=True).to(device)
+    definitionEmbeddingsB = model.encode(input_df['description'].tolist(), convert_to_tensor=True).to(device)
     definitionEmbeddingsA = model.encode(mdr_df["definition"].tolist(), convert_to_tensor=True).to(device)
     
     # Initialize a list to store results
@@ -65,8 +70,8 @@ def read_clean_model(input_df, mdr_df):
         most_similar_idx = similarities.argmax().item()
         similarity_score = round(similarities[0][most_similar_idx].item() * 100, 1)
         result = {
-            "input_name": input_df.iloc[most_similar_idx][["Legacy Variable"][0]] if ["Legacy Variable"] and ["Legacy Variable"][0] in input_df.columns else None,
-            "input_descr": input_df['Description *'].iloc[most_similar_idx],
+            "input_name": input_df.iloc[most_similar_idx][["variable"][0]] if ["variable"] and ["variable"][0] in input_df.columns else None,
+            "input_descr": input_df['description'].iloc[most_similar_idx],
             "mdr_name": mdr_df.iloc[i][["name"][0]] if ["name"] and ["name"][0] in mdr_df.columns else None,
             "mdr_descr": mdr_df["definition"].iloc[i],
             "similarity_score": similarity_score

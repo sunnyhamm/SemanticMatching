@@ -1,0 +1,397 @@
+variable,description
+B_OPR_CEASED,Yes/No if business has ceased operation
+B_CEASED_MONTH,Month the business ceased operation
+B_CEASED_DATE_ YEAR ,Year the business ceased operation
+B_PARENTCO_FOREIGN,Yes/No if business is a majority-owned subsidiary of a foreign company
+B_PARENTCO_DOMESTIC,Yes/No if business is more than 50% owned by another U.S. company
+B_OWNED_GOVT_TRIBAL,Yes/No if business is owned by a government or tribal entity
+B_ANYONE_10_PCT,Yes/No if one person owns 10% or more of the company
+B_OWNERNUM,Number of owners of the business
+B_EMPNUM_W2_OWNER ,Number of owners who received a W2 from this business
+B_EMPNUM_W2_NON_OWNER ,Number of employees who received a W2 from this business
+B_EMPNUM_W2_TOTAL,Total number of W2 paid employees and owners
+B_EMPNUM_PAID_OTHER_WAY ,Number of owners and employees who received a W2 from this business
+B_EMPNUM_UNPAID,Number of individuals who did work for the business but were unpaid
+B_SALES_TOT ,"Amount of worldwide and domestic sales, revenue, and grants"
+B_SALES_TOT_US,"Amount of sales, revenue, and grants from domestic operations"
+B_SALES_PCT_GOODS,"Percent of domestic sales, revenues, and grants coming from selling goods to customers"
+B_SALES_PCT_SERVICE,"Percent of domestic sales, revenues, and grants coming from selling services to customers"
+B_SALES_PCT_LICENSE,"Percent of domestic sales, revenues, and grants coming from selling services to customers"
+B_SALES_PCT_GRANT,"Percent of domestic sales, revenues, and grants coming from selling services to customers"
+B_SALES_PCT_OTH,"Percent of domestic sales, revenues, and grants coming from selling services to customers"
+B_SALES_PCT_US_TOT,"Write-in of other sales, revenue, and grant sourcesTotal percent entered from domestic sales questions"
+B_SALES_PCT_OTH_WIN,Total percent entered from domestic sales questions
+B_REV ,Types of customers that accounted for 10% or more of total sales
+B_TYPS_WRKS,Types of workers that were used by the business
+B_OPR_FRANCHISED ,Yes/No if all or part of the business operates as a franchise
+B_CRDAP,Yes/No if the business submitted an application for new credit
+B_CRDSRC,Other sources of credit not listed
+B_CRDSRC_OTHER_WIN,Write-in of what lenders the business applied for new credit with 
+B_CRDAMT,Total amount of credit that was requested and received 
+B_WORKHOME ,Yes/No if the business allowed any employees to work from home
+B_WORKHOME_PCT_NEVER,Percent of workers that never worked from home 
+B_WORKHOME_PCT_OCCASIO,Percent of workers that worked from home less than one day per week
+B_WORKHOME_PCT_ONE ,Percent of workers that worked from home one day per week 
+B_WORKHOME_PCT_TWO,Percent of workers that worked from home two to four days per week
+B_WORKHOME_PCT_FIVE ,Percent of workers that worked from home five or more days per weTotal percent entered from work from home questionsek
+B_WORKHOME_PCT_TOTAL,Total percent entered from work from home questions
+B_WORKHOME_FCT,List of factors that limit the ability of the mployees to work from home
+B_WORKHOME_FCT_WI,Write-in of whether the following factors limited the ability of employees to work from home
+RESP_BUS_DESC,Primary business activity
+O1_NAME_TITLE,Name of first owner
+O1_PCT_OWNED ,Percent owned by first owner
+O2_NAME_TITLE,Name of second owner
+O2_PCT_OWNED,Percent owned by second owner
+O3_NAME_TITLE,Name of third owner
+O3_PCT_OWNED ,Percent owned by third owner
+O4_NAME_TITLE,Name of fourth owner
+O4_PCT_OWNED ,Percent owned by fourth owner
+O1_SEX ,Sex of first owner
+O1_GENDER ,Sex of first owner
+O1_GENDER_WIN,Different gender term
+O1_HISP,"Whether the first owner is Hispanic, Latino, or Spanish"
+O1_HISP_OTH_WIN,"Another Hispanic, Latino, or Spanish origin not listed"
+O1_RACE,Race of first owner
+O1_RACE_WHITE_WIN,Race of first owner
+O1_RACE_BLACK_WIN,Race of first owner
+O1_RACE_AIAN_WIN,Race of first owner
+O1_RACE_OTH_AS_WIN,Race of first owner
+O1_RACE_OTH_PAC_WIN,Race of first owner
+O1_VET ,Yes/No if the first owner has served in the military
+O1_VET_DISABLED,Yes/No if the first owner is disabled as a result of military service
+O1_VET_SPECIFY,Characteristics of first owner's military service
+O1_ACQ_BUS_YR,Year that the first owner initially acquired this business
+O1_ACQ_BUS_YR_DK  ,Owner 1 does not know when initially acquired ownership of this business
+O1_PRIM_SRC_INCOM,"Yes/No if the business provided the first owner's primary source of persStatus of the previous business, other than this one, that the first owner startedonal income"
+O1_OTH_BUS,"Status of the previous business, other than this one, that the first owner started"
+O1_OTH_BUS_WIN,Other status of the previous business Owner 1 started most recently
+O1_EDUC ,Highest degree achieved by the first owner prior to owning this business
+O1_MAJOR,Field of the highest degree achieved by the first owner prior to owning this business
+O1_MAJOR_OTHSCI_WIN,Other science and engineering related fields that are not listed
+O1_MAJOR_NONSCI_WIN,Other non-science and engineering related fields that are not listed
+O1_AGE ,Age of first owner
+O1_US_BORN,Yes/No if first owner was born in the US
+O1_US_CITIZEN,Yes/No if the first owner is a citizen of the US
+O1_OWNER_DISABLE,Disability status of the first owner
+O1_REASON_OWNBOSS ,Reason for owning business: Being their own boss
+O1_REASON_FLEXIBLEHRS,Reason for owning business: Flexible hours
+O1_REASON_BALANCE,Reason for owning business: Balancing work and family
+O1_REASON_INCOME,Reason for owning business: Opportunity for greater income
+O1_REASON_IDEAS,Reason for owning business: Best avenue for ideas/goods/services
+O1_REASON_FINDJOB,Reason for owning business: Unable to find employment
+O1_REASON_WORKFORSELF,Reason for owning business: Working for someone else was unappealing
+O1_REASON_STARTBUS,Reason for owning business: Always wanted to start a business
+O1_REASON_ROLEMODEL,Reason for owning business: Entrepreneurial friend or family was a role model
+O1_REASON_FAMBUS ,Reason for owning business: Carrying on family business
+O1_REASON_COMM  ,Reason for owning business: Helping community 
+O1_REASON_OTHER,Reason for owning business: Other
+O1_REASON_OTHER_WIN ,Reason for owning business: Other
+B_FAMILY_OWNED ,Yes/No if two or more members of one family owned the majority of this business
+B_JOINTLY_OWNED,Yes/No if spouses or unmarried partners jointly owned this business
+B_OPR ,Business operated equally by both spouses or unmarried partners
+B_INNOV_GOODS,Whether the business introduced new or improved goods
+B_INNOV_SERV,Whether the business introduced new or improved services
+B_INNOV_SOURCE,Who developed the new or improved goods or services
+B_IMPROCESS_MAN ,Whether the business introduced new or improved methods for producing goods or providing services
+B_IMPROCESS_LOG ,"Whether the business introduced new or improved methods for logistics, delivery or distribution methods"
+B_IMPROCESS_MARKET ,Whether the business introduced new or improved methods for marketing methods
+B_IMPROCESS_INFO,Whether the business introduced new or improved methods for information and communication systems
+B_IMPROCESS_ADMIN ,Whether the business introduced new or improved methods for administration and management activities
+B_IMPROCESS_PROD ,Whether the business introduced new or improved methods for product and business process development activities
+B_IMPROCESS_DEV ,Who developed new or improved business processes 
+B_RD_CREATE,Yes/No if business engaged in research and development
+B_RD_ALTER_DESIGN,Yes/No if business engaged in engineering and design activities
+B_RD_MRKT_RESRCH,Yes/No if business engaged in marketing and brand equity activities
+B_RD_IP,Yes/No if business engaged in IP related activities
+B_RD_TRAINING,Yes/No if business engaged in employee training
+B_RD_DATA ,Yes/No if business engaged in software development and database activities
+B_RD_MACHINE,"Yes/No if business engaged in acquisition of machinery, equipment, or other tangible assets"
+B_RD_MANAGE,Yes/No if business engaged in management related to innovation
+B_COOP_RD ,Yes/No if business cooperated with other businesses or organizations on R&D
+B_COOP_OTH,Yes/No if business cooperated with other businesses or organizations on non-R&D innovation
+B_COOP_OTH_BUS,Yes/No if business cooperated with other businesses or organizations on any other business activities
+B_COOP,"Consultants, commercial labs, or private research institutes outside the business group "
+B_COOP,"Suppliers of equipment, materials, components, or software outside your business group "
+B_COOP,Companies that are the clients or customers outside the business group
+B_COOP,Companies that are your competitors outside the business group 
+B_COOP,Other companies outside the business group 
+B_COOP,Companieswithin the business group 
+B_COOP,Universities or other higher education institutions 
+B_COOP,Government or public research institutes 
+B_COOP,"Clients or customers from the public sector: public sector includes government owned organizations such as local, regional and national administrations and agencies, schools, hospitals, and government providers of services such as security, transport, housing, energy, etc. "
+B_COOP,Nonprofit organization 
+B_NOINNOV,Why the business did not have innovation activities
+B_NORESULT_STOP ,Yes/No if innovation activities didn't result in outcome because activities were abandoned
+B_NORESULT_ONGOING,Yes/No if innovation activities didn't result in outcome because activities are still ongoing
+B_NEWCUSTSTART ,Yes/No if business was founded around a new/customized product or service created by a founder
+B_NEWCUSTSTART_REASON,Why this new/customized product or service was developed
+B_RDACT_ACQUIRE,Yes/No if conducted R&D activities to acquire general problem solving knowledge
+B_RDACT_SPECIFIC,Yes/No if conducted R&D activities to acquire problem solving knowledge for a specific problem
+B_RDACT_SYSTEM,Yes/No if conducted R&D activities involving systematic work directed to producing new or improved products or processes
+B_RDACT_PROTO ,"Yes/No if conducted R&D activities using scientific research to develop and test goods, services, or processes"
+B_RDACT_SOFT ,Yes/No if conducted R&D activities for software developmentYes/No if conducted R&D activities that produced findings that could be published in academic journals or presented at conferences
+B_RDACT_PAPERS ,Yes/No if conducted R&D activities that produced findings that could be published in academic journals or presented at conferences
+B_RDACT_APPLIED,Yes/No if conducted R&D activities that applied knowledge in a way that has never been done before
+B_RDACT_SOLUTION,Yes/No if conducted R&D activities to create new solutions that could be generalized to other situations
+B_RDACT_DISCOVERN,Yes/No if conducted R&D activities to discover previously unknown facts 
+B_RDACT_UNDERSTAND,"Yes/No if conducted R&D activities to extend understanding of facts, relationships, or principles"
+B_RDEXP_TOT,Total cost for R&D activities
+B_RDEXP_FOR ,Amount of international R&D costs
+B_RDEXP_DOM ,Amount of domestic R&D costs
+B_RDEXP_DOM_EMPL,"Amount of domestic R&D costs going to salaries, wages, and benefits"
+B_RDEXP_DOM_EQUIPMT,Amount of domestic R&D costs going to expensed machinery and equipment
+B_RDEXP_DOM_MATERIALS,Amount of domestic R&D costs going to materials and supplies
+B_RDEXP_DOM_PARTNR,Amount of domestic R&D costs going to payments to others for R&D
+B_RDEXP_DOM_DEPR,Amount of domestic R&D costs going to depreciation on property and equipment
+B_RDEXP_DOM_OTHER ,Amount of domestic R&D costs going to all other costs
+B_RDEXP_DOM_SUM,Total amount of domestic R&D costs 
+B_RDEXP_PDOM ,Domestic R&D performance costs
+B_RDFUND_US_THISBUS,Domestic R&D costs paid by this business
+B_RDFUND_FR_OWNER,Domestic R&D costs paid by foreign owner
+B_RDFUND_US_OTHBUS,Domestic R&D costs paid by other U.S. businesses
+B_RDFUND_FR_OTHBUS,Domestic R&D costs paid by other foreign businesses
+B_RDFUND_US_EDU,Domestic R&D costs paid by U.S. universities
+B_RDFUND_US_NPORG,Domestic R&D costs paid by U.S. nonprofits
+B_RDFUND_US_FEDGOV,Domestic R&D costs paid by U.S. federal government
+B_RDFUND_US_FEDGOV_SHARE,Federal agency paying the most R&D costs
+B_RDFUND_US_STLOC,Domestic R&D costs paid by U.S. state or local government
+B_RDFUND_FR_OTHER,Domestic R&D costs paid by all other foreign organizations
+B_RDFUND_TOT,Total R&D funds
+B_RDCOST_DOM_BASIC,Domestic R&D performance costs for basic research
+B_RDCOST_DOM_APPLD,Domestic R&D performance costs for applied research
+B_RDCOST_DOM_DEV,Domestic R&D performance costs for development
+B_RDCOST_DOM_TOTAL ,Total domestic R&D performance costs
+B_RDFED_BASIC,Federally funded R&D costs for basic research
+B_RDFED_APPLD,Federally funded R&D costs for applied research
+B_RDFED_DEV,Federally funded R&D costs for development
+B_RDFED_TOTAL,Total federally funded R&D costs
+B_CAPEXP_TOTAL,Amount of capital expenditures
+B_RESOP_TOTAL,Amount of capital expenditures for R&D
+B_EXPCOST_LAND,R&D capital expenditures for land acquisition
+B_EXPCOST_BLDG,R&D capital expenditures for buildings and land imp R&D capital expenditures for equipmentrovement
+B_EXPCOST_EQUIP,R&D capital expenditures for equipment
+B_EXPCOST_TECH,R&D capital expenditures for software
+B_EXPCOST_INTEL,R&D capital expenditures for IP
+B_EXPCOST_OTH ,All other R&D capital expenditures
+B_EXPCOST_TOTAL,Total capital expenditures by R&D category
+B_RDEMP_DOMESTIC,Amount of R&D employees 
+B_RDEMP_FEMALE_DOMESTIC,Amount of R&D employees that were female
+B_RDEMP_MALE_DOMESTIC,Amount of R&D employees that were male
+B_RDJOB_RESRCH_DOMESTIC,Amount of R&D employees that were researchers
+B_RDJOB_TECH_DOMESTIC,Amount of R&D employees that were technicians
+B_RDJOB_SUPPORT_DOMESTIC,Amount of R&D employees that were support staff
+B_RDJOB_TOTEMP_DOMESTIC,Total R&D employees by staff type
+B_RDJOB_PHD_DOMESTIC,Number of R&D researchers that had PhDs
+B_EMPNUM_RDFTE_TOTAL,Full-time equivalent of the R&D employees
+B_EMPNUM_RDFTE_RSEARCH,Full-time equivalent of the R&D researchers
+B_RDTAXCREDIT,Yes/No if business filed for the federal tax credit for increasing research activities
+B_RDSTTX,Yes/No if business filed for the state tax credit for increasing research activities
+B_RDTAX_STATE,The state in which the business filed for a tax credit for increasing research activities
+AFFIL ,Yes/No if organization is affiliated with or considered a part of another organization 
+AFFILWI ,Details on affiliated organization 
+EXPNS,Amount of total expenses
+WEMP,Number of employees as of March 12th
+FYEND_MONTH,Month that fiscal year ends 
+RDPER,Yes/No if organization performed research 
+RDPERWI,Details on research performed
+RDOUT,Yes/No if organization funded research performed outside of the organization
+RDOUTWI,Details on outside funded research
+WZTOT,Amount of internal research funds
+WZTOTWI,Details on amount spent on research within the organization
+ZINT,Amount of domestic internal research funds that came from the organization itself
+ZINTTOT,Total mount of internal research funds that came from the organization itself
+FEDRD,Amount of domestic research funds that came from the federal government
+COPYFEDRD,Total amount of research funds that came from the federal government
+ZSTAT,Amount of domestic research funds that came from state and local governments
+COPYZSTAT,Total amount of research funds that came from state and local governments
+DZDON,Amount of domestic research funds that came from individual donors
+FZDON,Amount of foreign research funds that came from individual donors
+ZDON,Total amount of domestic and foreign research funds that came from individual donors
+DWZRCD,Amount of domestic research funds that came from businesses
+FWZRCD,Amount of foreign research funds that came from businesses
+WZRCD,Total amount of domestic and foreign research funds that came from businesses
+DZWUN,Amount of domestic research funds that came from universities
+FZWUN,Amount of foreign research funds that came from universities
+ZWUN,Total amount of domestic and foreign research funds that came from universities
+DFONP,Amount of domestic research funds that came from foundations and all other nonprofits
+FFONP,Amount of foreign research funds that came from foundations and all other nonprofits
+FONP,Total mount of domestic and foreign internal research funds that came from foundations and all other nonprofits
+DZOTH,Amount of domestic research funds that came from other sources
+FZOTH,Amount of foreign research funds that came from other sources
+ZOTH,Total amount of domestic and foreign internal research funds that came from other sources
+NPRDSOURCE_DOM,Total amount of domestic internal research funds by source of funds
+NPRDSOURCE_FGN,Total amount of foreign internal research funds by source of funds
+NPRDSOURCE_TOT,Total amount of domestic and foreign internal research funds by source of funds
+NPRDSOURCEWI,Details on the amount of internal research funds that came from other sources
+NAGR,Amount of internal research funds allocated to agricultural sciences and natural resources
+NBIO,"Amount of internal research funds allocated to biological, biomedical, and health sciences"
+NENG,Amount of internal research funds allocated to engineering
+NGEO,"Amount of internal research funds allocated to geosciences, atmosphere sciences, and ocean sciences"
+NMTH,"Amount of internal research funds allocated to mathematics, statistics, and information science"
+NPHY,Amount of internal research funds allocated to physical sciences
+NPSY,Amount of internal research funds allocated to social sciences
+NHUM,Amount of internal research funds allocated to humanities
+NOF,Amount of internal research funds allocated to other fields
+NPRDFIELD_TOT,Total amount of internal research funds by allocation field
+NPRDFIELDWI,Additional detail or clarification for question response
+ZCLNZP,Amount of internal research funds allocated to medical clinical trials
+BASF,Amount of internal research funds allocated to basic research
+XBAS,Amount of internal research funds allocated to basic research
+ZBAS,Amount of internal research funds allocated to basic research
+APPF,Amount of internal research funds allocated to applied research
+XAPP,Amount of internal research funds allocated to applied research
+ZAPP,Amount of internal research funds allocated to applied research
+DEVF,Amount of internal research funds allocated to experimental development
+XDEV,Amount of internal research funds allocated to experimental development
+ZDEV,Amount of internal research funds allocated to experimental development
+BADF,Total amount of internal research funds by research type 
+XBAD,Total amount of internal research funds by research type 
+ZBAD,Total amount of internal research funds by research type 
+BADWI,Details on Total amount of internal research funds by research type
+WZWAGE,Amount of internal research funds allocated to payroll for internal employees
+WZTEMP,Amount of internal research funds allocated to contract employees 
+WZDEPR,Amount of internal research funds allocated to depreciation and amortization of assets
+WZEQP,Amount of internal research funds allocated to expensed machinery and equipment
+WZMTR,Amount of internal research funds allocated to machinery and supplies
+WZOTHER,Amount of internal research funds allocated to all other costs
+WZOH_TOT,Total amount of internal research funds by cost category
+WZOHWI,Additional detail or clarification for question response
+WTOSE,Number of employees working on research activities who were researchers
+WTTEC,Number of employees working on research activities who were research technicians
+WTSUP,Number of employees working on research activities who were other support personnel 
+WRDEM ,Total number of employees working on research activities
+WRDEMWI,Additional detail or clarification for question response
+TOTSE,Number of full-time equivalents working on research activities who were researchers
+FTETE,Number of full-time equivalents working on research activities who were research technicians
+FTESU,Number of full-time equivalents working on research activities who were other support personnel 
+RDALE,Total number of full-time equivalents working on research activities
+RDALEWI,Additional detail or clarification for question response
+CONEM,Yes/No if any contract employees worked on research activities
+EMPC,Number of contract employes working on research activities
+VOLUN,Yes/No if any volunteers worked on research activities
+EMPV,Number of volunteers working on research activities
+GRNTS,Amount of funding provided to others for research grants or contracts
+SUBCT,Amount of funding provided to others for research subcontracts or subawards
+ZORD ,Total amount of funding provided to others for research activities
+RDOUTWI2,Details on the total amount of funding provided to others for research activities
+TCPEX,Total capital expenditures
+CAPEX,Total capital expenditures for research operations
+CAPEXWI,Additional detail or clarification for question response
+CPLND,Total capital expenditures for research operations that went towards land acquisition
+CPSTR,Total capital expenditures for research operations that went towards buildings and land improvement
+CPEQP,Total capital expenditures for research operations that went towards equipment
+CPSFT,Total capital expenditures for research operations that went towards capitalized software
+OTHERCEXP,Total capital expenditures for research operations that went towards all other capital expenditures
+CPTOT ,Total capital expenditures for research operations by capital expenditure category
+CPTOTWI,Additional detail or clarification for question response
+B_IP_UTILITY ,Yes/No if business protects IP with utility patents
+B_IP_DESIGN ,Yes/No if business protects IP with design patents
+B_IP_COPYRIGHT ,Yes/No if business protects IP with copyright
+B_IP_TRADE ,Yes/No if business protects IP with trademarks
+B_IP_COMPLEX ,Yes/No if business protects IP with design complexity
+B_IP_CLAUSE ,Yes/No if business protects IP with NDAs or noncompete clauses
+B_IP_IMAGE ,Yes/No if business protects IP with branding
+B_IP_SECRETS ,Yes/No if business protects IP with trade secret
+B_PATENT_PENDING,Number of patent applications pending
+B_PATENT_OWNED ,Number of patents owned
+B_IP_ACT_PURCHASE ,Yes/No if business licensed or purchased IP from non-affiliated businesses
+B_IP_ACT_SOLD ,Yes/No if business licensed or sold IP to non-affiliated businesses
+B_IP_ACT_TRANSFER ,"Yes/No if business transferred IP through ""know-how"" agreements to non-affiliated businesses"
+B_IP_ACT_RECEIVED ,"Yes/No if business received IP through ""know-how"" agreements to non-affiliated businesses"
+B_IP_ACT_CROSS ,Yes/No if business participated in cross-licensing agreements with non-affiliated businesses
+B_IP_ACT_ACQUIRED   ,Yes/No if business acquired or merged with non-affiliated businesses to acquire their IP
+B_IP_ACT_SPINOFF ,Yes/No if business transferred IP to a spin-off of this business
+B_IP_ACT_PARENT ,Yes/No if business received IP from parent company as part of a spin-off
+B_IP_ACT_FREE,Yes/No if business allowed free use of patents/IP they owned
+B_IP_ACT_OPEN ,Yes/No if business made use of open-source or freely available patents/IP
+B_COLLABU_COMPANY ,Yes/No if business performed collaborative research with university researchers
+B_COLLABU_FUNDED ,Yes/No if business funded university research
+B_COLLABU_PHD,Yes/No if business funded PhD or postdoctoral researchers at universities
+B_COLLABU_PURCHASE,Yes/No if business licensed or purchased IP from a university
+B_COLLABU_AGREE,Yes/No if business signed agreements pertaining to IP with universities
+B_COLLABU_ENGINEER,Yes/No if business hired science/engineering graduates
+B_COLLABU_ENGAGED,Yes/No if business exchanged personnel with universities
+B_COLLABG_AGREE ,Yes/No if business collaboratively researched with federal laboratories
+B_COLLABG_FACILITY,Yes/No if business researched at government user facilities
+B_COLLABG_FUNDED,Yes/No if business funded research at federal laboratories
+B_COLLABG_LICENSED,Yes/No if business licensed IP from federal laboratories
+B_COLLABG_ENGAGED,Yes/No if business exchanged personnel with federal laboratories
+B_COLLABG_WORKSHOP ,Yes/No if business attended workshops or seminars hosted by federal laboratories
+B_COLLAB,Yes/No if business collaborated with these federal agencies 
+B_COLLABNP_RESEARCH,Yes/No if business collaboratively researched with nonprofit researchers
+B_COLLABNP_FUNDED,Yes/No if business funded research at a nonprofit
+B_COLLABNP_LICENSED ,Yes/No if business licensed or purchased IP from a nonprofit
+B_COLLABNP_NDA,Yes/No if business signed agreements pertaining to IP with a nonprofit
+B_COLLABNP_ENGAGED ,Yes/No if business exchanged personnel with a nonprofit
+B_WORLDEXP_TOTAL ,Total worldwide operating expenses
+B_OPEXPENSE ,Total domestic operating expenses
+B_ACTIVITYUC_CORE ,Yes/No if domestic unaffiliated companies conducted core production for this business
+B_ACTIVITYUC_LOG ,Yes/No if domestic unaffiliated companies conducted distribution and logistics for this business
+B_ACTIVITYUC_SALE ,Yes/No if domestic unaffiliated companies conducted marketing or sales services for this business
+B_ACTIVITYUC_ADMIN ,Yes/No if domestic unaffiliated companies conducted administrative or management functions for this business
+B_ACTIVITYUC_RD ,Yes/No if domestic unaffiliated companies conducted R&D for this business
+B_ACTIVITYUC_ENG ,Yes/No if domestic unaffiliated companies conducted engineering for this business
+B_ACTIVITYUC_INFO ,Yes/No if domestic unaffiliated companies conducted information and communication tech services for this business
+B_ACTIVITYUC_OTHER ,Yes/No if domestic unaffiliated companies were involved in any other operating expenses
+B_ACTIVITYUFC_CORE,Yes/No if foreign unaffiliated companies conducted core production for this business
+B_ACTIVITYUFC_LOG ,Yes/No if foreign unaffiliated companies conducted distribution and logistics for this business
+B_ACTIVITYUFC_SALE ,Yes/No if foreign unaffiliated companies conducted marketing or sales services for this business
+B_ACTIVITYUFC_ADMIN ,Yes/No if foreign unaffiliated companies conducted administrative or management functions for this business
+B_ACTIVITYUFC_RD ,Yes/No if foreign unaffiliated companies conducted R&D for this business
+B_ACTIVITYUFC_ENG ,Yes/No if foreign unaffiliated companies conducted engineering for this business
+B_ACTIVITYUFC_INFO,Yes/No if foreign unaffiliated companies conducted information and communication tech services for this business
+B_ACTIVITYUFC_OTHER ,Yes/No if foreign unaffiliated companies were involved in any other operating expenses
+B_ACTIVITYUFC_CORE,Yes/No if foreign affiliated companies conducted core production for this business
+B_ACTIVITYUFC_LOG ,Yes/No if foreign affiliated companies conducted distribution and logistics for this business
+B_ACTIVITYUFC_SALE ,Yes/No if foreign affiliated companies conducted marketing or sales services for this business
+B_ACTIVITYUFC_ADMIN ,Yes/No if foreign affiliated companies conducted administrative or management functions for this business
+B_ACTIVITYUFC_RD ,Yes/No if foreign affiliated companies conducted R&D for this business
+B_ACTIVITYUFC_ENG ,Yes/No if foreign affiliated companies conducted engineering for this business
+B_ACTIVITYUFC_INFO,Yes/No if foreign affiliated companies conducted information and communication tech services for this business
+B_ACTIVITYUFC_OTHER ,Yes/No if foreign affiliated companies were involved in any other operating expenses
+B_MANACTIVITY ,Yes/No if business manufactured goods in the US
+B_CONTRACTOUT,Yes/No if business contracted out manufacturing tasks
+B_CONTRACTOUT_TYPE,Type of companies that manufacturing was contracted out to 
+B_DESIGNOUT ,Yes/No if business provided design for goods that were contracted out
+B_CONTRACTIN,Yes/No if business performed manufacturing tasks for other companies in the US 
+B_CONTRACTIN_TYPE ,Types of companies that this business performed manufacturing for
+B_DESIGNIN ,Yes/No if business provided designs for goods that were manufactured for other businesses
+B_RESHORE,Yes/No if business moved any production of goods or services from another country to the US
+B_RSREASON,Reasons why business moved production from another country to the US 
+B_PRODSVC_PROB,The actions taken when a production or service problem arose 
+B_NUMKPI,Number of key performance indicators monitored by this business 
+B_FREQKPI,How frequently key performance indicators are monitored by this business
+B_FREQCSM,How frequently customer satisfaction is monitored by this business
+B_BUSTARGET,The timeframe that the business focused on for production targets
+B_DIFF_TARGETS,Amount of effort it took to meet production targets
+B_PROMOTE_PERF,Primary method that employees are promoted at this business
+B_UNDERPERFORM,Whether an underperforming employee was reassigned or dismissed by this business
+B_TRAINEXP_TOT,Amount spent on formal training programs 
+B_EMPTRAIN_PCT,Percent of employees that received formal training
+B_EMPTRAIN_HRS,Average number of hours of training that employees at this business received
+B_EMPTRAIN,The areas covered by employee training
+RESP_CONTACT_NAME ,Contact Information: Name
+"
+RESP_TITLE   ",Contact Information: Title
+"RESP_PHONE_AREA_CODE
+RESP_PHONE_PREFIX, RESP_PHONE_SUFFIX, ",Contact Information: Phone
+RESP_PHONE_EXT ,Contact Information: Extension
+RESP_EMAIL  ,Contact Information: Email
+B_PROXY,Yes/No if person is reporting in behalf of business owners
+RESP_REMARKS,Remarks about reported data
+PERFBONUSM,What were managers’ performance bonuses usually based on at this company
+RECPERFBNSM,"When production targets were met, what percent of managers at this company received performance bonuses"
+PROMOTEM,What was the primary way managers were promoted at this company
+UNDPERFNM,When was an under-performing manager reassigned or dismissed at this company
+DESCANALYSIS,What descriptive analyses of data were typically used to support making key decisions at this company
+AIENVSAFETY,What extent did this company use artificial intelligence (including machine learning algorithms in software applications) to support production scheduling and monitoring       
+AIEQUIPMAIN,What extent did this company use artificial intelligence (including machine learning algorithms in software applications) to support quality control                                                 
+AIPRDMON,What extent did this company use artificial intelligence (including machine learning algorithms in software applications) to support environmental or safety compliance                                                   
+AIQUALC,What extent did this company use artificial intelligence (including machine learning algorithms in software applications) to support equipment maintenance                                                       
+AISALESFOR,What extent did this company use artificial intelligence (including machine learning algorithms in software applications) to support supply chain management and logistics                                                 
+AISPLYCHNMGT,What extent did this company use artificial intelligence (including machine learning algorithms in software applications) to supportsSales forecasting                                                                                       
+PDELAYAIUSE,Factors that prevented or delayed the use of artificial intelligence at this company
+EXTERNALCPA,"Did this company retain an external Certified Public Accountant to conduct an audit, review, or compilation of its financial statements"
+,Frequency of financial audits
+,Length of services of the current external audit firm
+,Does the external CPA firm that conducts audits provide tax preparation and consulting services 
