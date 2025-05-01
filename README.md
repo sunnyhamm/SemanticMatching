@@ -10,6 +10,8 @@ Then download these:
 %pip install scipy==1.13.1
 %pip install scikit-learn==1.6.1
 %pip install openpyxl==3.1.5
+%pip install gradio==5.27.1
+%pip install chardet==5.2.0
 
 (versions are recorded at the time code was created, other versions might work too) 
 
